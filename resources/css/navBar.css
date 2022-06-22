@@ -1,0 +1,28 @@
+.show {
+    padding-bottom: 0.5rem;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+nav .active {
+    color: #dc3545 !important;
+}
+
+#accountDropDownMenu {
+    padding-bottom: 6px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #dc3545;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: auto;
+}
+
+.bi-suit-heart-fill {
+    margin-left: 5px;
+}

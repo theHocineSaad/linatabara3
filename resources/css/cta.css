@@ -1,0 +1,50 @@
+/* .cta {
+  background-color: rgb(226, 226, 226);
+} */
+
+/* share buttons */
+.shareBtns i {
+    font-size: 20px;
+    padding-inline-end: 10px;
+}
+
+.shareBtns .btn {
+    border: none;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+    width: 200px;
+    height: 60px;
+}
+
+.instagramShare {
+    color: #24af3a;
+}
+
+.fbShare {
+    color: #286ed6;
+}
+
+.messengerShare {
+    color: #006aff;
+}
+
+.instagramShare:hover,
+.fbShare:hover,
+.messengerShare:hover {
+    color: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.instagramShare:hover {
+    background: #24af3a;
+}
+
+.fbShare:hover {
+    color: white;
+    background-color: #286ed6;
+}
+
+.messengerShare:hover {
+    color: white;
+    background: linear-gradient(to right, #00b2ff 0%, #006aff 100%);
+}

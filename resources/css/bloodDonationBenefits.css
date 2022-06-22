@@ -1,0 +1,43 @@
+.section-header {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.section-header p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 18px;
+    color: #323232;
+}
+
+.bi-check {
+    background: #ecf3ff;
+    padding: 4px;
+    margin-inline-end: 10px;
+    font-size: 24px;
+    border-radius: 3px;
+    color: #dc3545;
+}
+
+.bi-check:hover {
+    background: #dc3545;
+    color: white;
+}
+
+.bloodDonationBenefitsSectino {
+    margin-top: 100px;
+}
+
+.bloodDonationBenefitsSectino .feature-box {
+    padding: 24px 20px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.bloodDonationBenefitsSectino .feature-box h3 {
+    font-size: 14px;
+    color: #323232;
+    font-weight: 700;
+    margin: 0;
+}

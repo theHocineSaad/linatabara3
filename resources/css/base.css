@@ -1,0 +1,50 @@
+body {
+    background-color: #fff;
+}
+
+[dir=ltr] body {
+    font-family: 'Nunito', sans-serif;
+}
+
+[dir=rtl] body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+[dir=rtl] .headline {
+    line-height: 60px !important;
+}
+
+.imgCreditLink {
+    margin-top: -7px;
+    font-size: 10px;
+    color: #bdbdbd;
+}
+
+.imgCreditLink:hover {
+    color: #bdbdbd;
+    cursor: default;
+}
+
+.btn-danger {
+    box-shadow: 0 8px 28px rgb(220 56 72 / 45%);
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #dc3545;
+}
+
+::selection {
+    color: white;
+    background: #dc3545;
+}
+
+.searchDonorsBtn {
+    max-height: 48px;
+}

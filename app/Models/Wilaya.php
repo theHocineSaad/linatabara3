@@ -31,4 +31,12 @@ class Wilaya extends Model
         return $this->hasMany(User::class);
     }
 
+    /**
+     * Get the Dairas of a Wilaya.
+     */
+    public function dairas()
+    {
+        return $this->hasMany(Daira::class);
+    }
+
 }
