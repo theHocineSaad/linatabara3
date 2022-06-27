@@ -3,19 +3,18 @@
         <div class="col-10 rounded-3 shadow p-5 position-relative bg-white searchBox">
             <h3 class="text-center mb-4">{{ __('homePage.findDonors') }}</h3>
 
-            <form id="donorsSearchForm" action="#" method="post" class="d-flex flex-column flex-xl-row gap-3" novalidate>
-                @csrf
+            <form id="donorsSearchForm" action="{{ route('donorsPage') }}" method="get" class="d-flex flex-column flex-xl-row gap-3" novalidate>
                 <div class="w-100">
                     <select name="blood_group" id="bloodGroup" class="form-select form-select-lg" required>
                         <option selected hidden style="display:none" value="">{{ __('homePage.bloodGroup') }}</option>
-                        <option value="A+">A+</option>
-                        <option value="A-">A-</option>
-                        <option value="B+">B+</option>
-                        <option value="B-">B-</option>
-                        <option value="O+">O+</option>
-                        <option value="O-">O-</option>
-                        <option value="AB+">AB+</option>
-                        <option value="AB-">AB-</option>
+                        <option value="1">A+</option>
+                        <option value="2">A-</option>
+                        <option value="3">B+</option>
+                        <option value="4">B-</option>
+                        <option value="5">O+</option>
+                        <option value="6">O-</option>
+                        <option value="7">AB+</option>
+                        <option value="8">AB-</option>
                     </select>
 
                     <div class="invalid-feedback">
@@ -27,7 +26,7 @@
                     <select name="wilaya" id="wilayaSelect" class="form-select form-select-lg" required>
                         <option selected hidden style="display:none" value="">{{ __('homePage.wilaya') }}</option>
                         @foreach ($wilayas as $wilaya)
-                            <option value="{{ $wilaya['id'] }}"> {{ $wilaya['id'].'. '.LaravelLocalization::getCurrentLocale() === 'ar' ? $wilaya['arName'] : $wilaya['name'] }} </option>
+                            <option value="{{ $wilaya['id'] }}">{{ $wilaya['id'].'. '.$wilaya[$wilayaName] }} </option>
                         @endforeach
                     </select>
 

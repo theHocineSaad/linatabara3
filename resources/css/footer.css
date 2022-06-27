@@ -78,3 +78,7 @@
 .footerLink:hover{
     text-decoration: underline !important;
 }
+
+.social-btns .btn.github:before {
+    background-color: #24292f;
+}

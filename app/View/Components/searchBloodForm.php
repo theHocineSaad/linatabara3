@@ -317,7 +317,8 @@ class searchBloodForm extends Component
                 "arName" => "عين قزام"
             ]
         ];
+        $wilayaNameInCorrectLanguage = LaravelLocalization::getCurrentLocale() === 'ar' ? 'arName' : 'name';
 
-        return view('components.search-blood-form', ["wilayas" => $wilayas]);
+        return view('components.search-blood-form', ["wilayas" => $wilayas, "wilayaName" => $wilayaNameInCorrectLanguage]);
     }
 }

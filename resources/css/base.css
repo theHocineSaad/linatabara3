@@ -48,3 +48,25 @@ body {
 .searchDonorsBtn {
     max-height: 48px;
 }
+
+/* Custom scrollbar - it's cool - why not! */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #dc3545 white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #dc3545;    /* color of the scroll thumb */
+    border-radius: 23px;       /* roundness of the scroll thumb */
+    border: 3px solid white;  /* creates padding around scroll thumb */
+}

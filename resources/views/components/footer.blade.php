@@ -15,6 +15,21 @@
             </p>
         </div>
 
+        <span class="text-white">---</span>
+
+        <div class="w-75">
+            <p class="text-white mt-3 text-center">
+                {{ __('footer.openSource') }}
+            </p>
+
+            <div class="social-btns">
+                <a class="btn github" href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+
+            </div>
+        </div>
+
         <span class="text-white mt-3">{{ __('footer.followUs') }}</span>
         <div class="findUsOnSocialMedia bg-dark d-flex justify-content-end align-items-center">
             <div class="social-btns">

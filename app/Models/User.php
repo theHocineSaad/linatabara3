@@ -22,9 +22,9 @@ class User extends Authenticatable
         'password',
         'readyToGive',
         'phone',
-        'wilayaCode',
-        'dairaCode',
-        'bloodId'
+        'wilaya_id',
+        'daira_id',
+        'blood_group_id'
     ];
 
     /**

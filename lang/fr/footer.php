@@ -10,5 +10,6 @@
 
 return [
     'followUs' => 'Suivez nous sur:',
-    'text' => "هذا الموقع الجزائري يساعد المحتاجين إلى الدم في العثور على المتبرعين بكل سهولة وفي منطقتهم، هذا الموقع صدقة جارية، يرجى الدعاء لصاحبه ولكل من ساعد في تحقيقه بالرحمة والمغفرة. ",
+    'text' => 'Ce site algérien aide ceux qui ont besoin de sang à trouver des donneurs en toute simplicité près de chez eux. Ce site est une "Sada9a Jarya", merci de prier pour son propriétaire et tous ceux qui ont aidé à y parvenir avec miséricorde et pardon.',
+    'openSource' => 'Le code de cette platfom est open source, vous pouvez le trouver sur Github.',
 ];

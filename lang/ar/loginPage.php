@@ -9,5 +9,12 @@
 */
 
 return [
-    'title' => 'لنتبرع | تسجيل دخول المتبرع',
+    'title' => ':websiteTitle | تسجيل دخول المتبرع',
+    'greetings' => 'سعيدين جدا لعودتك!',
+    'emailPhone' => 'الإيميل أو رقم الهاتف',
+    'password' => 'كلمة المرور',
+    'forgetPassword' => 'نسيت كلمة المرور ؟',
+    'loginBtn' => 'تسجيل الدخول',
+    'notRegistered' => "ليس لديك حساب ؟",
+    'register' => "تسجيل حساب جديد",
 ];

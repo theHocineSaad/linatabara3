@@ -4,7 +4,9 @@ namespace App\Providers;
 
 use App\Models\User;
 use App\Observers\UserObserver;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Pagination\Paginator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -25,6 +27,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+//        URL::forceScheme('https');
+
+        // To use Bootstrap five pagination links instead of Tailwind
+        Paginator::useBootstrapFive();
+
+        // Observers
         User::observe(UserObserver::class);
     }
 }

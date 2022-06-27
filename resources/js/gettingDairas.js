@@ -11,9 +11,9 @@ wilayaSelect.addEventListener('change', () => {
             var dairas = JSON.parse(this.responseText);
 
             if(lang === 'ar'){
-                dairaSelect.innerHTML = '<option selected disabled value="">الدائرة</option>';
+                dairaSelect.innerHTML = '<option selected hidden style="display:none" value="">الدائرة</option>';
             } else if(lang === 'fr'){
-                dairaSelect.innerHTML = '<option selected disabled value="">Daira</option>';
+                dairaSelect.innerHTML = '<option selected hidden style="display:none" value="">Daira</option>';
             }
 
             dairas.forEach(element => {

@@ -11,4 +11,5 @@
 return [
     'websiteTitle' => 'لنتبرع',
     'websiteTitleDescription' => ':websiteTitle | نربط المتبرعين بالدم بالباحثين عن الدم',
+    'logOut' => 'تسجيل الخروج',
 ];

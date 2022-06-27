@@ -1,8 +1,6 @@
 <?php
 
 use App\Http\Controllers\WebController;
-use App\Models\BloodGroup;
-use App\Models\Daira;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,21 +24,17 @@ Route::group([
 
     // Home page
     Route::get('/', [WebController::class, 'homePage'])->name('homePage');
+
+    // Donors page
+    Route::get('/donors', [WebController::class, 'donorsPage'])->name('donorsPage');
+    Route::post('/donors', [WebController::class, 'donorsPage'])->name('donorsPage');
 });
 
 
-Route::get('test', function(){
-
-//    $count = BloodGroup::withCount([
-//        'users as usersApos' => function ($query) {
-//            $query->where('blood_groups.id', '1');
-//        },
-//        'users as usersAneg' => function ($query) {
-//            $query->where('blood_groups.id', '2');
-//        },
-//    ])->get();
 
 
-    return  memory_get_usage();
+Route::get('/test', function(){
+    $user = \App\Models\BloodGroup::find(20);
 
+    return empty($user);
 });

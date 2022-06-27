@@ -13,8 +13,10 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/particles.min.js', 'public/js')
+    .js('resources/js/donorsPage.js', 'public/js')
     .js('resources/js/practicle-js-engine.js', 'public/js')
     .js('resources/js/gettingDairas.js', 'public/js')
+    .js('resources/js/registerPage.js', 'public/js')
     .js('resources/js/donorsSearchFormValidation.js', 'public/js')
 
     .sass('resources/sass/bootstrap.scss', 'public/css')
@@ -28,4 +30,7 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/cta.css', 'public/css')
     .postCss('resources/css/footer.css', 'public/css')
     .postCss('resources/css/stats.css', 'public/css')
+    .postCss('resources/css/loginPage.css', 'public/css')
+    .postCss('resources/css/registerPage.css', 'public/css')
+    .postCss('resources/css/donorsPage.css', 'public/css')
     .postCss('resources/css/faq.css', 'public/css');

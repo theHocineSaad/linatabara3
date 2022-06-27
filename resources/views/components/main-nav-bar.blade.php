@@ -6,7 +6,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarToggler">
 
             <div class="dropdown d-flex justify-content-center my-2 my-xl-0">
                 <button class="btn btn-sm btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -19,12 +19,12 @@
                 </ul>
             </div>
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+            <ul class="navbar-nav mb-2 mb-lg-0 fw-bold">
                 <li class="nav-item">
                     <a class="nav-link {{ $homeActive ?? '' }}" aria-current="page" href="{{ route('homePage') }}">{{ __('homePage.home') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ $donorsActive ?? '' }}" href="{{ route('homePage') }}">{{ __('homePage.donors') }}</a>
+                    <a class="nav-link {{ $donorsActive ?? '' }}" href="{{ route('donorsPage') }}">{{ __('homePage.donors') }}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ $aboutActive ?? '' }}" href="{{ route('homePage') }}">{{ __('homePage.about') }}</a>
@@ -38,12 +38,12 @@
             <div class="dropdown d-flex justify-content-center">
                 <button class="btn btn-danger dropdown-toggle" type="button" id="accountDropDownMenu" data-bs-toggle="dropdown" aria-expanded="false">{{ Auth::user()->email }}</button>
                 <ul class="dropdown-menu" aria-labelledby="accountDropDownMenu">
-                    <li><a class="dropdown-item" href="{{ route('') }}">{{ __('homePage.myAccount') }}</a></li>
+                    <li><a class="dropdown-item" href="{{ route('homePage') }}">{{ __('homePage.myAccount') }}</a></li>
 
                     <li>
                         <form action="{{ route('logout') }}" method="post">
                             @csrf
-                            <input class="dropdown-item" type="submit" value="Se déconnecter">
+                            <input class="dropdown-item" type="submit" value="{{ __('general.logOut') }}">
                         </form>
                     </li>
 
