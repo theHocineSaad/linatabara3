@@ -76,14 +76,17 @@
                 <div class="invalid-feedback">{{ __('registerPage.passwordValidation') }}</div>
             </div>
 
-            <div>
+            <div class="mb-3">
                 <label for="id_confirm_password" class="form-label mt-3">{{ __('registerPage.rePassword') }}</label>
                 <input data-validator-func="passwordConfirmationValidator" type="password" name="password_confirmation" class="form-control" required id="id_confirm_password" placeholder="{{ __('registerPage.rePassword') }}"/>
                 <div class="invalid-feedback">{{ __('registerPage.rePasswordValidation') }}</div>
             </div>
 
-            <input class="btn btn-danger my-3 w-100" id="submitBtn" type="submit" value="S'inscrire" />
+            {!! NoCaptcha::display() !!}
+
+            <input class="btn btn-danger my-3 w-100" id="submitBtn" type="submit" value="{{ __('registerPage.register') }}" />
             <span class="text-dark d-block text-center">{{ __('registerPage.alreadyMember') }}<a href="{{ route('login') }}" class="text-danger text-decoration-none"> {{ __('registerPage.login') }}</a></span>
+
         </form>
     </div>
 
@@ -93,4 +96,5 @@
 @section('beforeBodyEnd')
     <script src="{{ asset('js/gettingDairas.js') }}"></script>
     <script src="{{ asset('js/registerPage.js') }}"></script>
+    {!! NoCaptcha::renderJs( LaravelLocalization::getCurrentLocale() ) !!}
 @endsection

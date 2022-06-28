@@ -132,5 +132,9 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'g-recaptcha-response' => [
+            'required' => "Veuillez vérifier que vous n'êtes pas un bot, juste au-dessus du bouton d'inscription, après avoir rempli à nouveau le formulaire.",
+            'captcha' => "Erreur CAPTCHA! Réessayez plus tard ou contactez l'administrateur du site web.",
+        ],
     ],
 ];
