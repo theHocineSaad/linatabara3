@@ -8,16 +8,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarToggler">
 
-            <div class="dropdown d-flex justify-content-center my-2 my-xl-0">
-                <button class="btn btn-sm btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    {{ LaravelLocalization::getCurrentLocaleNative() }}
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item text-end" rel="alternate" hreflang="{{ LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'ar' : 'fr' }}" href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'ar' : 'fr', null, [], true) }}">
-                            {{ LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'العربية' : 'Francais' }}
-                        </a></li>
-                </ul>
-            </div>
+            <a href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'ar' : 'fr', null, [], true) }}" style="{{ LaravelLocalization::getCurrentLocale() === 'fr' ? "font-family: 'Noto Kufi Arabic', sans-serif;" : "font-family: 'Nunito', sans-serif;" }}" class="btn btn-danger btn-sm px-3 py-1">{{ LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'العربية' : 'Francais' }}</a>
 
             <ul class="navbar-nav mb-2 mb-lg-0 fw-bold">
                 <li class="nav-item">
