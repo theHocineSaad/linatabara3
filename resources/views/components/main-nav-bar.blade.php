@@ -23,7 +23,14 @@
                     <a class="nav-link {{ $aboutActive ?? '' }}" href="{{ route('aboutPage') }}">{{ __('homePage.about') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ $contactActive ?? '' }}" href="{{ route('homePage') }}">{{ __('homePage.contact') }}</a>
+
+{{--                    <a class="nav-link {{ $contactActive ?? '' }}" href="{{ route('contactPage') }}">{{ __('homePage.contact') }}</a>--}}
+
+                    <button type="button" class="nav-link btn btn-link" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        {{ __('homePage.contact') }}
+                    </button>
+
+
                 </li>
             </ul>
 

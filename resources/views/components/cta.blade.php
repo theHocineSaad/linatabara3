@@ -9,18 +9,18 @@
     <div class="shareBtns container d-flex flex-column flex-sm-row flex-wrap align-items-center justify-content-center">
 
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ env('APP_URL') }}" class="fbShare btn d-flex align-items-center justify-content-center" target="_blank" rel="nofollow">
-            <i class="fab fa-facebook"></i>
-            <span>Facebook</span>
+            <i class="fa-brands fa-facebook"></i>
+            <span class="ms-2">Facebook</span>
         </a>
 
         <a href="https://www.facebook.com/dialog/send?link={{ env('APP_URL') }}&app_id=194134865891187&redirect_uri={{ env('APP_URL') }}" class="messengerShare btn d-flex align-items-center justify-content-center my-3 my-lg-0 mx-sm-3" target="_blank" rel="nofollow">
-            <i class="fab fa-facebook-messenger"></i>
-            <span>Messenger</span>
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <span class="ms-2">Messenger</span>
         </a>
 
         <a href="https://web.whatsapp.com/send?text={{ env('APP_URL') }}" class="instagramShare btn d-flex align-items-center justify-content-center" target="_blank" rel="nofollow">
-            <i class="fab fa-whatsapp"></i>
-            <span>Whatsapp</span>
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ms-2">Whatsapp</span>
         </a>
 
     </div>

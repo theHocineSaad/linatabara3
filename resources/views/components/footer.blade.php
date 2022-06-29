@@ -24,7 +24,7 @@
 
             <div class="social-btns">
                 <a class="btn github" href="#">
-                    <i class="fab fa-github"></i>
+                    <i class="fa-brands fa-github"></i>
                 </a>
 
             </div>
@@ -34,10 +34,10 @@
         <div class="findUsOnSocialMedia bg-dark d-flex justify-content-end align-items-center">
             <div class="social-btns">
                 <a class="btn facebook" href="#">
-                    <i class="fab fa-facebook"></i>
+                    <i class="fa-brands fa-facebook"></i>
                 </a>
                 <a class="btn instagram" href="#">
-                    <i class="fab fa-instagram"></i>
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
 
             </div>
