@@ -26,6 +26,7 @@ mix.js('resources/js/app.js', 'public/js')
         //
     ])
     .postCss('resources/css/homeHero.css', 'public/css')
+    .postCss('resources/css/aboutPage.css', 'public/css')
     .postCss('resources/css/bloodDonationBenefits.css', 'public/css')
     .postCss('resources/css/cta.css', 'public/css')
     .postCss('resources/css/footer.css', 'public/css')

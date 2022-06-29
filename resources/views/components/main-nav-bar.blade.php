@@ -8,7 +8,9 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarToggler">
 
-            <a href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'ar' : 'fr', null, [], true) }}" style="{{ LaravelLocalization::getCurrentLocale() === 'fr' ? "font-family: 'Noto Kufi Arabic', sans-serif;" : "font-family: 'Nunito', sans-serif;" }}" class="btn btn-danger btn-sm px-3 py-1">{{ LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'العربية' : 'Francais' }}</a>
+            <div class="languageSwitcher text-center">
+                <a href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'ar' : 'fr', null, [], true) }}" style="{{ LaravelLocalization::getCurrentLocale() === 'fr' ? "font-family: 'Noto Kufi Arabic', sans-serif;" : "font-family: 'Nunito', sans-serif;" }}" class="px-3 mt-2 mt-lg-0 btn btn-danger btn-sm py-1">{{ LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'العربية' : 'Francais' }}</a>
+            </div>
 
             <ul class="navbar-nav mb-2 mb-lg-0 fw-bold">
                 <li class="nav-item">
@@ -18,7 +20,7 @@
                     <a class="nav-link {{ $donorsActive ?? '' }}" href="{{ route('donorsPage') }}">{{ __('homePage.donors') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ $aboutActive ?? '' }}" href="{{ route('homePage') }}">{{ __('homePage.about') }}</a>
+                    <a class="nav-link {{ $aboutActive ?? '' }}" href="{{ route('aboutPage') }}">{{ __('homePage.about') }}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ $contactActive ?? '' }}" href="{{ route('homePage') }}">{{ __('homePage.contact') }}</a>

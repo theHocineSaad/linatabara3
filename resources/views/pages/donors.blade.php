@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title',__('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]))
+@section('title',!isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults').' '.$searchedBloodGroup.', '.__('registerPage.wilaya').': '.$searchedWilaya.' '.__('registerPage.daira').': '.$searchedDaira )
 
 @section('head')
     <link href="{{ asset('css/donorsPage.css') }}" rel="stylesheet">

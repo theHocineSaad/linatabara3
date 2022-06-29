@@ -1,0 +1,11 @@
+.aboutPageHero{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ourMissionDescription{
+    font-size: 25px;
+    max-width: 800px;
+}

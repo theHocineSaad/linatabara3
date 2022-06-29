@@ -66,5 +66,13 @@ class WebController extends Controller
 
     }
 
+    /**
+     * about page
+     *
+     */
+    public function aboutPage()
+    {
+        return view('pages.about');
+    }
 
 }

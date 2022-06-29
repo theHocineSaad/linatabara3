@@ -8,7 +8,7 @@
     "/js/donorsSearchFormValidation.js": "/js/donorsSearchFormValidation.js",
     "/css/app.css": "/css/app.css",
     "/css/bootstrap-rtl.css": "/css/bootstrap-rtl.css",
-    "/css/bloodDonationBenefits.css": "/css/bloodDonationBenefits.css",
+    "/css/aboutPage.css": "/css/aboutPage.css",
     "/css/homeHero.css": "/css/homeHero.css",
     "/css/bootstrap.css": "/css/bootstrap.css",
     "/css/faq.css": "/css/faq.css",
@@ -17,5 +17,6 @@
     "/css/loginPage.css": "/css/loginPage.css",
     "/css/stats.css": "/css/stats.css",
     "/css/footer.css": "/css/footer.css",
-    "/css/cta.css": "/css/cta.css"
+    "/css/cta.css": "/css/cta.css",
+    "/css/bloodDonationBenefits.css": "/css/bloodDonationBenefits.css"
 }
