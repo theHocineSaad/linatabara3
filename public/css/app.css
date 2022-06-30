@@ -97,12 +97,10 @@ nav .active {
 }
 
 .bi-suit-heart-fill {
-    margin-left: 5px;
+    -webkit-margin-start: 5px;
+            margin-inline-start: 5px;
 }
 
-.languageSwitcher{
-
-}
 
 
 .findUsOnSocialMedia {
