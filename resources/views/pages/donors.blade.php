@@ -44,9 +44,9 @@
                                 </div>
                             </div>
 
-                            <div class="donorPhone bg-danger p-3 bg-light row align-items-center">
-                                <strong class="col-8 col-lg-12 text-lg-center text-success fs-4" style="user-select: all;"><i class="fas fa-phone-alt text-white d-none d-lg-inline bg-success rounded-circle phoneIcon"></i><span>{{ $donor['phone'] }}</span></strong>
+                            <div class="donorPhone bg-danger p-3 bg-light row">
                                 <a class="col-4 d-lg-none" href="tel:{{ $donor['phone'] }}"><button class="btn btn-success w-100" type="button"><i class="fas fa-phone-alt"></i></button></a>
+                                <strong class="align-items-center justify-content-center d-flex col-8 col-lg-12 text-lg-center text-success fs-4" style="user-select: all;"><i class="fas fa-phone-alt text-white d-none d-lg-inline bg-success rounded-circle phoneIcon"></i><span>{{ $donor['phone'] }}</span></strong>
                             </div>
                         </div>
                     @endforeach
