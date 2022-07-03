@@ -21,4 +21,6 @@ return [
     'currentPasswordValidation' => 'Veuillez saisir votre mot de passe actuel!',
     'newPassword' => 'Nouveau mot de passe',
     'reNewPassword' => 'Entrez à nouveau le nouveau mot de passe',
+    'passwordUpdated' => 'Le mot de passe a été changé avec succès',
+    'profileInformationUpdated' => 'Les informations de profil ont été mises à jour avec succès',
 ];

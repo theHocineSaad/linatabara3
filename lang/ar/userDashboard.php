@@ -21,4 +21,6 @@ return [
     'currentPasswordValidation' => 'الرجاء إدخال كلمة المرور الحالية الخاصة بك!',
     'newPassword' => 'كلمة المرور الجديدة',
     'reNewPassword' => 'إعادة إدخال كلمة المرور الجديدة',
+    'passwordUpdated' => 'تم تغيير كلمة المرور بنجاح',
+    'profileInformationUpdated' => 'تم تحديث معلومات الملف الشخصي بنجاح',
 ];

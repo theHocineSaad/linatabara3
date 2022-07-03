@@ -3,6 +3,12 @@
         @csrf
         @method("PUT")
 
+        @if (session('status') and session('status') === "profile-information-updated")
+            <p class="alert alert-success">{{ __('userDashboard.profileInformationUpdated') }}</p>
+        @elseif(session('status') and session('status') === "password-updated")
+            <p class="alert alert-success">{{ __('userDashboard.passwordUpdated') }}</p>
+        @endif
+
         @if ($errors->updateProfileInformation->any())
             @foreach ($errors->updateProfileInformation->all() as $error)
                 <div class="alert alert-danger shadow-sm" role="alert">
