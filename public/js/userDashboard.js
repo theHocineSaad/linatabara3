@@ -16,7 +16,6 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var queryString = window.location.search;
-messageBoxText = document.querySelector('.messageBoxText');
 body = document.body; // form js
 
 wilayaSelect = document.getElementById('wilayaSelect');
@@ -52,17 +51,7 @@ readyToGive = document.getElementById('readyToGive');
 userIsReadyToGive = document.getElementById('userIsReadyToGive');
 var boolUserIsReadyToGive = userIsReadyToGive.innerText == "1";
 readyToGive.checked = boolUserIsReadyToGive; // form js
-// success message remover
-
-successMsg = document.getElementById('successMsg');
-
-if (successMsg) {
-  setTimeout(function () {
-    successMsg.remove();
-  }, 4000);
-} // success message remover
 // password edit form validation
-
 
 var currentPassword = document.getElementById("id_password_current_password");
 var password = document.getElementById("id_password");

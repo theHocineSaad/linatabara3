@@ -1,6 +1,5 @@
 const queryString = window.location.search;
 
-messageBoxText = document.querySelector('.messageBoxText')
 body = document.body
 
 // form js
@@ -39,15 +38,6 @@ userIsReadyToGive = document.getElementById('userIsReadyToGive')
 var boolUserIsReadyToGive = userIsReadyToGive.innerText == "1"
 readyToGive.checked = boolUserIsReadyToGive
 // form js
-
-// success message remover
-successMsg = document.getElementById('successMsg')
-if (successMsg){
-    setTimeout(function(){
-        successMsg.remove();
-    },4000);
-}
-// success message remover
 
 
 // password edit form validation
