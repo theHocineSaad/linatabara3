@@ -3,6 +3,9 @@
 @section('title',!isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults').' '.$searchedBloodGroup.', '.__('registerPage.wilaya').': '.$searchedWilaya.' '.__('registerPage.daira').': '.$searchedDaira )
 
 @section('head')
+    @if(Route::currentRouteName() === 'donorsSearch')
+        <meta name="robots" content="noindex">
+    @endif
     <link href="{{ asset('css/donorsPage.css') }}" rel="stylesheet">
     <link href="{{ asset('css/stats.css') }}" rel="stylesheet">
 @endsection

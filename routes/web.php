@@ -27,6 +27,7 @@ Route::group([
 
     // Donors page
     Route::get('/donors', [WebController::class, 'donorsPage'])->name('donorsPage');
+    Route::get('/donors/search', [WebController::class, 'donorsSearch'])->name('donorsSearch');
 
     //About page
     Route::get('/about', [WebController::class, 'aboutPage'])->name('aboutPage');

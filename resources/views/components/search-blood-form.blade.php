@@ -3,7 +3,7 @@
         <div class="col-10 rounded-3 shadow p-5 position-relative bg-white searchBox">
             <h3 class="text-center mb-4">{{ __('homePage.findDonors') }}</h3>
 
-            <form id="donorsSearchForm" action="{{ route('donorsPage') }}" method="get" class="d-flex flex-column flex-xl-row gap-3" novalidate>
+            <form id="donorsSearchForm" action="{{ route('donorsSearch') }}" method="get" class="d-flex flex-column flex-xl-row gap-3" novalidate>
                 <div class="w-100">
                     <select name="blood_group" id="bloodGroup" class="form-select form-select-lg" required>
                         <option selected hidden style="display:none" value="">{{ __('homePage.bloodGroup') }}</option>

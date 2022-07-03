@@ -25,45 +25,44 @@ class WebController extends Controller
      * Donors page
      *
      */
-    public function donorsPage(Request $request)
+    public function donorsPage()
     {
+        return view('pages.donors');
+    }
 
-        if (!$request->has(['blood_group', 'wilaya', 'daira'])) {
-            return view('pages.donors');
-        } else {
+    /**
+     * donors search page
+     *
+     */
+    public function donorsSearch(Request $request)
+    {
+        $validated = validator($request->all(), [
+            'blood_group' => ['required', 'exists:blood_groups,id'],
+            'wilaya' => ['required', 'exists:wilayas,id'],
+            'daira' => ['required', 'exists:dairas,id'],
+        ])->validate();
+
+        // Get Blood-group, Wilaya and Daira names to be shown on front end
+        $searchedBloodGroup = BloodGroup::select('bloodGroup')->find($validated['blood_group'])->bloodGroup;
+        $searchedWilaya = Wilaya::select(LaravelLocalization::getCurrentLocale() === 'ar' ? 'arName as name' : 'name')->find($validated['wilaya'])->name;
+        $searchedDaira = Daira::select(LaravelLocalization::getCurrentLocale() === 'ar' ? 'arName as name' : 'name')->find($validated['daira'])->name;
+
+        $donors = User::select('phone')
+            ->where('Blood_Group_id', $validated['blood_group'])
+            ->where('wilaya_id', $validated['wilaya'])
+            ->where('daira_id', $validated['daira'])
+            ->where('readyToGive', 1)
+            ->inRandomOrder()
+            ->paginate(10);
 
 
-            $validated = validator($request->all(), [
-                'blood_group' => ['required', 'exists:blood_groups,id'],
-                'wilaya' => ['required', 'exists:wilayas,id'],
-                'daira' => ['required', 'exists:dairas,id'],
-            ])->validate();
-
-            // Get Blood-group, Wilaya and Daira names to be shown on front end
-            $searchedBloodGroup = BloodGroup::select('bloodGroup')->find($validated['blood_group'])->bloodGroup;
-            $searchedWilaya = Wilaya::select(LaravelLocalization::getCurrentLocale() === 'ar' ? 'arName as name' : 'name')->find($validated['wilaya'])->name;
-            $searchedDaira = Daira::select(LaravelLocalization::getCurrentLocale() === 'ar' ? 'arName as name' : 'name')->find($validated['daira'])->name;
-
-            $donors = User::select('phone')
-                ->where('Blood_Group_id', $validated['blood_group'])
-                ->where('wilaya_id', $validated['wilaya'])
-                ->where('daira_id', $validated['daira'])
-                ->where('readyToGive', 1)
-                ->inRandomOrder()
-                ->paginate(10);
-
-
-            $data = [
-                "searchedBloodGroup" => $searchedBloodGroup,
-                "searchedWilaya" => $searchedWilaya,
-                "searchedDaira" => $searchedDaira,
-                "donors" => $donors,
-            ];
-//            return $data['donors'];
-            return view('pages.donors', $data);
-
-        }
-
+        $data = [
+            "searchedBloodGroup" => $searchedBloodGroup,
+            "searchedWilaya" => $searchedWilaya,
+            "searchedDaira" => $searchedDaira,
+            "donors" => $donors,
+        ];
+        return view('pages.donors', $data);
     }
 
     /**
