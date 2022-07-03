@@ -30,13 +30,11 @@ Route::group([
 
     //About page
     Route::get('/about', [WebController::class, 'aboutPage'])->name('aboutPage');
+
+    //Loged in users routes
+    Route::group(['middleware' => 'auth'], function(){
+        Route::get('/dashboard', [WebController::class, 'dashboard'])->name('dashboard');
+    });
 });
 
 
-
-
-Route::get('/test', function(){
-    $user = \App\Models\BloodGroup::find(20);
-
-    return empty($user);
-});

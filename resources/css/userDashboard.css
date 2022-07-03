@@ -1,0 +1,43 @@
+@media (min-width: 540px) {
+    .formFieldsWrapper {
+        width: 500px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+
+.modalBox {
+    background-color: #000000a3;
+    z-index: 1021;
+}
+
+.messageBox {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px 30px 70px;
+}
+.messageBox button.closeBtn {
+    width: 30px;
+    font-size: 20px;
+    color: #c0c5cb;
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+}
+.messageBox p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+.messageBox button.acceptBtn {
+    width: 200px;
+    padding: 14px;
+    font-size: 16px;
+}

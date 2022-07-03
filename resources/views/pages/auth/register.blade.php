@@ -60,25 +60,25 @@
 
             <div>
                 <label for="id_phone" class="form-label mt-3">{{ __('registerPage.phoneNumber') }}</label>
-                <input data-validator-func="phoneValidator" type="text" name="phone" maxlength="10" class="form-control" required id="id_phone" value="{{ old('phone') }}" placeholder="{{ __('registerPage.phoneNumber') }}"/>
+                <input dir="auto" data-validator-func="phoneValidator" type="text" name="phone" maxlength="10" class="form-control" required id="id_phone" value="{{ old('phone') }}" />
                 <div class="invalid-feedback">{{ __('registerPage.phoneNumberValidation') }}</div>
             </div>
 
             <div>
                 <label for="id_email" class="form-label mt-3">{{ __('registerPage.email') }}</label>
-                <input data-validator-func="emailValidator" type="email" name="email" maxlength="60" class="form-control" required id="id_email" value="{{ old('email') }}" placeholder="{{ __('registerPage.email') }}"/>
+                <input dir="auto" data-validator-func="emailValidator" type="email" name="email" maxlength="60" class="form-control" required id="id_email" value="{{ old('email') }}" />
                 <div class="invalid-feedback emailInvalidFeedBack">{{ __('registerPage.emailValidation') }}</div>
             </div>
 
             <div>
                 <label for="id_password" class="form-label mt-3">{{ __('registerPage.password') }}</label>
-                <input data-validator-func="passwordValidator" type="password" name="password" class="form-control" required id="id_password" placeholder="{{ __('registerPage.password') }}"/>
+                <input dir="auto" data-validator-func="passwordValidator" type="password" name="password" class="form-control" required id="id_password" />
                 <div class="invalid-feedback">{{ __('registerPage.passwordValidation') }}</div>
             </div>
 
             <div class="mb-3">
                 <label for="id_confirm_password" class="form-label mt-3">{{ __('registerPage.rePassword') }}</label>
-                <input data-validator-func="passwordConfirmationValidator" type="password" name="password_confirmation" class="form-control" required id="id_confirm_password" placeholder="{{ __('registerPage.rePassword') }}"/>
+                <input dir="auto" data-validator-func="passwordConfirmationValidator" type="password" name="password_confirmation" class="form-control" required id="id_confirm_password" />
                 <div class="invalid-feedback">{{ __('registerPage.rePasswordValidation') }}</div>
             </div>
 

@@ -35,7 +35,7 @@
             <div class="dropdown d-flex justify-content-center">
                 <button class="btn btn-danger dropdown-toggle" type="button" id="accountDropDownMenu" data-bs-toggle="dropdown" aria-expanded="false">{{ Auth::user()->email }}</button>
                 <ul class="dropdown-menu" aria-labelledby="accountDropDownMenu">
-                    <li><a class="dropdown-item" href="{{ route('homePage') }}">{{ __('homePage.myAccount') }}</a></li>
+                    <li><a class="dropdown-item" href="{{ route('dashboard') }}">{{ __('homePage.myAccount') }}</a></li>
 
                     <li>
                         <form action="{{ route('logout') }}" method="post">

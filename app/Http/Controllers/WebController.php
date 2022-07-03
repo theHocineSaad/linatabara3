@@ -75,4 +75,13 @@ class WebController extends Controller
         return view('pages.about');
     }
 
+    /**
+     * user dashboard
+     *
+     */
+    public function dashboard()
+    {
+        return view('pages.dashboards.user');
+    }
+
 }

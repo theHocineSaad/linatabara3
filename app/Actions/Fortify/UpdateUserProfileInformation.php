@@ -2,6 +2,7 @@
 
 namespace App\Actions\Fortify;
 
+use App\Models\User;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
@@ -19,24 +20,32 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
     public function update($user, array $input)
     {
         Validator::make($input, [
-            'name' => ['required', 'string', 'max:255'],
-
             'email' => [
                 'required',
                 'string',
                 'email',
-                'max:255',
-                Rule::unique('users')->ignore($user->id),
+                'max:100',
+                Rule::unique(User::class)->ignore($user->id),
             ],
-        ])->validateWithBag('updateProfileInformation');
+            'phone' => ['required', 'numeric', 'digits:10', Rule::unique(User::class)->ignore($user->id)],
+            'wilaya' => ['required', 'exists:wilayas,id'],
+            'daira' => ['required', 'exists:dairas,id'],
+        ],
+            [
+                'email.unique'=>__('registerPage.alreadyUsedEmail'),
+                'phone.unique'=>__('registerPage.alreadyUsedPhoneNumber'),
+            ])->validateWithBag('updateProfileInformation');
 
         if ($input['email'] !== $user->email &&
             $user instanceof MustVerifyEmail) {
             $this->updateVerifiedUser($user, $input);
         } else {
             $user->forceFill([
-                'name' => $input['name'],
                 'email' => $input['email'],
+                'phone' => $input['phone'],
+                'wilaya_id' => $input['wilaya'],
+                'daira_id'=> $input['daira'],
+                'readyToGive' => array_key_exists('ready_to_give', $input) ? 1 : 0,
             ])->save();
         }
     }
@@ -50,9 +59,13 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
      */
     protected function updateVerifiedUser($user, array $input)
     {
+
         $user->forceFill([
-            'name' => $input['name'],
-            'email' => $input['email'],
+            'email' => $input['name'],
+            'phone' => $input['email'],
+            'wilaya_id' => $input['name'],
+            'daira_id'=> $input['name'],
+            'readyToGive' => $input['ready_to_give'] === 'on' ? 1 : 0,
             'email_verified_at' => null,
         ])->save();
 

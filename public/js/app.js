@@ -27890,6 +27890,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/css/userDashboard.css":
+/*!*****************************************!*\
+  !*** ./resources/css/userDashboard.css ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/footer.css":
 /*!**********************************!*\
   !*** ./resources/css/footer.css ***!
@@ -28372,9 +28385,10 @@ process.umask = function() { return 0; };
 /******/ 			"css/registerPage": 0,
 /******/ 			"css/loginPage": 0,
 /******/ 			"css/stats": 0,
+/******/ 			"css/footer": 0,
+/******/ 			"css/userDashboard": 0,
 /******/ 			"css/cta": 0,
-/******/ 			"css/bloodDonationBenefits": 0,
-/******/ 			"css/footer": 0
+/******/ 			"css/bloodDonationBenefits": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -28424,20 +28438,21 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/sass/bootstrap.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/sass/bootstrap-rtl.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/css/homeHero.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/css/aboutPage.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/css/bloodDonationBenefits.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/css/cta.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/css/footer.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/css/stats.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/css/loginPage.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/css/registerPage.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/css/donorsPage.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/cta","css/bloodDonationBenefits","css/footer"], () => (__webpack_require__("./resources/css/faq.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/sass/bootstrap.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/sass/bootstrap-rtl.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/css/homeHero.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/css/aboutPage.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/css/bloodDonationBenefits.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/css/cta.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/css/userDashboard.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/css/footer.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/css/stats.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/css/loginPage.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/css/registerPage.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/css/donorsPage.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/bootstrap-rtl","css/aboutPage","css/homeHero","css/bootstrap","css/faq","css/donorsPage","css/registerPage","css/loginPage","css/stats","css/footer","css/userDashboard","css/cta","css/bloodDonationBenefits"], () => (__webpack_require__("./resources/css/faq.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
