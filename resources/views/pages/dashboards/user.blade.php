@@ -3,6 +3,7 @@
 @section('title',__('userDashboard.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
 
 @section('head')
+    <meta name="robots" content="noindex">
     <link href="{{ asset('css/userDashboard.css') }}" rel="stylesheet">
 @endsection
 
