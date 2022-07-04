@@ -6,10 +6,11 @@
     "/js/gettingDairas.js": "/js/gettingDairas.js",
     "/js/userDashboard.js": "/js/userDashboard.js",
     "/js/registerPage.js": "/js/registerPage.js",
+    "/js/passwordValidationForgotPassword.js": "/js/passwordValidationForgotPassword.js",
     "/js/donorsSearchFormValidation.js": "/js/donorsSearchFormValidation.js",
     "/css/app.css": "/css/app.css",
     "/css/bootstrap-rtl.css": "/css/bootstrap-rtl.css",
-    "/css/aboutPage.css": "/css/aboutPage.css",
+    "/css/forgotPasswordPage.css": "/css/forgotPasswordPage.css",
     "/css/homeHero.css": "/css/homeHero.css",
     "/css/bootstrap.css": "/css/bootstrap.css",
     "/css/faq.css": "/css/faq.css",
@@ -20,5 +21,6 @@
     "/css/footer.css": "/css/footer.css",
     "/css/userDashboard.css": "/css/userDashboard.css",
     "/css/cta.css": "/css/cta.css",
-    "/css/bloodDonationBenefits.css": "/css/bloodDonationBenefits.css"
+    "/css/bloodDonationBenefits.css": "/css/bloodDonationBenefits.css",
+    "/css/aboutPage.css": "/css/aboutPage.css"
 }

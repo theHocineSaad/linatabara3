@@ -365,6 +365,13 @@ class FortifyServiceProvider extends ServiceProvider
             return view('pages.auth.register', ["wilayas" => $wilayas, "wilayaName" => $wilayaNameInCorrectLanguage]);
         });
 
+        Fortify::requestPasswordResetLinkView(function () {
+            return view('pages.auth.forgot-password');
+        });
+
+        Fortify::resetPasswordView(function ($request) {
+            return view('pages.auth.reset-password', ['request' => $request]);
+        });
 
 
         // Rate limiters

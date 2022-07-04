@@ -18,13 +18,15 @@
             @csrf
 
             @if ($errors->any())
-
                 @foreach ($errors->all() as $error)
                     <div class="alert alert-danger shadow-sm" role="alert">
                         {{ $error }}
                     </div>
                 @endforeach
-
+            @elseif (session('status'))
+                <div class="alert alert-success shadow-sm" role="alert">
+                    {{ session('status') }}
+                </div>
             @else
                 <div class="alert alert-success text-center shadow-sm" role="alert">
                     {{ __('loginPage.greetings') }}
@@ -40,7 +42,7 @@
                 <label for="id_password" class="form-label">{{ __('loginPage.password') }} </label>
                 <input type="password" name="password" class="form-control" required id="id_password" placeholder="{{ __('loginPage.password') }}"/>
                 <span class="form-text text-muted"></span>
-                <small><a href="#" class="text-decoration-none text-danger">{{ __('loginPage.forgetPassword') }}</a></small>
+                <small><a href="{{ route('password.request') }}" class="text-decoration-none text-danger">{{ __('loginPage.forgetPassword') }}</a></small>
             </div>
 
             <input id="submitBtn" class="btn btn-danger my-3 w-100" type="submit" value="{{ __('loginPage.loginBtn') }}" />
