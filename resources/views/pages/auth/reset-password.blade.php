@@ -3,6 +3,7 @@
 @section('title',__('forgotPassword.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
 
 @section('head')
+    <meta name="robots" content="noindex,nofollow" />
     <link href="{{ asset('css/forgotPasswordPage.css') }}" rel="stylesheet">
 @endsection
 
