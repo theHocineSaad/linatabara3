@@ -1,6 +1,22 @@
 @extends('layout')
 
 @section('title',__('aboutPage.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
+<!-- Primary Meta Tags -->
+@section('metaTitle', __('aboutPage.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
+@section('metaDescription', __('aboutPage.whoAreWeDescription'))
+
+<!-- Open Graph / Facebook -->
+@section('metaOGurl', url()->full())
+@section('metaOGtitle', __('aboutPage.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
+@section('metaOGdescription', __('aboutPage.whoAreWeDescription'))
+@section('metaOGimage', asset('imgs/vialsOfBlood.jpg'))
+@section('metaOGLocale', Lang::locale() === "ar" ? Lang::locale()."_DZ" : Lang::locale()."_FR")
+
+<!-- Twitter -->
+@section('metaTwitterUrl', url()->full())
+@section('metaTwitterTitle', __('aboutPage.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
+@section('metaTwitterDescription', __('aboutPage.whoAreWeDescription'))
+@section('metaTwitterImage', asset('imgs/vialsOfBlood.jpg'))
 
 @section('head')
     <link href="{{ asset('css/aboutPage.css') }}" rel="stylesheet">

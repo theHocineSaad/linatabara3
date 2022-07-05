@@ -1,6 +1,22 @@
 @extends('layout')
 
 @section('title',__('registerPage.title', ["websiteTitle" => __('general.websiteTitle')]))
+<!-- Primary Meta Tags -->
+@section('metaTitle', __('registerPage.title', ["websiteTitle" => __('general.websiteTitle')]))
+@section('metaDescription', __('homePage.register'))
+
+<!-- Open Graph / Facebook -->
+@section('metaOGurl', url()->full())
+@section('metaOGtitle', __('registerPage.title', ["websiteTitle" => __('general.websiteTitle')]))
+@section('metaOGdescription', __('homePage.register'))
+@section('metaOGimage', asset('imgs/vialsOfBlood.jpg'))
+@section('metaOGLocale', Lang::locale() === "ar" ? Lang::locale()."_DZ" : Lang::locale()."_FR")
+
+<!-- Twitter -->
+@section('metaTwitterUrl', url()->full())
+@section('metaTwitterTitle', __('registerPage.title', ["websiteTitle" => __('general.websiteTitle')]))
+@section('metaTwitterDescription', __('homePage.register'))
+@section('metaTwitterImage', asset('imgs/vialsOfBlood.jpg'))
 
 @section('head')
     <link href="{{ asset('css/registerPage.css') }}" rel="stylesheet">

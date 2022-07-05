@@ -1,6 +1,22 @@
 @extends('layout')
 
-@section('title',__('general.websiteTitleDescription', ["websiteTitle" => __('general.websiteTitle')]))
+@section('title', __('general.websiteTitleDescription', ["websiteTitle" => __('general.websiteTitle')]))
+<!-- Primary Meta Tags -->
+@section('metaTitle', __('general.websiteTitleDescription', ["websiteTitle" => __('general.websiteTitle')]))
+@section('metaDescription', __('homePage.pageDescription'))
+
+<!-- Open Graph / Facebook -->
+@section('metaOGurl', url()->full())
+@section('metaOGtitle', __('general.websiteTitleDescription', ["websiteTitle" => __('general.websiteTitle')]))
+@section('metaOGdescription', __('homePage.pageDescription'))
+@section('metaOGimage', asset('imgs/vialsOfBlood.jpg'))
+@section('metaOGLocale', Lang::locale() === "ar" ? Lang::locale()."_DZ" : Lang::locale()."_FR")
+
+<!-- Twitter -->
+@section('metaTwitterUrl', url()->full())
+@section('metaTwitterTitle', __('general.websiteTitleDescription', ["websiteTitle" => __('general.websiteTitle')]))
+@section('metaTwitterDescription', __('homePage.pageDescription'))
+@section('metaTwitterImage', asset('imgs/vialsOfBlood.jpg'))
 
 @section('head')
     <link href="{{ asset('css/homeHero.css') }}" rel="stylesheet">

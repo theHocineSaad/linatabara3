@@ -128,7 +128,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" class="image_block" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
                                         <tr>
                                             <td style="padding-left:40px;padding-right:40px;width:100%;">
-                                                <div align="center" style="line-height:10px"><img class="big" src="{{ asset('imgs/emailImage.jpg') }}" style="display: block; height: auto; border: 0; width: 352px; max-width: 100%;" width="352"/></div>
+                                                <div align="center" style="line-height:10px"><img class="big" src="{{ asset('imgs/passwordImage.jpg') }}" style="display: block; height: auto; border: 0; width: 352px; max-width: 100%;" width="352"/></div>
                                             </td>
                                         </tr>
                                     </table>

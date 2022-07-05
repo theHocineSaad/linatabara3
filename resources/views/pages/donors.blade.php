@@ -1,6 +1,22 @@
 @extends('layout')
 
 @section('title',!isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults').' '.$searchedBloodGroup.', '.__('registerPage.wilaya').': '.$searchedWilaya.' '.__('registerPage.daira').': '.$searchedDaira )
+<!-- Primary Meta Tags -->
+@section('metaTitle', !isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults').' '.$searchedBloodGroup.', '.__('registerPage.wilaya').': '.$searchedWilaya.' '.__('registerPage.daira').': '.$searchedDaira)
+@section('metaDescription', __('donorsPage.pageDescription'))
+
+<!-- Open Graph / Facebook -->
+@section('metaOGurl', url()->full())
+@section('metaOGtitle', !isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults').' '.$searchedBloodGroup.', '.__('registerPage.wilaya').': '.$searchedWilaya.' '.__('registerPage.daira').': '.$searchedDaira)
+@section('metaOGdescription', __('donorsPage.pageDescription'))
+@section('metaOGimage', asset('imgs/vialsOfBlood.jpg'))
+@section('metaOGLocale', Lang::locale() === "ar" ? Lang::locale()."_DZ" : Lang::locale()."_FR")
+
+<!-- Twitter -->
+@section('metaTwitterUrl', url()->full())
+@section('metaTwitterTitle', !isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults').' '.$searchedBloodGroup.', '.__('registerPage.wilaya').': '.$searchedWilaya.' '.__('registerPage.daira').': '.$searchedDaira)
+@section('metaTwitterDescription', __('donorsPage.pageDescription'))
+@section('metaTwitterImage', asset('imgs/vialsOfBlood.jpg'))
 
 @section('head')
     @if(Route::currentRouteName() === 'donorsSearch')

@@ -1,6 +1,22 @@
 @extends('layout')
 
 @section('title',__('forgotPassword.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
+<!-- Primary Meta Tags -->
+@section('metaTitle', __('forgotPassword.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
+@section('metaDescription', __('forgotPassword.passwordReset'))
+
+<!-- Open Graph / Facebook -->
+@section('metaOGurl', url()->full())
+@section('metaOGtitle', __('forgotPassword.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
+@section('metaOGdescription', __('forgotPassword.passwordReset'))
+@section('metaOGimage', asset('imgs/passwordImage.jpg'))
+@section('metaOGLocale', Lang::locale() === "ar" ? Lang::locale()."_DZ" : Lang::locale()."_FR")
+
+<!-- Twitter -->
+@section('metaTwitterUrl', url()->full())
+@section('metaTwitterTitle', __('forgotPassword.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
+@section('metaTwitterDescription', __('forgotPassword.passwordReset'))
+@section('metaTwitterImage', asset('imgs/passwordImage.jpg'))
 
 @section('head')
     <link href="{{ asset('css/forgotPasswordPage.css') }}" rel="stylesheet">
