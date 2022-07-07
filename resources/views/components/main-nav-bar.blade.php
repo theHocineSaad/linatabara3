@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-xl navbar-light bg-white shadow-sm sticky-lg-top">
     <div class="container">
         <a class="navbar-brand" href="{{ url('') }}">
-            <img src="https://xgenious.com/laravel/weforyou/assets/uploads/site-logo-70930.png" alt="Linatabara3 Logo" height="40px">
+            <img src="{{ asset(Lang::locale() === "ar" ? 'imgs/linatabara3Logo.png' : 'imgs/linatabara3LogoAscii.png') }}" alt="Linatabara3 Logo" height="40px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
