@@ -30,7 +30,7 @@ I also used Algerian Provinces and Districts.
 **We welcome every contribution to make this platform dynamic and multinational.**
 
 ## Installation
-#### Step1 - Clone the project
+#### Step 1 - Clone the project
 `git clone https://github.com/theHocineSaad/linatabra3.git`
 
 #### Step 2: Configure the Environment
