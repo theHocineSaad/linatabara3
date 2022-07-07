@@ -24,7 +24,7 @@ Linatabara3 is an open source blood donation platform that connects blood seeker
 - **For blood seekers:** they do a quick search where they choose the blood group and the region, then they will get a list of donors with their phone number.
 
 ## Just Arabic and French?
-I created this platform to launch it first in Algeria (My country :tw-2764:) that's why I used Arabic and French (they are the most used languages in Algeria).
+I created this platform to launch it first in Algeria (My country ❤) that's why I used Arabic and French (they are the most used languages in Algeria).
 I also used Algerian Provinces and Districts.
 
 **We welcome every contribution to make this platform dynamic and multinational.**
