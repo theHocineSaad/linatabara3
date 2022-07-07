@@ -1,64 +1,64 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://github.com/theHocineSaad/linatabra3" target="_blank"><img src="https://i.imgur.com/9Kv6TtZ.png"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+------------
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+[![Linatabara3 home page in Arabic](https://i.imgur.com/2wONroz.jpg "Linatabara3 home page in Arabic")](https://github.com/theHocineSaad/linatabra3 "Linatabara3 home page in Arabic")
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+------------
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+[![Linatabra3 home page in French](https://i.imgur.com/c0cm8pK.jpg "Linatabra3 home page in French")](https://github.com/theHocineSaad/linatabra3 "Linatabra3 home page in French")
 
-## Laravel Sponsors
+## What is Linatabara3?
+Linatabara3 is "**لنتبرع**" written with latin alphabets, which is an Arabic word that means "**let's donate**".
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Linatabara3 is an open source blood donation platform that connects blood seekers with blood donors in their region.
 
-### Premium Partners
+**I used Laravel 9 and Bootstrap.**
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## How it works?
+- **For blood donors:** they register using their phone number, blood group, address...
+- **For blood seekers:** they do a quick search where they choose the blood group and the region, then they will get a list of donors with their phone number.
 
-## Contributing
+## Just Arabic and French?
+I created this platform to launch it first in Algeria (My country :tw-2764:) that's why I used Arabic and French (they are the most used languages in Algeria).
+I also used Algerian Provinces and Districts.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+**We welcome every contribution to make this platform dynamic and multinational.**
 
-## Code of Conduct
+## Installation
+#### Step1 - Clone the project
+`git clone https://github.com/theHocineSaad/linatabra3.git`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+#### Step 2: Configure the Environment
+Rename .env.example to .env and fill it.
+- Database info.
+- noCaptcha SITEKEY and SECRET, for the reCaptcha in register page, get them from: https://www.google.com/recaptcha/admin.
+- Mail info, for forgot password feature.
 
-## Security Vulnerabilities
+#### Step 3: Run the following commands
+    composer install
+    php artisan migrate
+    php artisan db:seed
+    php artisan key:generate
+    npm install
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+#### Step 4: Run the server
+`php artisan serve`
 
-## License
+#### Factories
+The project has a User factorie.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+    php artisan tinker
+    \App\Models\User::factory(1999)->create();
+Change **1999** to the number of users you want.
+
+#### Contributing
+Thank you for considering contributing to Linatabara3 project! Feel free to contribute in any way, we welcome every contribution.
+
+#### License
+Linatabara3 project is open-sourced software licensed under the [MIT license.](https://github.com/theHocineSaad/linatabra3/blob/main/LICENSE "MIT license.")
