@@ -34,7 +34,7 @@ I also used Algerian Provinces and Districts.
 `git clone https://github.com/theHocineSaad/linatabra3.git`
 
 #### Step 2: Configure the Environment
-Rename .env.example to .env and fill it.
+Copy .env.example to .env and fill it.
 - Database info.
 - noCaptcha SITEKEY and SECRET, for the reCaptcha in register page, get them from: https://www.google.com/recaptcha/admin.
 - Mail info, for forgot password feature.
