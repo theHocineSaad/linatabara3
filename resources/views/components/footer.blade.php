@@ -23,7 +23,7 @@
             </p>
 
             <div class="social-btns">
-                <a class="btn github" href="#">
+                <a class="btn github" href="https://github.com/theHocineSaad/linatabra3" rel="nofollow">
                     <i class="fa-brands fa-github"></i>
                 </a>
 
