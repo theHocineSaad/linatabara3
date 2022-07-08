@@ -19,6 +19,7 @@
 @section('metaTwitterImage', asset('imgs/vialsOfBlood.jpg'))
 
 @section('head')
+    <meta name="google-site-verification" content="{{ env('GOOGLE_SITE_VERIFICATION') }}" />
     <link href="{{ asset('css/homeHero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/faq.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bloodDonationBenefits.css') }}" rel="stylesheet">
