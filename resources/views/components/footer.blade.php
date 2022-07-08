@@ -5,8 +5,7 @@
         <div class="d-flex flex-column flex-sm-row align-items-center">
             <a class="footerLink text-decoration-none text-white px-3 mt-4 mt-sm-3" href="{{ route('homePage') }}">{{ __('homePage.home') }}</a>
             <a class="footerLink text-decoration-none text-white px-3 mt-3" href="{{ route('donorsPage') }}">{{ __('homePage.donors') }}</a>
-            <a class="footerLink text-decoration-none text-white px-3 mt-3" href="{{ route('homePage') }}">{{ __('homePage.about') }}</a>
-            <a class="footerLink text-decoration-none text-white px-3 mt-3" href="{{ route('homePage') }}">{{ __('homePage.contact') }}</a>
+            <a class="footerLink text-decoration-none text-white px-3 mt-3" href="{{ route('aboutPage') }}">{{ __('homePage.about') }}</a>
         </div>
 
         <div class="w-75">
