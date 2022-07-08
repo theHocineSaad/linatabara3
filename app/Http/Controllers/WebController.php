@@ -48,7 +48,7 @@ class WebController extends Controller
         $searchedDaira = Daira::select(LaravelLocalization::getCurrentLocale() === 'ar' ? 'arName as name' : 'name')->find($validated['daira'])->name;
 
         $donors = User::select('phone')
-            ->where('Blood_Group_id', $validated['blood_group'])
+            ->where('blood_group_id', $validated['blood_group'])
             ->where('wilaya_id', $validated['wilaya'])
             ->where('daira_id', $validated['daira'])
             ->where('readyToGive', 1)
