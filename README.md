@@ -31,7 +31,7 @@ I also used Algerian Provinces and Districts.
 
 ## Installation
 #### Step 1 - Clone the project
-`git clone https://github.com/theHocineSaad/linatabra3.git`
+    git clone https://github.com/theHocineSaad/linatabra3.git
 
 #### Step 2: Configure the Environment
 Copy .env.example to .env and fill it.
@@ -40,21 +40,36 @@ Copy .env.example to .env and fill it.
 - Mail info, for forgot password feature.
 
 #### Step 3: Run the following commands
-    composer install
-    php artisan migrate
+       composer install
+
+------------
+
+       php artisan migrate
+
+------------
+
     php artisan db:seed
+
+------------
+
     php artisan key:generate
+
+------------
+
     npm install
 
 #### Step 4: Run the server
-`php artisan serve`
+    php artisan serve
 
 #### Factories
 The project has a User factorie.
 
-
     php artisan tinker
+
+------------
+
     \App\Models\User::factory(1999)->create();
+
 Change **1999** to the number of users you want.
 
 ## Contributing
