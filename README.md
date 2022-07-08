@@ -57,8 +57,8 @@ The project has a User factorie.
     \App\Models\User::factory(1999)->create();
 Change **1999** to the number of users you want.
 
-#### Contributing
+## Contributing
 Thank you for considering contributing to Linatabara3 project! Feel free to contribute in any way, we welcome every contribution.
 
-#### License
+## License
 Linatabara3 project is open-sourced software licensed under the [MIT license.](https://github.com/theHocineSaad/linatabra3/blob/main/LICENSE "MIT license.")
