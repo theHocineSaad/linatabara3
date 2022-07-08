@@ -28,7 +28,7 @@ return new class extends Migration
             $table->foreign('wilaya_id')->references('id')->on('wilayas');
 
             $table->foreignId('daira_id')->constrained();
-            $table->foreignId('Blood_Group_id')->constrained();
+            $table->foreignId('blood_group_id')->constrained();
         });
     }
 
