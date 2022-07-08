@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 d-flex flex-column align-items-center mb-5">
-                <img src="{{ asset('/imgs/homeHeroImage.svg') }}" class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy">
+                <img src="{{ asset('/imgs/homeHeroImage.svg') }}" class="d-block mx-lg-auto img-fluid" width="700" height="500">
             </div>
         </div>
     </div>
