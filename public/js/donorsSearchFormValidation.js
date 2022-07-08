@@ -1,16 +1,1 @@
-/******/ (() => { // webpackBootstrap
-var __webpack_exports__ = {};
-/*!****************************************************!*\
-  !*** ./resources/js/donorsSearchFormValidation.js ***!
-  \****************************************************/
-theForm = document.getElementById('donorsSearchForm');
-theForm.addEventListener('submit', function (event) {
-  if (!theForm.checkValidity()) {
-    event.preventDefault();
-    event.stopPropagation();
-  }
-
-  theForm.classList.add('was-validated');
-}, false);
-/******/ })()
-;
+theForm=document.getElementById("donorsSearchForm"),theForm.addEventListener("submit",(function(t){theForm.checkValidity()||(t.preventDefault(),t.stopPropagation()),theForm.classList.add("was-validated")}),!1);
