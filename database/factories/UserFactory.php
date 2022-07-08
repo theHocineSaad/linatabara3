@@ -28,7 +28,7 @@ class UserFactory extends Factory
             'phone' => $this->faker->unique()->numerify('##########'),
             'wilaya_id' => Wilaya::inRandomOrder()->first()->id,
             'daira_id' =>  Daira::inRandomOrder()->first()->id,
-            'Blood_Group_id' => BloodGroup::inRandomOrder()->first()->id,
+            'blood_group_id' => BloodGroup::inRandomOrder()->first()->id,
         ];
     }
 
