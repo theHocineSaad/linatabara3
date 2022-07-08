@@ -6,7 +6,7 @@ use Illuminate\View\Component;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\models\Wilaya;
 
-class searchBloodForm extends Component
+class SearchBloodForm extends Component
 {
     /**
      * Create a new component instance.

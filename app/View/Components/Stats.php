@@ -6,7 +6,7 @@ use App\Models\BloodGroup;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\View\Component;
 
-class stats extends Component
+class Stats extends Component
 {
 
     public $stats;
