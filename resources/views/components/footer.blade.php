@@ -1,6 +1,6 @@
 <footer class="bg-dark">
     <div class="container d-flex flex-column align-items-center py-5">
-        <a href="{{ route('homePage') }}"><img src="{{ asset(Lang::locale() === "ar" ? 'imgs/linatabara3Logo.png' : 'imgs/linatabara3LogoAscii.png') }}" alt="Linatabara3 Logo" height="40px"></a>
+        <a href="{{ route('homePage') }}"><img src="{{ asset(Lang::locale() === "ar" ? 'imgs/linatabara3LogoWhite.png' : 'imgs/linatabara3LogoAsciiWhite.png') }}" alt="Linatabara3 Logo" height="40px"></a>
 
         <div class="d-flex flex-column flex-sm-row align-items-center">
             <a class="footerLink text-decoration-none text-white px-3 mt-4 mt-sm-3" href="{{ route('homePage') }}">{{ __('homePage.home') }}</a>
