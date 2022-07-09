@@ -22,8 +22,7 @@
     @if(Route::currentRouteName() === 'donorsSearch')
         <meta name="robots" content="noindex">
     @endif
-    <link href="{{ asset('css/donorsPage.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/stats.css') }}" rel="stylesheet">
+    @vite(['resources/css/donorsPage.css', 'resources/css/stats.css'])
 @endsection
 
 @section('body')
@@ -82,7 +81,9 @@
 @endsection
 
 @section('beforeBodyEnd')
-    <script src="{{ asset('js/donorsPage.js') }}"></script>
-    <script src="{{ asset('js/donorsSearchFormValidation.js') }}"></script>
-    <script src="{{ asset('js/gettingDairas.js') }}"></script>
+    @vite([
+        'resources/js/donorsPage.js',
+        'resources/js/donorsSearchFormValidation.js',
+        'resources/js/gettingDairas.js',
+    ])
 @endsection

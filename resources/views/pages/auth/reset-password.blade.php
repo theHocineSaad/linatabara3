@@ -4,7 +4,7 @@
 
 @section('head')
     <meta name="robots" content="noindex,nofollow" />
-    <link href="{{ asset('css/forgotPasswordPage.css') }}" rel="stylesheet">
+    @vite(['resources/css/forgotPasswordPage.css',])
 @endsection
 
 @section('body')
@@ -49,5 +49,5 @@
 @endsection
 
 @section('beforeBodyEnd')
-{{--    <script src="{{ asset('js/passwordValidationForgotPassword.js') }}"></script>--}}
+    @vite(['resources/js/passwordValidationForgotPassword.js',])
 @endsection

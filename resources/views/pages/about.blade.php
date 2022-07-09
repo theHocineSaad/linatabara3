@@ -19,9 +19,7 @@
 @section('metaTwitterImage', asset('imgs/vialsOfBlood.jpg'))
 
 @section('head')
-    <link href="{{ asset('css/aboutPage.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/cta.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/stats.css') }}" rel="stylesheet">
+    @vite(['resources/css/aboutPage.css', 'resources/css/cta.css', 'resources/css/stats.css'])
 @endsection
 
 @section('body')

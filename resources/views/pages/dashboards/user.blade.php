@@ -4,7 +4,7 @@
 
 @section('head')
     <meta name="robots" content="noindex,nofollow">
-    <link href="{{ asset('css/userDashboard.css') }}" rel="stylesheet">
+    @vite(['resources/css/userDashboard.css',])
 @endsection
 
 @section('body')
@@ -23,6 +23,5 @@
 @endsection
 
 @section('beforeBodyEnd')
-    <script src="{{ asset('js/userDashboard.js') }}"></script>
-    <script src="{{ asset('js/gettingDairas.js') }}"></script>
+    @vite(['resources/js/userDashboard.js', 'resources/js/gettingDairas.js',])
 @endsection

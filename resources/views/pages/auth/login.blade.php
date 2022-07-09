@@ -19,7 +19,7 @@
 @section('metaTwitterImage', asset('imgs/passwordImage.jpg'))
 
 @section('head')
-    <link href="{{ asset('css/loginPage.css') }}" rel="stylesheet">
+    @vite(['resources/css/loginPage.css',])
 @endsection
 
 @section('body')

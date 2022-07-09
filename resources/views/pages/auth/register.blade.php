@@ -19,7 +19,7 @@
 @section('metaTwitterImage', asset('imgs/vialsOfBlood.jpg'))
 
 @section('head')
-    <link href="{{ asset('css/registerPage.css') }}" rel="stylesheet">
+    @vite(['resources/css/registerPage.css',])
 @endsection
 
 @section('body')
@@ -110,7 +110,6 @@
 @endsection
 
 @section('beforeBodyEnd')
-    <script src="{{ asset('js/gettingDairas.js') }}"></script>
-    <script src="{{ asset('js/registerPage.js') }}"></script>
+    @vite(['resources/js/gettingDairas.js', 'resources/js/registerPage.js'])
     {!! NoCaptcha::renderJs( LaravelLocalization::getCurrentLocale() ) !!}
 @endsection

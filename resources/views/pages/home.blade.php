@@ -20,11 +20,13 @@
 
 @section('head')
     <meta name="google-site-verification" content="{{ env('GOOGLE_SITE_VERIFICATION') }}" />
-    <link href="{{ asset('css/homeHero.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/faq.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bloodDonationBenefits.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/cta.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/stats.css') }}" rel="stylesheet">
+    @vite([
+        'resources/css/homeHero.css',
+        'resources/css/faq.css',
+        'resources/css/bloodDonationBenefits.css',
+        'resources/css/cta.css',
+        'resources/css/stats.css',
+    ])
 @endsection
 
 @section('body')
@@ -39,8 +41,10 @@
 @endsection
 
 @section('beforeBodyEnd')
-    <script src="{{ asset('js/particles.min.js') }}"></script>
-    <script src="{{ asset('js/practicle-js-engine.js') }}"></script>
-    <script src="{{ asset('js/donorsSearchFormValidation.js') }}"></script>
-    <script src="{{ asset('js/gettingDairas.js') }}"></script>
+    @vite([
+        'resources/js/particles.min.js',
+        'resources/js/practicle-js-engine.js',
+        'resources/js/donorsSearchFormValidation.js',
+        'resources/js/gettingDairas.js',
+    ])
 @endsection

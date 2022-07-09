@@ -62,6 +62,10 @@ Copy .env.example to .env and fill it.
 
     npm install
 
+------------
+
+    npm run dev
+
 #### Step 4: Run the server
     php artisan serve
 
