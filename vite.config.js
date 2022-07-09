@@ -23,10 +23,10 @@ export default defineConfig({
             'resources/sass/bootstrap-rtl.scss',
 
             'resources/js/app.js',
-            'resources/js/particles.min.js',
             'resources/js/donorsPage.js',
-            'resources/js/practicle-js-engine.js',
             'resources/js/gettingDairas.js',
+            'resources/js/tsPracticles.js',
+            'resources/js/tsPracticlesEngine.js',
             'resources/js/userDashboard.js',
             'resources/js/registerPage.js',
             'resources/js/passwordValidationForgotPassword.js',

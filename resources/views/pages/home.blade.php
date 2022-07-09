@@ -30,7 +30,7 @@
 @endsection
 
 @section('body')
-    <div id="particles-js"></div>
+    <div id="tsparticles"></div>
     <x-main-nav-bar homeActive="active"/>
     <x-home-hero />
     <x-blood-donation-benefits />
@@ -42,9 +42,9 @@
 
 @section('beforeBodyEnd')
     @vite([
-        'resources/js/particles.min.js',
-        'resources/js/practicle-js-engine.js',
         'resources/js/donorsSearchFormValidation.js',
         'resources/js/gettingDairas.js',
+        'resources/js/tsPracticles.js',
+        'resources/js/tsPracticlesEngine.js',
     ])
 @endsection

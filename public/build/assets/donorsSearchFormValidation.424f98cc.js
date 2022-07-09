@@ -1,1 +1,0 @@
-theForm=document.getElementById("donorsSearchForm");theForm.addEventListener("submit",function(t){theForm.checkValidity()||(t.preventDefault(),t.stopPropagation()),theForm.classList.add("was-validated")},!1);
