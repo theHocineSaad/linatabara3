@@ -19,6 +19,9 @@ export default defineConfig({
             'resources/css/donorsPage.css',
             'resources/css/faq.css',
 
+            'resources/sass/bootstrap.scss',
+            'resources/sass/bootstrap-rtl.scss',
+
             'resources/js/app.js',
             'resources/js/particles.min.js',
             'resources/js/donorsPage.js',
