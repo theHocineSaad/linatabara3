@@ -1,4 +1,4 @@
-theForm = document.getElementById('donorsSearchForm');
+const theForm = document.getElementById('donorsSearchForm');
 
 
 theForm.addEventListener('submit', function (event) {

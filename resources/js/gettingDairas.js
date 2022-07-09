@@ -1,5 +1,5 @@
-dairaSelect = document.getElementById('dairaSelect');
-wilayaSelect = document.getElementById('wilayaSelect');
+const dairaSelect = document.getElementById('dairaSelect');
+const wilayaSelect = document.getElementById('wilayaSelect');
 
 const [html] = document.getElementsByTagName("html")
 const lang = html.getAttribute("lang");
@@ -17,7 +17,7 @@ wilayaSelect.addEventListener('change', () => {
             }
 
             dairas.forEach(element => {
-                option = document.createElement("option");
+                const option = document.createElement("option");
                 option.value = element.id;
                 option.text = lang === 'ar' ? element.arName : element.name;
                 dairaSelect.add(option);
