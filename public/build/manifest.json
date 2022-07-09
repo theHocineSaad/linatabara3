@@ -1,0 +1,112 @@
+{
+  "resources/js/app.js": {
+    "file": "assets/app.49a7299a.js",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/particles.min.js": {
+    "file": "assets/particles.min.5a89c96a.js",
+    "src": "resources/js/particles.min.js",
+    "isEntry": true
+  },
+  "resources/js/donorsPage.js": {
+    "file": "assets/donorsPage.368a72dc.js",
+    "src": "resources/js/donorsPage.js",
+    "isEntry": true
+  },
+  "resources/js/practicle-js-engine.js": {
+    "file": "assets/practicle-js-engine.fc1bedea.js",
+    "src": "resources/js/practicle-js-engine.js",
+    "isEntry": true
+  },
+  "resources/js/gettingDairas.js": {
+    "file": "assets/gettingDairas.f967acd1.js",
+    "src": "resources/js/gettingDairas.js",
+    "isEntry": true
+  },
+  "resources/js/userDashboard.js": {
+    "file": "assets/userDashboard.d5fe6cf5.js",
+    "src": "resources/js/userDashboard.js",
+    "isEntry": true
+  },
+  "resources/js/registerPage.js": {
+    "file": "assets/registerPage.58e63a89.js",
+    "src": "resources/js/registerPage.js",
+    "isEntry": true
+  },
+  "resources/js/passwordValidationForgotPassword.js": {
+    "file": "assets/passwordValidationForgotPassword.1d068035.js",
+    "src": "resources/js/passwordValidationForgotPassword.js",
+    "isEntry": true
+  },
+  "resources/js/donorsSearchFormValidation.js": {
+    "file": "assets/donorsSearchFormValidation.424f98cc.js",
+    "src": "resources/js/donorsSearchFormValidation.js",
+    "isEntry": true
+  },
+  "resources/css/app.css": {
+    "file": "assets/app.4341184a.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/faq.css": {
+    "file": "assets/faq.8f4c48cc.css",
+    "src": "resources/css/faq.css",
+    "isEntry": true
+  },
+  "resources/css/loginPage.css": {
+    "file": "assets/loginPage.9c3ad3ad.css",
+    "src": "resources/css/loginPage.css",
+    "isEntry": true
+  },
+  "resources/css/userDashboard.css": {
+    "file": "assets/userDashboard.2ee72fd6.css",
+    "src": "resources/css/userDashboard.css",
+    "isEntry": true
+  },
+  "resources/css/homeHero.css": {
+    "file": "assets/homeHero.a12ef423.css",
+    "src": "resources/css/homeHero.css",
+    "isEntry": true
+  },
+  "resources/css/forgotPasswordPage.css": {
+    "file": "assets/forgotPasswordPage.223138a0.css",
+    "src": "resources/css/forgotPasswordPage.css",
+    "isEntry": true
+  },
+  "resources/css/aboutPage.css": {
+    "file": "assets/aboutPage.8381195d.css",
+    "src": "resources/css/aboutPage.css",
+    "isEntry": true
+  },
+  "resources/css/bloodDonationBenefits.css": {
+    "file": "assets/bloodDonationBenefits.91d90a87.css",
+    "src": "resources/css/bloodDonationBenefits.css",
+    "isEntry": true
+  },
+  "resources/css/footer.css": {
+    "file": "assets/footer.802534ed.css",
+    "src": "resources/css/footer.css",
+    "isEntry": true
+  },
+  "resources/css/donorsPage.css": {
+    "file": "assets/donorsPage.56e99b91.css",
+    "src": "resources/css/donorsPage.css",
+    "isEntry": true
+  },
+  "resources/css/registerPage.css": {
+    "file": "assets/registerPage.5f545203.css",
+    "src": "resources/css/registerPage.css",
+    "isEntry": true
+  },
+  "resources/css/stats.css": {
+    "file": "assets/stats.431c0330.css",
+    "src": "resources/css/stats.css",
+    "isEntry": true
+  },
+  "resources/css/cta.css": {
+    "file": "assets/cta.279980de.css",
+    "src": "resources/css/cta.css",
+    "isEntry": true
+  }
+}
