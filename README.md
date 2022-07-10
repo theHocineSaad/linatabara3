@@ -1,16 +1,16 @@
-<p align="center"><a href="https://github.com/theHocineSaad/linatabra3" target="_blank"><img src="https://i.imgur.com/9Kv6TtZ.png"></a></p>
+<p align="center"><a href="https://github.com/theHocineSaad/linatabra3" target="_blank"><img src="https://i.imgur.com/pU6Uatt.png"></a></p>
 
 
 ------------
 
 
-[![Linatabara3 home page in Arabic](https://i.imgur.com/2wONroz.jpg "Linatabara3 home page in Arabic")](https://github.com/theHocineSaad/linatabra3 "Linatabara3 home page in Arabic")
+[![Linatabara3 home page in Arabic](https://i.imgur.com/1YJgkVT.png "Linatabara3 home page in Arabic")](https://github.com/theHocineSaad/linatabra3 "Linatabara3 home page in Arabic")
 
 
 ------------
 
 
-[![Linatabra3 home page in French](https://i.imgur.com/c0cm8pK.jpg "Linatabra3 home page in French")](https://github.com/theHocineSaad/linatabra3 "Linatabra3 home page in French")
+[![Linatabra3 home page in French](https://i.imgur.com/MvmhgHc.png "Linatabra3 home page in French")](https://github.com/theHocineSaad/linatabra3 "Linatabra3 home page in French")
 
 ## What is Linatabara3?
 Linatabara3 is "**لنتبرع**" written with latin alphabets, which is an Arabic word that means "**let's donate**".
