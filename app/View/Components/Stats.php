@@ -8,7 +8,6 @@ use Illuminate\View\Component;
 
 class Stats extends Component
 {
-
     public $stats;
 
     /**
@@ -18,9 +17,9 @@ class Stats extends Component
      */
     public function __construct()
     {
-        $this->stats = Cache::rememberForever('stats',  function(){
+        $this->stats = Cache::rememberForever('stats', function () {
             return BloodGroup::select([])->withCount('users')->get();
-        }) ;
+        });
     }
 
     /**
