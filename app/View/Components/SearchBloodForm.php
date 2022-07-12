@@ -3,17 +3,28 @@
 namespace App\View\Components;
 
 use App\Models\Wilaya;
-use Illuminate\Support\Facades\Cache;
+use App\Models\BloodGroup;
 use Illuminate\View\Component;
+use Illuminate\Support\Facades\Cache;
 
 class SearchBloodForm extends Component
 {
-    public function render()
+    public $wilayas;
+    public $stats;
+
+    public function __construct()
     {
-        $wilayas = Cache::rememberForever('wilayas', function () {
+        $this->wilayas = Cache::rememberForever('wilayas', function () {
             return Wilaya::all();
         });
 
-        return view('components.search-blood-form', ['wilayas' => $wilayas]);
+        $this->stats = Cache::rememberForever('stats', function () {
+            return BloodGroup::all();
+        });
+    }
+
+    public function render()
+    {
+        return view('components.search-blood-form');
     }
 }

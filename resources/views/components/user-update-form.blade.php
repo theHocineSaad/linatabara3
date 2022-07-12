@@ -31,7 +31,7 @@
             <select data-validator-func="wilayaValidator" name="wilaya" id="wilayaSelect" class="form-select" required>
                 <option value="" selected disabled>{{ __('registerPage.wilaya') }}</option>
                 @foreach ($wilayas as $wilaya)
-                    <option value="{{ $wilaya['id'] }}">{{ $wilaya['id'] . '. ' . $wilaya['name'] }} </option>
+                    <option value="{{ $wilaya->id }}">{{ $wilaya->id . '. ' . $wilaya->name }} </option>
                 @endforeach
             </select>
             <div class="invalid-feedback">{{ __('registerPage.wilayaValidation') }}</div>

@@ -8,12 +8,16 @@ use Illuminate\Support\Facades\Cache;
 
 class UserUpdateForm extends Component
 {
-    public function render()
+    public $wilayas;
+
+    public function __construct()
     {
-        $wilayas = Cache::rememberForever('wilayas', function () {
+        $this->wilayas = Cache::rememberForever('wilayas', function () {
             return Wilaya::all();
         });
-
-        return view('components.user-update-form', ['wilayas' => $wilayas]);
+    }
+    public function render()
+    {
+        return view('components.user-update-form');
     }
 }
