@@ -24,8 +24,7 @@ class FortifyServiceProvider extends ServiceProvider
     {
         Fortify::ignoreRoutes();
 
-        $this->app->instance(LogoutResponse::class, new class implements LogoutResponse
-        {
+        $this->app->instance(LogoutResponse::class, new class implements LogoutResponse {
             public function toResponse($request)
             {
                 return redirect('/'.LaravelLocalization::getCurrentLocale());
@@ -35,6 +34,10 @@ class FortifyServiceProvider extends ServiceProvider
 
     public function boot()
     {
+        // load fortify routes
+        require base_path('vendor/laravel/fortify/routes/routes.php');
+ 
+
         Fortify::createUsersUsing(CreateNewUser::class);
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
