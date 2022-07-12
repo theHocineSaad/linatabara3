@@ -23,7 +23,6 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-
             $table->tinyInteger('wilaya_id');
             $table->foreign('wilaya_id')->references('id')->on('wilayas');
 

@@ -3,11 +3,10 @@
 namespace App\Actions\Fortify;
 
 use App\Models\User;
-use http\Env\Response;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
-use Laravel\Fortify\Contracts\CreatesNewUsers;use Illuminate\Support\Facades\Http;
+use Laravel\Fortify\Contracts\CreatesNewUsers;
 
 class CreateNewUser implements CreatesNewUsers
 {
@@ -21,7 +20,6 @@ class CreateNewUser implements CreatesNewUsers
      */
     public function create(array $input)
     {
-
         Validator::make($input, [
             'email' => [
                 'required',
@@ -38,8 +36,8 @@ class CreateNewUser implements CreatesNewUsers
             'g-recaptcha-response' => 'required|captcha',
         ],
         [
-            'email.unique'=>__('registerPage.alreadyUsedEmail'),
-            'phone.unique'=>__('registerPage.alreadyUsedPhoneNumber'),
+            'email.unique' => __('registerPage.alreadyUsedEmail'),
+            'phone.unique' => __('registerPage.alreadyUsedPhoneNumber'),
         ])->validate();
 
         return User::create([
@@ -50,6 +48,5 @@ class CreateNewUser implements CreatesNewUsers
             'blood_group_id' => $input['blood_group'],
             'password' => Hash::make($input['password']),
         ]);
-
     }
 }

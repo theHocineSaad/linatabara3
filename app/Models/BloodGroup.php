@@ -11,18 +11,10 @@ class BloodGroup extends Model
 
     public $timestamps = false;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'bloodGroup',
     ];
 
-    /**
-     * Get the Users of a blood group.
-     */
     public function users()
     {
         return $this->hasMany(User::class);

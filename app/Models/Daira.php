@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class Daira extends Model
 {
@@ -11,22 +13,23 @@ class Daira extends Model
 
     public $timestamps = false;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'name',
         'arName',
-        'wilaya_id'
+        'wilaya_id',
     ];
 
-    /**
-     * Get the Users of a Daira.
-     */
     public function users()
     {
         return $this->hasMany(User::class);
+    }
+
+    public function name()
+    {
+        return Attribute::make(
+            get : function () {
+                return LaravelLocalization::getCurrentLocale() === 'ar' ? $this->arName : $this->name;
+            }
+        );
     }
 }

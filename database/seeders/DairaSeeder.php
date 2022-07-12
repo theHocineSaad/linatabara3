@@ -2,13 +2,11 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 class DairaSeeder extends Seeder
 {
-
     private $dairas = [
         1 => [
             'arName' => 'أدرار',
@@ -2759,7 +2757,7 @@ class DairaSeeder extends Seeder
      */
     public function run()
     {
-        foreach($this->dairas as $key=>$daira){
+        foreach ($this->dairas as $key => $daira) {
             DB::table('dairas')->insert([
                 'id' => $key,
                 'name' => $daira['name'],

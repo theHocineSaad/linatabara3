@@ -26,7 +26,7 @@
                     <select name="wilaya" id="wilayaSelect" class="form-select form-select-lg" required>
                         <option selected hidden style="display:none" value="">{{ __('homePage.wilaya') }}</option>
                         @foreach ($wilayas as $wilaya)
-                            <option value="{{ $wilaya['id'] }}">{{ $wilaya['id'].'. '.$wilaya[$wilayaName] }} </option>
+                            <option value="{{ $wilaya['id'] }}">{{ $wilaya['id'].'. '.$wilaya['name'] }} </option>
                         @endforeach
                     </select>
 
