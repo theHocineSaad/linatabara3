@@ -12,7 +12,7 @@ class Stats extends Component
 
     public function __construct()
     {
-        $this->stats = Cache::rememberForever('stats', function () {
+        $this->stats = Cache::rememberForever('stats-with-counts', function () {
             return BloodGroup::withCount('users')->get();
         });
     }

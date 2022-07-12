@@ -18,9 +18,10 @@ class SearchBloodForm extends Component
             return Wilaya::all();
         });
 
-        $this->stats = Cache::rememberForever('stats', function () {
+        $this->stats = Cache::rememberForever('all-stats', function () {
             return BloodGroup::all();
         });
+
     }
 
     public function render()
