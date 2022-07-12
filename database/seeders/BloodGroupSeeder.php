@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\BloodGroup;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -18,18 +19,14 @@ class BloodGroupSeeder extends Seeder
         '8' => 'AB-',
     ];
 
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
+
     public function run()
     {
-        foreach ($this->bloodGroups as $key => $bloodGroup) {
-            DB::table('blood_groups')->insert([
+        array_walk($this->bloodGroups, function ($bloodGroup, $key) {
+            BloodGroup::create([
                 'id' => $key,
                 'bloodGroup' => $bloodGroup,
             ]);
-        }
+        });
     }
 }
