@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use App\Models\Daira;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class DairaSeeder extends Seeder
 {
@@ -2750,11 +2749,11 @@ class DairaSeeder extends Seeder
             'wilaya_id' => '48',
         ],
     ];
- 
+
     public function run()
     {
         array_walk($this->dairas, function ($diara, $key) {
-            Daira::create([ 'id' => $key,...$diara ]);
+            Daira::create(['id' => $key, ...$diara]);
         });
     }
 }

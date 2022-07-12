@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use App\Models\Wilaya;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class WilayaSeeder extends Seeder
 {
@@ -301,7 +300,6 @@ class WilayaSeeder extends Seeder
         ],
     ];
 
-  
     public function run()
     {
         array_walk($this->wilayas, function ($wilaya) {

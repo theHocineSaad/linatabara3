@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use App\Models\BloodGroup;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class BloodGroupSeeder extends Seeder
 {
@@ -18,7 +17,6 @@ class BloodGroupSeeder extends Seeder
         '7' => 'AB+',
         '8' => 'AB-',
     ];
-
 
     public function run()
     {
