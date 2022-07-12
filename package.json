@@ -15,8 +15,6 @@
     "dependencies": {
         "@popperjs/core": "^2.11.5",
         "bootstrap": "^5.2.0-beta1",
-        "sass": "^1.52.3",
-        "sass-loader": "^13.0.0",
         "tsparticles-engine": "^2.1.3"
     }
 }
