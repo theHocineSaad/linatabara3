@@ -3,8 +3,8 @@
 namespace App\View\Components;
 
 use App\Models\Wilaya;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\View\Component;
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class SearchBloodForm extends Component
 {
@@ -25,6 +25,10 @@ class SearchBloodForm extends Component
      */
     public function render()
     {
-        return view('components.search-blood-form', ['wilayas' => Wilaya::all()]);
+        $wilayas = Cache::rememberForever('wilayas', function () {
+            return Wilaya::all();
+        });
+
+        return view('components.search-blood-form', ['wilayas' => $wilayas]);
     }
 }
