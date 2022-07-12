@@ -25,8 +25,6 @@ class SearchBloodForm extends Component
      */
     public function render()
     {
-        $wilayas = Wilaya::all();
-
-        return view('components.search-blood-form', ['wilayas' => $wilayas]);
+        return view('components.search-blood-form', ['wilayas' => Wilaya::all()]);
     }
 }
