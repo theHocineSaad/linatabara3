@@ -28,13 +28,13 @@
 
 
     @if(Lang::locale() === 'ar')
-        @vite(['resources/sass/bootstrap-rtl.scss'])
+        @vite(['resources/css/bootstrap-rtl.css'])
     @else
-        @vite(['resources/sass/bootstrap.scss'])
+        @vite(['resources/css/bootstrap.css'])
     @endif
 
     @vite(['resources/css/app.css'])
-    <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp" crossorigin="anonymous"></script>
+
     @yield('head')
 </head>
 <body>
