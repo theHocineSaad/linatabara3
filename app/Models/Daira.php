@@ -24,12 +24,10 @@ class Daira extends Model
         return $this->hasMany(User::class);
     }
 
-    public function name()
+    protected function name(): Attribute
     {
         return Attribute::make(
-            get : function () {
-                return LaravelLocalization::getCurrentLocale() === 'ar' ? $this->arName : $this->name;
-            }
+            get: fn ($value) => LaravelLocalization::getCurrentLocale() === 'ar' ? $this->arName : $value,
         );
     }
 }
