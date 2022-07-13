@@ -2,14 +2,15 @@
 
 namespace App\View\Components;
 
-use App\Models\Wilaya;
 use App\Models\BloodGroup;
-use Illuminate\View\Component;
+use App\Models\Wilaya;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\View\Component;
 
 class SearchBloodForm extends Component
 {
     public $wilayas;
+
     public $stats;
 
     public function __construct()
@@ -21,7 +22,6 @@ class SearchBloodForm extends Component
         $this->stats = Cache::rememberForever('all-stats', function () {
             return BloodGroup::all();
         });
-
     }
 
     public function render()
