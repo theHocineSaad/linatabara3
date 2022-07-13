@@ -34,7 +34,7 @@
     @endif
 
     @vite(['resources/css/app.css'])
-    <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp" crossorigin="anonymous"></script>
+
     @yield('head')
 </head>
 <body>
