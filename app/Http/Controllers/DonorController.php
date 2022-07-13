@@ -24,9 +24,9 @@ class DonorController extends Controller
         ]);
 
         return view('pages.donors', [
-            'searchedBloodGroup' => BloodGroup::select('bloodGroup')->find($request['blood_group']),
-            'searchedWilaya' => Wilaya::select('name')->find($request['wilaya']),
-            'searchedDaira' => Daira::select('name')->find($request['daira']),
+            'searchedBloodGroup' => BloodGroup::select('bloodGroup')->find($request['blood_group']) -> bloodGroup,
+            'searchedWilaya' => Wilaya::select('name')->find($request['wilaya']) -> name,
+            'searchedDaira' => Daira::select('name')->find($request['daira']) -> name,
             'donors' => $donors,
         ]);
     }
