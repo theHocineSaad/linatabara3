@@ -27,9 +27,8 @@
     line-height: 40px;
 }
 
-.social-btns .btn fa-brands {
-    font-size: 25px;
-    vertical-align: middle;
+.social-btns .btn .fa-brands {
+    width: 16px;
 }
 
 
