@@ -35,6 +35,9 @@ class FortifyServiceProvider extends ServiceProvider
 
     public function boot()
     {
+        // load fortify routes
+        require base_path('vendor/laravel/fortify/routes/routes.php');
+
         Fortify::createUsersUsing(CreateNewUser::class);
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);

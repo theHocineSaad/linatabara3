@@ -31,12 +31,10 @@ class Wilaya extends Model
         return $this->hasMany(Daira::class);
     }
 
-    public function name()
+    protected function name(): Attribute
     {
         return Attribute::make(
-            get : function () {
-                return LaravelLocalization::getCurrentLocale() === 'ar' ? $this->arName : $this->name;
-            }
+            get: fn ($value) => LaravelLocalization::getCurrentLocale() === 'ar' ? $this->arName : $value,
         );
     }
 }

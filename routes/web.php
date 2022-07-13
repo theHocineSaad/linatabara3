@@ -15,8 +15,6 @@ Route::group([
     'prefix' => LaravelLocalization::setLocale(),
     'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
 ], function () {
-    require base_path('vendor/laravel/fortify/routes/routes.php');
-
     Route::get('/', [HomeController::class, 'home'])->name('homePage');
 
     Route::prefix('/donors')->group(function () {
