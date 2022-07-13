@@ -28,9 +28,9 @@
 
 
     @if(Lang::locale() === 'ar')
-        @vite(['resources/sass/bootstrap-rtl.scss'])
+        @vite(['resources/css/bootstrap-rtl.css'])
     @else
-        @vite(['resources/sass/bootstrap.scss'])
+        @vite(['resources/css/bootstrap.css'])
     @endif
 
     @vite(['resources/css/app.css'])
