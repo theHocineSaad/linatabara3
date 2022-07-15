@@ -12,7 +12,7 @@ class DonorController extends Controller
 {
     public function index()
     {
-        return view('pages.donors');
+        return view('pages.donors', ['allReadyToGiveDonors' => User::getAllReadyToGiveDonors()]);
     }
 
     public function search(DonorRequest $request)

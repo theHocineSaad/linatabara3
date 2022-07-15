@@ -59,4 +59,9 @@ class User extends Authenticatable
     {
         return User::select($column)->donors($data)->inRandomOrder()->paginate(10);
     }
+
+    public static function getAllReadyToGiveDonors()
+    {
+        return User::with('wilaya', 'daira', 'bloodGroup')->where('readyToGive', 1)->inRandomOrder()->paginate(10);
+    }
 }
