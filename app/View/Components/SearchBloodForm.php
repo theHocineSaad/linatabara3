@@ -11,7 +11,7 @@ class SearchBloodForm extends Component
 {
     public $wilayas;
 
-    public $stats;
+    public $bloodGroups;
 
     public function __construct()
     {
@@ -19,7 +19,7 @@ class SearchBloodForm extends Component
             return Wilaya::all();
         });
 
-        $this->stats = Cache::rememberForever('all-stats', function () {
+        $this->bloodGroups = Cache::rememberForever('bloodGroups', function () {
             return BloodGroup::all();
         });
     }
