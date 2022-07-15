@@ -32,7 +32,7 @@ class User extends Authenticatable
 
     public function bloodGroup()
     {
-        return $this->belongsTo(Blood::class);
+        return $this->belongsTo(BloodGroup::class);
     }
 
     public function wilaya()
