@@ -2,10 +2,16 @@
 
 namespace App\Http\Controllers;
 
+
+
+use Illuminate\Http\Request;
+
 class HomeController extends Controller
 {
-    public function home()
+    public function home(Request $request)
     {
+        $request -> flush();
+
         return view('pages.home');
     }
 
