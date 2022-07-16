@@ -55,9 +55,36 @@ class User extends Authenticatable
         ]);
     }
 
+    public function scopeDonorsInWilaya($query, $data)
+    {
+        return $query->where([
+            'blood_group_id' => $data['blood_group'],
+            'wilaya_id' => $data['wilaya'],
+            'readyToGive' => 1,
+        ]);
+    }
+
+    public function scopeDonorsHaveBloodGroup($query, $bloodGroup)
+    {
+        return $query->where([
+            'blood_group_id' => $bloodGroup,
+            'readyToGive' => 1,
+        ]);
+    }
+
     public static function getDonors($column, $data)
     {
         return User::select($column)->donors($data)->inRandomOrder()->paginate(10);
+    }
+
+    public static function getDonorsInWilaya($data)
+    {
+        return User::donorsInWilaya($data)->inRandomOrder()->paginate(10);
+    }
+
+    public static function getDonorsHaveBloodGroup($bloodGroup)
+    {
+        return User::donorsHaveBloodGroup($bloodGroup)->inRandomOrder()->paginate(10);
     }
 
     public static function getAllReadyToGiveDonors()

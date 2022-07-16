@@ -4,7 +4,7 @@ const wilayaSelect = document.getElementById('wilayaSelect');
 const [html] = document.getElementsByTagName("html")
 const lang = html.getAttribute("lang");
 
-wilayaSelect.addEventListener('change', () => {
+const getDairas = () => {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -28,4 +28,10 @@ wilayaSelect.addEventListener('change', () => {
     var wilaya = wilayaSelect.value;
     xhttp.open("GET", "/api/dairas/" + wilaya, true);
     xhttp.send();
-});
+}
+
+if(wilayaSelect.value){
+    getDairas()
+}
+
+wilayaSelect.addEventListener('change', getDairas);

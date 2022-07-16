@@ -7,11 +7,12 @@
                 class="d-flex flex-column flex-xl-row gap-3" novalidate>
                 <div class="w-100">
                     <select name="blood_group" id="bloodGroup" class="form-select form-select-lg" required>
-                        <option selected hidden style="display:none" value="">{{ __('homePage.bloodGroup') }}
-                        </option>
+                        <option selected hidden style="display:none" value="">{{ __('homePage.bloodGroup') }}</option>
 
-                        @foreach ($stats as $stat)
-                            <option value="{{ $stat->id }}">{{ $stat->bloodGroup }}</option>
+                        @foreach ($bloodGroups as $bloodGroup)
+                            <option value="{{ $bloodGroup->id }}" @selected(old('blood_group') == $bloodGroup->id)>
+                                {{ $bloodGroup->bloodGroup }}
+                            </option>
                         @endforeach
 
                     </select>
@@ -22,11 +23,13 @@
                 </div>
 
                 <div class="w-100">
-                    <select name="wilaya" id="wilayaSelect" class="form-select form-select-lg" required>
+                    <select name="wilaya" id="wilayaSelect" class="form-select form-select-lg">
                         <option selected hidden style="display:none" value="">{{ __('homePage.wilaya') }}
                         </option>
                         @foreach ($wilayas as $wilaya)
-                            <option value="{{ $wilaya->id }}">{{ $wilaya->id . '. ' . $wilaya->name }} </option>
+                            <option value="{{ $wilaya->id }}" @selected(old('wilaya') == $wilaya->id)>
+                                {{ $wilaya->id . '. ' . $wilaya->name }}
+                            </option>
                         @endforeach
                     </select>
 
@@ -36,7 +39,7 @@
                 </div>
 
                 <div class="w-100">
-                    <select name="daira" id="dairaSelect" class="form-select form-select-lg" required disabled>
+                    <select name="daira" id="dairaSelect" class="form-select form-select-lg" disabled>
                         <option selected hidden style="display:none" value="">{{ __('homePage.daira') }}
                         </option>
                     </select>

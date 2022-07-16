@@ -25,8 +25,8 @@ class DonorRequest extends FormRequest
     {
         return [
             'blood_group' => ['required', 'exists:blood_groups,id'],
-            'wilaya' => ['required', 'exists:wilayas,id'],
-            'daira' => ['required', 'exists:dairas,id'],
+            'wilaya' => ['sometimes', 'nullable', 'exists:wilayas,id'],
+            'daira' => ['sometimes', 'nullable', 'exists:dairas,id'],
         ];
     }
 }

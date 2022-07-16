@@ -1,20 +1,20 @@
 @extends('layout')
 
-@section('title',!isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults').' '.$searchedBloodGroup.', '.__('registerPage.wilaya').': '.$searchedWilaya.' '.__('registerPage.daira').': '.$searchedDaira )
+@section('title', !isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults', ["websiteTitle" => __('general.websiteTitle')]) )
 <!-- Primary Meta Tags -->
-@section('metaTitle', !isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults').' '.$searchedBloodGroup.', '.__('registerPage.wilaya').': '.$searchedWilaya.' '.__('registerPage.daira').': '.$searchedDaira)
+@section('metaTitle', !isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults', ["websiteTitle" => __('general.websiteTitle')]) )
 @section('metaDescription', __('donorsPage.pageDescription'))
 
 <!-- Open Graph / Facebook -->
 @section('metaOGurl', url()->full())
-@section('metaOGtitle', !isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults').' '.$searchedBloodGroup.', '.__('registerPage.wilaya').': '.$searchedWilaya.' '.__('registerPage.daira').': '.$searchedDaira)
+@section('metaOGtitle', !isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults', ["websiteTitle" => __('general.websiteTitle')]) )
 @section('metaOGdescription', __('donorsPage.pageDescription'))
 @section('metaOGimage', asset('imgs/vialsOfBlood.jpg'))
 @section('metaOGLocale', Lang::locale() === "ar" ? Lang::locale()."_DZ" : Lang::locale()."_FR")
 
 <!-- Twitter -->
 @section('metaTwitterUrl', url()->full())
-@section('metaTwitterTitle', !isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults').' '.$searchedBloodGroup.', '.__('registerPage.wilaya').': '.$searchedWilaya.' '.__('registerPage.daira').': '.$searchedDaira)
+@section('metaTwitterTitle', !isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults', ["websiteTitle" => __('general.websiteTitle')]) )
 @section('metaTwitterDescription', __('donorsPage.pageDescription'))
 @section('metaTwitterImage', asset('imgs/vialsOfBlood.jpg'))
 
@@ -29,7 +29,6 @@
     <x-main-nav-bar donorsActive="active"/>
     <div class="separator"> </div>
     <x-search-blood-form />
-
     <div class="searchResult container d-flex flex-wrap gap-4 justify-content-center">
 
         @if ($errors->any())
@@ -46,14 +45,14 @@
                     {{ __('donorsPage.noDonorsMsg') }}
                 </div>
             @else
-                <div class="resultTitle alert alert-success text-center fs-3" role="alert">{{ __('donorsPage.donorsSearchResultText') }} <span class="text-danger fw-bold">{{ $searchedBloodGroup }}</span> {{ __('registerPage.wilaya') }}: <span class="text-danger fw-bold">{{ $searchedWilaya }}</span>, {{ __('registerPage.daira') }}: <span class="text-danger fw-bold">{{ $searchedDaira }}</span>.</div>
+                <div class="resultTitle alert alert-success text-center fs-3 w-100" role="alert">{{ __('donorsPage.donorsSearchResultText') }} <span class="text-danger fw-bold">{{ $searchedBloodGroup }}</span> @isset($searchedWilaya) {{ __('registerPage.wilaya') }}: <span class="text-danger fw-bold">{{ $searchedWilaya }}</span> @endisset @isset($searchedDaira) {{ ','.__('registerPage.daira') }}: <span class="text-danger fw-bold">{{ $searchedDaira }}</span>@endisset</div>
                 @foreach($donors as $donor)
                     <div class="container shadow-lg donorCard d-flex flex-column">
                         <div class="donorInfo px-3 py-3 row">
                             <div class="infos col-9">
-                                <span class="text-danger fs-4"><strong class="text-dark">{{ __('registerPage.wilaya') }}: </strong>{{ $searchedWilaya }}</span>
+                                <span class="text-danger fs-4"><strong class="text-dark">{{ __('registerPage.wilaya') }}: </strong>{{ $searchedWilaya ?? $donor['wilaya'] -> name}}</span>
                                 <br>
-                                <span class="text-danger fs-4"><strong class="text-dark">{{ __('registerPage.daira') }}: </strong>{{ $searchedDaira }}</span>
+                                <span class="text-danger fs-4"><strong class="text-dark">{{ __('registerPage.daira') }}: </strong>{{ $searchedDaira ?? $donor['daira'] -> name }}</span>
                             </div>
 
                             <div class="bloodGroup col-3 d-flex align-items-center">
