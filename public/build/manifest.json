@@ -8,12 +8,12 @@
     ]
   },
   "resources/js/donorsPage.js": {
-    "file": "assets/donorsPage.368a72dc.js",
+    "file": "assets/donorsPage.38a6b597.js",
     "src": "resources/js/donorsPage.js",
     "isEntry": true
   },
   "resources/js/gettingDairas.js": {
-    "file": "assets/gettingDairas.f572d190.js",
+    "file": "assets/gettingDairas.cf0ccf26.js",
     "src": "resources/js/gettingDairas.js",
     "isEntry": true
   },
@@ -53,7 +53,7 @@
     "isDynamicEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app.77b525bc.css",
+    "file": "assets/app.1fd5bbb5.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -62,29 +62,19 @@
     "src": "resources/css/homeHero.css",
     "isEntry": true
   },
+  "resources/css/forgotPasswordPage.css": {
+    "file": "assets/forgotPasswordPage.223138a0.css",
+    "src": "resources/css/forgotPasswordPage.css",
+    "isEntry": true
+  },
+  "resources/css/aboutPage.css": {
+    "file": "assets/aboutPage.8381195d.css",
+    "src": "resources/css/aboutPage.css",
+    "isEntry": true
+  },
   "resources/css/bloodDonationBenefits.css": {
     "file": "assets/bloodDonationBenefits.91d90a87.css",
     "src": "resources/css/bloodDonationBenefits.css",
-    "isEntry": true
-  },
-  "resources/css/footer.css": {
-    "file": "assets/footer.802534ed.css",
-    "src": "resources/css/footer.css",
-    "isEntry": true
-  },
-  "resources/css/donorsPage.css": {
-    "file": "assets/donorsPage.56e99b91.css",
-    "src": "resources/css/donorsPage.css",
-    "isEntry": true
-  },
-  "resources/css/registerPage.css": {
-    "file": "assets/registerPage.5f545203.css",
-    "src": "resources/css/registerPage.css",
-    "isEntry": true
-  },
-  "resources/css/userDashboard.css": {
-    "file": "assets/userDashboard.2ee72fd6.css",
-    "src": "resources/css/userDashboard.css",
     "isEntry": true
   },
   "resources/css/faq.css": {
@@ -92,9 +82,29 @@
     "src": "resources/css/faq.css",
     "isEntry": true
   },
+  "resources/css/userDashboard.css": {
+    "file": "assets/userDashboard.2ee72fd6.css",
+    "src": "resources/css/userDashboard.css",
+    "isEntry": true
+  },
+  "resources/css/cta.css": {
+    "file": "assets/cta.914a397d.css",
+    "src": "resources/css/cta.css",
+    "isEntry": true
+  },
+  "resources/css/registerPage.css": {
+    "file": "assets/registerPage.5f545203.css",
+    "src": "resources/css/registerPage.css",
+    "isEntry": true
+  },
   "resources/css/stats.css": {
     "file": "assets/stats.431c0330.css",
     "src": "resources/css/stats.css",
+    "isEntry": true
+  },
+  "resources/css/footer.css": {
+    "file": "assets/footer.99b47084.css",
+    "src": "resources/css/footer.css",
     "isEntry": true
   },
   "resources/css/loginPage.css": {
@@ -102,19 +112,9 @@
     "src": "resources/css/loginPage.css",
     "isEntry": true
   },
-  "resources/css/forgotPasswordPage.css": {
-    "file": "assets/forgotPasswordPage.223138a0.css",
-    "src": "resources/css/forgotPasswordPage.css",
-    "isEntry": true
-  },
-  "resources/css/cta.css": {
-    "file": "assets/cta.279980de.css",
-    "src": "resources/css/cta.css",
-    "isEntry": true
-  },
-  "resources/css/aboutPage.css": {
-    "file": "assets/aboutPage.8381195d.css",
-    "src": "resources/css/aboutPage.css",
+  "resources/css/donorsPage.css": {
+    "file": "assets/donorsPage.2c278c8b.css",
+    "src": "resources/css/donorsPage.css",
     "isEntry": true
   },
   "resources/css/bootstrap.css": {
