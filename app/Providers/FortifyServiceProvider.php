@@ -17,6 +17,7 @@ use Illuminate\Support\ServiceProvider;
 use Laravel\Fortify\Contracts\LogoutResponse;
 use Laravel\Fortify\Fortify;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Illuminate\Support\Facades\Route;
 
 class FortifyServiceProvider extends ServiceProvider
 {
@@ -36,7 +37,12 @@ class FortifyServiceProvider extends ServiceProvider
     public function boot()
     {
         // load fortify routes
-        require base_path('vendor/laravel/fortify/routes/routes.php');
+        Route::group([
+            'prefix' => LaravelLocalization::setLocale(),
+            'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
+        ], function () {
+            require base_path('vendor/laravel/fortify/routes/routes.php');
+        });
 
         Fortify::createUsersUsing(CreateNewUser::class);
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
