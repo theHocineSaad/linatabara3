@@ -26,7 +26,7 @@ const getDairas = () => {
         }
     };
     var wilaya = wilayaSelect.value;
-    xhttp.open("GET", `${lang}/api/dairas/` + wilaya, true);
+    xhttp.open("GET",  `/${lang}/api/dairas/` + wilaya, true);
     xhttp.send();
 }
 
