@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ApiController;
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Route;use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -9,4 +9,9 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-Route::get('/dairas/{wilayaCode}', [ApiController::class, 'getDairas']);
+Route::group([
+    'prefix' => LaravelLocalization::setLocale().'/api',
+    'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
+], function () {
+    Route::get('/dairas/{wilayaCode}', [ApiController::class, 'getDairas']);
+});

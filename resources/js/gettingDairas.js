@@ -19,14 +19,14 @@ const getDairas = () => {
             dairas.forEach(element => {
                 const option = document.createElement("option");
                 option.value = element.id;
-                option.text = lang === 'ar' ? element.arName : element.name;
+                option.text = element.name;
                 dairaSelect.add(option);
                 dairaSelect.removeAttribute("disabled");
             });
         }
     };
     var wilaya = wilayaSelect.value;
-    xhttp.open("GET", "/api/dairas/" + wilaya, true);
+    xhttp.open("GET", `${lang}/api/dairas/` + wilaya, true);
     xhttp.send();
 }
 
