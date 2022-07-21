@@ -25,5 +25,5 @@ return [
     'bloodGroupValidation' => 'Veuillez choisir un Group Sanguin.',
     'wilayaValidation' => 'Veuillez choisir une Wilaya.',
     'dairaValidation' => 'Veuillez choisir une Daira.',
-    'pageDescription' => 'Une plateforme algérienne qui aide les personnes en besoin de sang à trouver des donneurs dans leur région.',
+    'pageDescription' => 'Une plateforme algérienne qui aide les personnes en besoin de sang à trouver des donneurs dans leur région',
 ];
