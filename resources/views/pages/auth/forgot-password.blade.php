@@ -2,7 +2,7 @@
 
 @section('title',__('forgotPassword.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
 <!-- Primary Meta Tags -->
-@section('metaTitle', __('forgotPassword.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
+
 @section('metaDescription', __('forgotPassword.passwordReset'))
 
 <!-- Open Graph / Facebook -->

@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="{{ Lang::locale() }}" dir="{{ Lang::locale() === "ar" ? "rtl" : "ltr" }}">
 <head>
+    <title>@yield('title')</title>
+
     <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="title" content="@yield('metaTitle')">
     <meta name="description" content="@yield('metaDescription')">
 
     <!-- Open Graph / Facebook -->
@@ -23,9 +24,7 @@
     <meta property="twitter:description" content="@yield('metaTwitterDescription')">
     <meta property="twitter:image" content="@yield('metaTwitterImage')">
 
-    <title>@yield('title')</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600&family=Nunito:wght@600;700&display=swap" rel="stylesheet">
-
 
     @if(Lang::locale() === 'ar')
         @vite(['resources/css/bootstrap-rtl.css'])

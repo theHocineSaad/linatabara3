@@ -2,7 +2,7 @@
 
 @section('title',__('aboutPage.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
 <!-- Primary Meta Tags -->
-@section('metaTitle', __('aboutPage.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
+
 @section('metaDescription', __('aboutPage.whoAreWeDescription'))
 
 <!-- Open Graph / Facebook -->

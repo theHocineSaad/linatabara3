@@ -2,7 +2,7 @@
 
 @section('title', !isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults', ["websiteTitle" => __('general.websiteTitle')]) )
 <!-- Primary Meta Tags -->
-@section('metaTitle', !isset($donors) ? __('donorsPage.title', ["websiteTitle" => __('general.websiteTitle')]) : __('donorsPage.tabTitleWhileResults', ["websiteTitle" => __('general.websiteTitle')]) )
+
 @section('metaDescription', __('donorsPage.pageDescription'))
 
 <!-- Open Graph / Facebook -->

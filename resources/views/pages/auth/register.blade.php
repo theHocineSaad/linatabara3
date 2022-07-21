@@ -2,7 +2,7 @@
 
 @section('title', __('registerPage.title', ['websiteTitle' => __('general.websiteTitle')]))
 <!-- Primary Meta Tags -->
-@section('metaTitle', __('registerPage.title', ['websiteTitle' => __('general.websiteTitle')]))
+
 @section('metaDescription', __('homePage.register'))
 
 <!-- Open Graph / Facebook -->

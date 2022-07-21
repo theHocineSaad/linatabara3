@@ -1,8 +1,8 @@
 @extends('layout')
 
 @section('title', __('general.websiteTitleDescription', ["websiteTitle" => __('general.websiteTitle')]))
+
 <!-- Primary Meta Tags -->
-@section('metaTitle', __('general.websiteTitleDescription', ["websiteTitle" => __('general.websiteTitle')]))
 @section('metaDescription', __('homePage.pageDescription'))
 
 <!-- Open Graph / Facebook -->
