@@ -47,7 +47,7 @@
                 <div class="title">
                     @yield('message')
                 </div>
-                <a href="{{ env('APP_URL') }}" style="color: #636b6f; font-size: 25px; text-decoration: underline;">
+                <a href="{{ config('app.url') }}" style="color: #636b6f; font-size: 25px; text-decoration: underline;">
                     {{ __('errorPages.goToHomePage') }}
                 </a>
             </div>

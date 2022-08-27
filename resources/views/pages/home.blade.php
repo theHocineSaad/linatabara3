@@ -19,7 +19,7 @@
 @section('metaTwitterImage', asset('imgs/vialsOfBlood.jpg'))
 
 @section('head')
-    <meta name="google-site-verification" content="{{ env('GOOGLE_SITE_VERIFICATION') }}" />
+    <meta name="google-site-verification" content="{{ config('custom.gsv') }}" />
     @vite([
         'resources/css/homeHero.css',
         'resources/css/faq.css',
