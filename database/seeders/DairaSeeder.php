@@ -2752,8 +2752,8 @@ class DairaSeeder extends Seeder
 
     public function run()
     {
-        array_walk($this->dairas, function ($diara, $key) {
-            Daira::create(['id' => $key, ...$diara]);
+        array_walk($this->dairas, function ($daira, $key) {
+            Daira::create( array_merge(['id' => $key], $daira) );
         });
     }
 }
