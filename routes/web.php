@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DonorController;
 use App\Http\Controllers\HomeController;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -28,3 +29,8 @@ Route::group([
         Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
     });
 });
+
+
+// Route::get('/test', function () {
+//     return User::getOtherDonorsCanDonateTo(1, 15, 1254);
+// });

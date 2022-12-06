@@ -55,6 +55,12 @@ class User extends Authenticatable
         ]);
     }
 
+
+    public static function getDonors($column, $data)
+    {
+        return User::select($column)->donors($data)->inRandomOrder()->paginate(10);
+    }
+
     public function scopeDonorsInWilaya($query, $data)
     {
         return $query->where([
@@ -64,27 +70,38 @@ class User extends Authenticatable
         ]);
     }
 
-    public function scopeDonorsHaveBloodGroup($query, $bloodGroup)
-    {
-        return $query->where([
-            'blood_group_id' => $bloodGroup,
-            'readyToGive' => 1,
-        ]);
-    }
-
-    public static function getDonors($column, $data)
-    {
-        return User::select($column)->donors($data)->inRandomOrder()->paginate(10);
-    }
-
     public static function getDonorsInWilaya($data)
     {
         return User::donorsInWilaya($data)->inRandomOrder()->paginate(10);
     }
 
-    public static function getDonorsHaveBloodGroup($bloodGroup)
+    public static function getDonorsHaveBloodGroup($bloodGroupId)
     {
-        return User::donorsHaveBloodGroup($bloodGroup)->inRandomOrder()->paginate(10);
+        return User::with('bloodGroup')
+            ->where('blood_group_id', $bloodGroupId)
+            ->inRandomOrder()
+            ->paginate(10, ['*'], 'donors')
+            ->appends(request()->except('donors'));
+    }
+
+    public static function getOtherDonorsCanDonateTo($bloodGroupId, $wilaya = null, $daira=null )
+    {
+        if (!empty(otherBloodGroupsDonorsOf($bloodGroupId))) {
+            return User::with('bloodGroup')
+                ->whereIn('blood_group_id', otherBloodGroupsDonorsOf($bloodGroupId))
+                ->where('readyToGive', '=', 1)
+                ->when($wilaya, function($q) use($wilaya){
+                    return $q->where('wilaya_id', $wilaya);
+                })
+                ->when($daira, function($q) use($daira){
+                    return $q->where('daira_id', $daira);
+                })
+                ->inRandomOrder()
+                ->paginate(10, ['*'], 'other-donors')
+                ->appends(request()->except('other-donors'));
+        }
+
+        return []; // add abiliy of wilay and daira
     }
 
     public static function getAllReadyToGiveDonors()
