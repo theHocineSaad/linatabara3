@@ -30,7 +30,6 @@ Route::group([
     });
 });
 
-
 // Route::get('/test', function () {
 //     return User::getOtherDonorsCanDonateTo(1, 15, 1254);
 // });

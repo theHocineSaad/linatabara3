@@ -35,9 +35,9 @@ class DonorController extends Controller
                 'searchedWilaya' => Wilaya::find($request['wilaya'])->name,
                 'searchedDaira' => Daira::find($request['daira'])->name,
                 'donors' => $donors,
-                'otherDonors' => $otherDonors
+                'otherDonors' => $otherDonors,
             ]);
-        } else if ($request->filled(['wilaya'])) { // blood group will also be filled because of the validation (DonorRequest $request)
+        } elseif ($request->filled(['wilaya'])) { // blood group will also be filled because of the validation (DonorRequest $request)
             $donors = User::getDonorsInWilaya([
                 'blood_group' => $request['blood_group'],
                 'wilaya' => $request['wilaya'],
@@ -48,7 +48,7 @@ class DonorController extends Controller
                 'searchedBloodGroup' => BloodGroup::find($request['blood_group'])->bloodGroup,
                 'searchedWilaya' => Wilaya::find($request['wilaya'])->name,
                 'donors' => $donors,
-                'otherDonors' => $otherDonors
+                'otherDonors' => $otherDonors,
             ]);
         } else {
             $donors = User::getDonorsHaveBloodGroup($request['blood_group']);
@@ -57,7 +57,7 @@ class DonorController extends Controller
             return view('pages.donors', [
                 'searchedBloodGroup' => BloodGroup::find($request['blood_group'])->bloodGroup,
                 'donors' => $donors,
-                'otherDonors' => $otherDonors
+                'otherDonors' => $otherDonors,
             ]);
         }
     }

@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Controllers\ApiController;
-use Illuminate\Support\Facades\Route;use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------

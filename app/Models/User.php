@@ -55,7 +55,6 @@ class User extends Authenticatable
         ]);
     }
 
-
     public static function getDonors($column, $data)
     {
         return User::select($column)->donors($data)->inRandomOrder()->paginate(10);
@@ -84,16 +83,16 @@ class User extends Authenticatable
             ->appends(request()->except('donors'));
     }
 
-    public static function getOtherDonorsCanDonateTo($bloodGroupId, $wilaya = null, $daira=null )
+    public static function getOtherDonorsCanDonateTo($bloodGroupId, $wilaya = null, $daira = null)
     {
-        if (!empty(otherBloodGroupsDonorsOf($bloodGroupId))) {
+        if (! empty(otherBloodGroupsDonorsOf($bloodGroupId))) {
             return User::with('bloodGroup')
                 ->whereIn('blood_group_id', otherBloodGroupsDonorsOf($bloodGroupId))
                 ->where('readyToGive', '=', 1)
-                ->when($wilaya, function($q) use($wilaya){
+                ->when($wilaya, function ($q) use ($wilaya) {
                     return $q->where('wilaya_id', $wilaya);
                 })
-                ->when($daira, function($q) use($daira){
+                ->when($daira, function ($q) use ($daira) {
                     return $q->where('daira_id', $daira);
                 })
                 ->inRandomOrder()

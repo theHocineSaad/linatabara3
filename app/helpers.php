@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('otherBloodGroupsDonorsOf')) {
+if (! function_exists('otherBloodGroupsDonorsOf')) {
     function otherBloodGroupsDonorsOf($bloodGroupId)
     {
         switch ($bloodGroupId) {
