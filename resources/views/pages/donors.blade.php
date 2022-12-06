@@ -204,8 +204,6 @@
 
     <x-stats />
     <x-footer />
-
-    <h1>here is {{empty($otherDonors)}}</h1>
 @endsection
 
 @section('beforeBodyEnd')
