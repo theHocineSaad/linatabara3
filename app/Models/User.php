@@ -45,43 +45,32 @@ class User extends Authenticatable
         return $this->belongsTo(Daira::class);
     }
 
-    public function scopeDonors($query, $data)
+    public function scopeFilter($query, array $filters)
     {
-        return $query->where([
-            'blood_group_id' => $data['blood_group'],
-            'wilaya_id' => $data['wilaya'],
-            'daira_id' => $data['daira'],
-            'readyToGive' => 1,
-        ]);
+        $query->when(
+            $filters['blood_group'] ?? false,
+            fn ($query, $blood_group) => $query->whereHas(
+                'bloodGroup',
+                fn ($query) => $query->where('id', $blood_group)
+            )
+        );
+        $query->when(
+            $filters['wilaya'] ?? false,
+            fn ($query, $wilaya) => $query->whereHas(
+                'wilaya',
+                fn ($query) => $query->where('id', $wilaya)
+            )
+        );
+        $query->when(
+            $filters['daira'] ?? false,
+            fn ($query, $daira) => $query->whereHas(
+                'daira',
+                fn ($query) => $query->where('id', $daira)
+            )
+        );
     }
 
-    public static function getDonors($column, $data)
-    {
-        return User::select($column)->donors($data)->inRandomOrder()->paginate(10);
-    }
 
-    public function scopeDonorsInWilaya($query, $data)
-    {
-        return $query->where([
-            'blood_group_id' => $data['blood_group'],
-            'wilaya_id' => $data['wilaya'],
-            'readyToGive' => 1,
-        ]);
-    }
-
-    public static function getDonorsInWilaya($data)
-    {
-        return User::donorsInWilaya($data)->inRandomOrder()->paginate(10);
-    }
-
-    public static function getDonorsHaveBloodGroup($bloodGroupId)
-    {
-        return User::with('bloodGroup')
-            ->where('blood_group_id', $bloodGroupId)
-            ->inRandomOrder()
-            ->paginate(10, ['*'], 'donors')
-            ->appends(request()->except('donors'));
-    }
 
     public static function getOtherDonorsCanDonateTo($bloodGroupId, $wilaya = null, $daira = null)
     {
