@@ -26,6 +26,7 @@
         <env name="MAIL_MAILER" value="array"/>
         <env name="QUEUE_CONNECTION" value="sync"/>
         <env name="SESSION_DRIVER" value="array"/>
+        <env name="DB_DATABASE" value="laravel_test"/>
         <env name="TELESCOPE_ENABLED" value="false"/>
     </php>
 </phpunit>
