@@ -3,16 +3,19 @@
 namespace Tests\Feature;
 
 use App\Models\User;
-use App\Models\Wilaya;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\DB;
 use Tests\TestCase;
 
 class SearchTest extends TestCase
 {
-    use RefreshDatabase;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        DB::table('users')->truncate();
+    }
 
     /**
-     * A basic test example.
      * @test
      * @return void
      */
@@ -23,15 +26,49 @@ class SearchTest extends TestCase
     }
 
     /**
-     * A basic test example.
      * @test
      * @return void
      */
     public function it_can_search_with_blood_group_only()
     {
-        $this->seed();
         $user = User::factory(1)->create()->first();
-        $response = $this->get('/donors/search?blood_group=' . $user->blood_group_id);
+        $response = $this->get("/donors/search?blood_group={$user->blood_group_id}");
         $response->assertSeeText($user->phone);
+    }
+
+    /**
+     * @test
+     * @return void
+     */
+    public function it_can_search_with_blood_group_and_wilaya()
+    {
+        $user = User::factory(1)->create([
+            'wilaya_id' => 1
+        ])->first();
+        $response = $this->get("/donors/search?blood_group={$user->blood_group_id}&wilaya={$user->wilaya_id}");
+        $response->assertSeeText($user->phone);
+    }
+
+    /**
+     * @test
+     * @return void
+     */
+    public function it_can_search_with_blood_group_and_wilaya_and_daira()
+    {
+        $user = User::factory(1)->create([
+            'wilaya_id' => 1,
+            'daira_id' =>1
+        ])->first();
+        $response = $this->get("/donors/search?blood_group={$user->blood_group_id}&wilaya={$user->wilaya_id}&daira={$user->daira_id}");
+        $response->assertSeeText($user->phone);
+    }
+
+    /**
+     *
+     * @return void
+     */
+    public function it_cannot_search_with_daira_and_without_wilaya()
+    {
+        // This test cant success now because for now if there is no wilaya_id it will search only by blood_group ignoring daira_id
     }
 }
