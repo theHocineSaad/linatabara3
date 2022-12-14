@@ -1,8 +1,6 @@
 <?php
 
 use App\Http\Controllers\DonorController;
-use App\Http\Controllers\HomeController;
-use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -12,24 +10,31 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |--------------------------------------------------------------------------
 */
 
-Route::group([
-    'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
-], function () {
-    Route::get('/', [HomeController::class, 'home'])->name('homePage');
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
+    ],
+    function () {
 
-    Route::prefix('/donors')->group(function () {
-        Route::get('', [DonorController::class, 'index'])->name('donorsPage');
-        Route::get('/search', [DonorController::class, 'search'])->name('donorsSearch');
+        Route::get('/', function (\Illuminate\Http\Request $request) {
+            $request->flush();
+            return view('pages.home');
+        })->name('homePage');
+
+        Route::get('/about', function () {
+            return view('pages.about');
+        })->name('aboutPage');
+
+        Route::get('/dashboard', function () {
+            return view('pages.dashboards.user');
+        })->middleware('auth')->name('dashboard');
+
+
+        Route::prefix('/donors')->group(function () {
+            Route::get('', [DonorController::class, 'index'])->name('donorsPage');
+            Route::get('/search', [DonorController::class, 'search'])->name('donorsSearch');
+        });
+
     });
 
-    Route::get('/about', [HomeController::class, 'about'])->name('aboutPage');
-
-    Route::group(['middleware' => 'auth'], function () {
-        Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
-    });
-});
-
-// Route::get('/test', function () {
-//     return User::getOtherDonorsCanDonateTo(1, 15, 1254);
-// });
