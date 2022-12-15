@@ -3,16 +3,18 @@
 namespace Tests\Feature;
 
 use App\Models\User;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
 class SearchTest extends TestCase
 {
 
+    use DatabaseMigrations;
+
     protected function setUp(): void
     {
         parent::setUp();
-        DB::table('users')->truncate();
+        $this->seed();
     }
 
     /**
@@ -57,7 +59,7 @@ class SearchTest extends TestCase
     {
         $user = User::factory(1)->create([
             'wilaya_id' => 1,
-            'daira_id' =>1
+            'daira_id' => 1
         ])->first();
         $response = $this->get("/donors/search?blood_group={$user->blood_group_id}&wilaya={$user->wilaya_id}&daira={$user->daira_id}");
         $response->assertSeeText($user->phone);
