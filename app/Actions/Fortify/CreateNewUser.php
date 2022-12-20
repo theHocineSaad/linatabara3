@@ -35,10 +35,10 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
             'g-recaptcha-response' => 'required|captcha',
         ],
-        [
-            'email.unique' => __('registerPage.alreadyUsedEmail'),
-            'phone.unique' => __('registerPage.alreadyUsedPhoneNumber'),
-        ])->validate();
+            [
+                'email.unique' => __('registerPage.alreadyUsedEmail'),
+                'phone.unique' => __('registerPage.alreadyUsedPhoneNumber'),
+            ])->validate();
 
         return User::create([
             'email' => $input['email'],

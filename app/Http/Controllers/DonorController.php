@@ -18,7 +18,6 @@ class DonorController extends Controller
         return view('pages.donors', ['allReadyToGiveDonors' => User::getAllReadyToGiveDonors()]);
     }
 
-
     public function search(DonorRequest $request)
     {
         $request->flash();
@@ -36,6 +35,5 @@ class DonorController extends Controller
             'donors' => $donors,
             'otherDonors' => User::getOtherDonorsCanDonateTo($request['blood_group'], $request['wilaya'], $request['daira']),
         ]);
-
     }
 }

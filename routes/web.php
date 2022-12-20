@@ -16,9 +16,9 @@ Route::group(
         'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
     ],
     function () {
-
-        Route::get('/', function (\Illuminate\Http\Request $request) {
+        Route::get('/', function (Illuminate\Http\Request $request) {
             $request->flush();
+
             return view('pages.home');
         })->name('homePage');
 
@@ -30,11 +30,8 @@ Route::group(
             return view('pages.dashboards.user');
         })->middleware('auth')->name('dashboard');
 
-
         Route::prefix('/donors')->group(function () {
             Route::get('', [DonorController::class, 'index'])->name('donorsPage');
             Route::get('/search', [DonorController::class, 'search'])->name('donorsSearch');
         });
-
     });
-

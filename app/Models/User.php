@@ -70,8 +70,6 @@ class User extends Authenticatable
         );
     }
 
-
-
     public static function getOtherDonorsCanDonateTo($bloodGroupId, $wilaya = null, $daira = null)
     {
         if (! empty(otherBloodGroupsDonorsOf($bloodGroupId))) {
