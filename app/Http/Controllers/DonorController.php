@@ -21,7 +21,10 @@ class DonorController extends Controller
             ->inRandomOrder()
             ->paginate(10);
 
-        return view('pages.donors', ['allReadyToGiveDonors' => $donors]);
+        return view('pages.donors', [
+            'allReadyToGiveDonors' => $donors,
+            'otherDonors' => User::getOtherDonorsCanDonateTo($request['blood_group'], $request['wilaya'], $request['daira']),
+        ]);
     }
 
     public function search(DonorRequest $request)

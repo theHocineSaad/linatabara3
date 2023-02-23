@@ -41,10 +41,11 @@ class FilterDonorsTest extends TestCase
      */
     public function it_get_all_donors_filtered_by_blood_group(): void
     {
+        // NOTE: BloodGroupId must be different, try not change (1 and 3) to avoid OtherDonors Result
         $bloodGroupOne = BloodGroup::where('id', 1)->first();
         $userOne = User::factory()->create(['blood_group_id' => $bloodGroupOne->id]);
 
-        $bloodGroupTwo = BloodGroup::where('id', 2)->first();
+        $bloodGroupTwo = BloodGroup::where('id', 3)->first();
         $userTwo = User::factory()->create(['blood_group_id' => $bloodGroupTwo->id]);
 
 
