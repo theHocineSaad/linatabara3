@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\BloodGroup;
 use App\Models\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
@@ -32,6 +33,25 @@ class FilterDonorsTest extends TestCase
 
         $response->assertSee($phoneOne);
         $response->assertSee($phoneTwo);
+    }
+
+    /**
+     * @test
+     */
+    public function it_get_all_donors_filtered_by_blood_group(): void
+    {
+        $bloodGroupOne = BloodGroup::where('id', 1)->first();
+        $userOne = User::factory()->create(['blood_group_id' => $bloodGroupOne->id]);
+
+        $bloodGroupTwo = BloodGroup::where('id', 2)->first();
+        $userTwo = User::factory()->create(['blood_group_id' => $bloodGroupTwo->id]);
+
+
+        $response = $this->get("/donors?blood_group={$bloodGroupOne->id}");
+
+        $response->assertSee($userOne->phone);
+        $response->assertDontSee($userTwo->phone);
+
     }
 
 }

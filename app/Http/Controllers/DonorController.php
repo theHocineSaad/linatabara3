@@ -15,7 +15,13 @@ class DonorController extends Controller
     {
         $request->flush();
 
-        return view('pages.donors', ['allReadyToGiveDonors' => User::getAllReadyToGiveDonors()]);
+        $donors = User::with('wilaya', 'daira', 'bloodGroup')
+            ->filter(request(['blood_group']))
+            ->where('readyToGive', 1)
+            ->inRandomOrder()
+            ->paginate(10);
+
+        return view('pages.donors', ['allReadyToGiveDonors' => $donors]);
     }
 
     public function search(DonorRequest $request)
