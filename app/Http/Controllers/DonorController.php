@@ -23,6 +23,7 @@ class DonorController extends Controller
 
         return view('pages.donors', [
             'allReadyToGiveDonors' => $donors,
+            'searchedBloodGroup' => BloodGroup::find($request['blood_group'])?->bloodGroup,
             'otherDonors' => User::getOtherDonorsCanDonateTo($request['blood_group'], $request['wilaya'], $request['daira']),
         ]);
     }
