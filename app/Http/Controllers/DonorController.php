@@ -22,8 +22,10 @@ class DonorController extends Controller
             ->paginate(10);
 
         return view('pages.donors', [
-            'allReadyToGiveDonors' => $donors,
+            'donors' => $donors,
             'searchedBloodGroup' => BloodGroup::find($request['blood_group'])?->bloodGroup,
+            'searchedWilaya' => Wilaya::find($request['wilaya'])?->name,
+            'searchedDaira' => Daira::find($request['daira'])?->name,
             'otherDonors' => User::getOtherDonorsCanDonateTo($request['blood_group'], $request['wilaya'], $request['daira']),
         ]);
     }
