@@ -16,7 +16,7 @@ class DonorController extends Controller
         $request->flush();
 
         $donors = User::with('wilaya', 'daira', 'bloodGroup')
-            ->filter(request(['blood_group', 'wilaya']))
+            ->filter(request(['blood_group', 'wilaya', 'daira']))
             ->where('readyToGive', 1)
             ->inRandomOrder()
             ->paginate(10);
