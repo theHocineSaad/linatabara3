@@ -30,8 +30,5 @@ Route::group(
             return view('pages.dashboards.user');
         })->middleware('auth')->name('dashboard');
 
-        Route::prefix('/donors')->group(function () {
-            Route::get('', [DonorController::class, 'index'])->name('donorsPage');
-            Route::get('/search', [DonorController::class, 'search'])->name('donorsSearch');
-        });
+        Route::get('/donors', [DonorController::class, 'index'])->name('donorsPage');
     });
