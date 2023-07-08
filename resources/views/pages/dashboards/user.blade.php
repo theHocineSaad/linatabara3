@@ -17,11 +17,10 @@
     <x-footer />
 
     {{--Passing data to JS files--}}
-    <div class="visually-hidden" id="userWilayaCode">{{ Auth::user()->wilaya_id }}</div>
-    <div class="visually-hidden" id="userDairaCode">{{ Auth::user()->daira_id }}</div>
+    <div class="visually-hidden" id="userBaladiaCode">{{ Auth::user()->baladia_id }}</div>
     <div class="visually-hidden" id="userIsReadyToGive">{{ Auth::user()->readyToGive }}</div>
 @endsection
 
 @section('beforeBodyEnd')
-    @vite(['resources/js/userDashboard.js', 'resources/js/gettingDairas.js',])
+    @vite(['resources/js/userDashboard.js'])
 @endsection

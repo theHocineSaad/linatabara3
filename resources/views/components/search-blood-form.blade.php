@@ -23,29 +23,18 @@
                 </div>
 
                 <div class="w-100">
-                    <select name="wilaya" id="wilayaSelect" class="form-select form-select-lg">
-                        <option selected hidden style="display:none" value="">{{ __('homePage.wilaya') }}
+                    <select name="baladia" id="baladiaSelect" class="form-select form-select-lg">
+                        <option selected hidden style="display:none" value="">{{ __('homePage.baladia') }}
                         </option>
-                        @foreach ($wilayas as $wilaya)
-                            <option value="{{ $wilaya->id }}" @selected(old('wilaya') == $wilaya->id)>
-                                {{ $wilaya->id . '. ' . $wilaya->name }}
+                        @foreach ($baladiat as $baladia)
+                            <option value="{{ $baladia->id }}" @selected(old('baladia') == $baladia->id)>
+                                {{ $baladia->id . '. ' . $baladia->name }}
                             </option>
                         @endforeach
                     </select>
 
                     <div class="invalid-feedback">
-                        {{ __('homePage.wilayaValidation') }}
-                    </div>
-                </div>
-
-                <div class="w-100">
-                    <select name="daira" id="dairaSelect" class="form-select form-select-lg" disabled>
-                        <option selected hidden style="display:none" value="">{{ __('homePage.daira') }}
-                        </option>
-                    </select>
-
-                    <div class="invalid-feedback">
-                        {{ __('homePage.dairaValidation') }}
+                        {{ __('homePage.baladiaValidation') }}
                     </div>
                 </div>
 

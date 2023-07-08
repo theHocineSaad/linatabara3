@@ -28,8 +28,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
                 Rule::unique(User::class)->ignore($user->id),
             ],
             'phone' => ['required', 'numeric', 'digits:10', Rule::unique(User::class)->ignore($user->id)],
-            'wilaya' => ['required', 'exists:wilayas,id'],
-            'daira' => ['required', 'exists:dairas,id'],
+            'baladia' => ['required', 'exists:baladiat,id'],
         ],
             [
                 'email.unique' => __('registerPage.alreadyUsedEmail'),
@@ -43,8 +42,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             $user->forceFill([
                 'email' => $input['email'],
                 'phone' => $input['phone'],
-                'wilaya_id' => $input['wilaya'],
-                'daira_id' => $input['daira'],
+                'baladia_id' => $input['baladia'],
                 'readyToGive' => array_key_exists('ready_to_give', $input) ? 1 : 0,
             ])->save();
         }
@@ -60,10 +58,9 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
     protected function updateVerifiedUser($user, array $input)
     {
         $user->forceFill([
-            'email' => $input['name'],
-            'phone' => $input['email'],
-            'wilaya_id' => $input['name'],
-            'daira_id' => $input['name'],
+            'email' => $input['email'],
+            'phone' => $input['phone'],
+            'baladia_id' => $input['baladia'],
             'readyToGive' => $input['ready_to_give'] === 'on' ? 1 : 0,
             'email_verified_at' => null,
         ])->save();

@@ -9,6 +9,7 @@
 */
 
 return [
+    'baladia' => 'البلدية',
     'title' => ':websiteTitle | التسجيل كمتبرع',
     'wilaya' => 'الولاية',
     'daira' => 'الدائرة',
@@ -21,6 +22,7 @@ return [
     'alreadyMember' => 'لديك حساب ؟',
     'login' => 'تسجيل الدخول',
     'wilayaValidation' => 'الرجاء اختيار ولاية !',
+    'baladiaValidation' => 'الرجاء اختيار بلدية !',
     'dairaValidation' => 'الرجاء اختيار دائرة !',
     'phoneNumberValidation' => 'من فضلك أدخل رقم هاتفك الصحيح !',
     'bloodGroupValidation' => 'الرجاء اختيار فصيلة دمك !',

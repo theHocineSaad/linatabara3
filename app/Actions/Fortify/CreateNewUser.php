@@ -28,9 +28,8 @@ class CreateNewUser implements CreatesNewUsers
                 'max:100',
                 Rule::unique(User::class),
             ],
-            'phone' => ['required', 'numeric', 'digits:10', Rule::unique(User::class)],
-            'wilaya' => ['required', 'exists:wilayas,id'],
-            'daira' => ['required', 'exists:dairas,id'],
+            'phone' => ['required', 'numeric', Rule::unique(User::class)],
+            'baladia' => ['required', 'exists:baladiat,id'],
             'blood_group' => ['required', 'exists:blood_groups,id'],
             'password' => $this->passwordRules(),
             'g-recaptcha-response' => 'required|captcha',
@@ -43,8 +42,7 @@ class CreateNewUser implements CreatesNewUsers
         return User::create([
             'email' => $input['email'],
             'phone' => $input['phone'],
-            'wilaya_id' => $input['wilaya'],
-            'daira_id' => $input['daira'],
+            'baladia_id' => $input['baladia'],
             'blood_group_id' => $input['blood_group'],
             'password' => Hash::make($input['password']),
         ]);

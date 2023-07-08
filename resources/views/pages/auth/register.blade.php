@@ -52,24 +52,14 @@
             </div>
 
             <div>
-                <label for="wilayaSelect" class="form-label mt-3">{{ __('homePage.wilaya') }}</label>
-                <select data-validator-func="wilayaValidator" name="wilaya" id="wilayaSelect" class="form-select" required>
-                    <option selected hidden style="display:none" value="">{{ __('homePage.wilaya') }}</option>
-                    @foreach ($wilayas as $wilaya)
-                        <option value="{{ $wilaya['id'] }}">{{ $wilaya['id'] . '. ' . $wilaya['name'] }} </option>
+                <label for="baladiaSelect" class="form-label mt-3">{{ __('homePage.baladia') }}</label>
+                <select data-validator-func="baladiaValidator" name="baladia" id="baladiaSelect" class="form-select" required>
+                    <option selected hidden style="display:none" value="">{{ __('homePage.baladia') }}</option>
+                    @foreach ($baladiat as $baladia)
+                        <option value="{{ $baladia['id'] }}">{{ $baladia['id'] . '. ' . $baladia['name'] }} </option>
                     @endforeach
                 </select>
-                <div class="invalid-feedback">{{ __('registerPage.wilayaValidation') }}</div>
-            </div>
-
-
-            <div>
-                <label for="dairaSelect" class="form-label mt-3">{{ __('registerPage.daira') }}</label>
-                <select data-validator-func="dairaValidator" name="daira" id="dairaSelect" class="form-select" disabled
-                    required>
-                    <option selected hidden style="display:none" value="">{{ __('registerPage.daira') }}</option>
-                </select>
-                <div class="invalid-feedback">{{ __('registerPage.dairaValidation') }}</div>
+                <div class="invalid-feedback">{{ __('registerPage.baladiaValidation') }}</div>
             </div>
 
             <div>

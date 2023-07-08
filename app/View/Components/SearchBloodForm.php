@@ -2,21 +2,21 @@
 
 namespace App\View\Components;
 
+use App\Models\Baladia;
 use App\Models\BloodGroup;
-use App\Models\Wilaya;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\View\Component;
 
 class SearchBloodForm extends Component
 {
-    public $wilayas;
+    public $baladiat;
 
     public $bloodGroups;
 
     public function __construct()
     {
-        $this->wilayas = Cache::rememberForever('wilayas', function () {
-            return Wilaya::all();
+        $this->baladiat = Cache::rememberForever('baladiat', function () {
+            return Baladia::all();
         });
 
         $this->bloodGroups = Cache::rememberForever('bloodGroups', function () {

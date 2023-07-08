@@ -6,9 +6,9 @@ use App\Actions\Fortify\CreateNewUser;
 use App\Actions\Fortify\ResetUserPassword;
 use App\Actions\Fortify\UpdateUserPassword;
 use App\Actions\Fortify\UpdateUserProfileInformation;
+use App\Models\Baladia;
 use App\Models\BloodGroup;
 use App\Models\User;
-use App\Models\Wilaya;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -29,7 +29,7 @@ class FortifyServiceProvider extends ServiceProvider
         {
             public function toResponse($request)
             {
-                return redirect('/'.LaravelLocalization::getCurrentLocale());
+                return redirect('/' . LaravelLocalization::getCurrentLocale());
             }
         });
     }
@@ -51,11 +51,13 @@ class FortifyServiceProvider extends ServiceProvider
 
         Fortify::authenticateUsing(function (Request $request) {
             $user = User::where('email', $request->username)
-                          ->orWhere('phone', $request->username)
-                          ->first();
+                ->orWhere('phone', $request->username)
+                ->first();
 
-            if ($user &&
-                Hash::check($request->password, $user->password)) {
+            if (
+                $user &&
+                Hash::check($request->password, $user->password)
+            ) {
                 return $user;
             }
         });
@@ -65,8 +67,13 @@ class FortifyServiceProvider extends ServiceProvider
         });
 
         Fortify::registerView(function () {
-            return view('pages.auth.register', ['wilayas' => Wilaya::all(),
-                'bloodGroups' => BloodGroup::all(), ]);
+            return view(
+                'pages.auth.register',
+                [
+                    'baladiat' => Baladia::all(),
+                    'bloodGroups' => BloodGroup::all(),
+                ]
+            );
         });
 
         Fortify::requestPasswordResetLinkView(function () {

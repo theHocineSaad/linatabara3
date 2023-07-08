@@ -51,21 +51,17 @@
                 <div class="resultTitle alert alert-success text-center fs-3 w-100" role="alert">
                     {{ __('donorsPage.donorsSearchResultText') }} <span
                         class="text-danger fw-bold">{{ $searchedBloodGroup }}</span>
-                    @isset($searchedWilaya)
-                        {{ __('registerPage.wilaya') }}: <span class="text-danger fw-bold">{{ $searchedWilaya }}</span>
-                        @endisset @isset($searchedDaira)
-                        {{ ',' . __('registerPage.daira') }}: <span class="text-danger fw-bold">{{ $searchedDaira }}</span>
+                    @isset($searchedBaladia)
+                        {{ __('registerPage.baladia') }}: <span class="text-danger fw-bold">{{ $searchedBaladia }}</span>
                     @endisset
                 </div>
                 @foreach ($donors as $donor)
                     <div class="container shadow-lg donorCard d-flex flex-column">
                         <div class="donorInfo px-3 py-3 row">
-                            <div class="infos col-9">
-                                <span class="text-danger fs-4"><strong class="text-dark">{{ __('registerPage.wilaya') }}:
-                                    </strong>{{ $donor->wilaya->name }}</span>
-                                <br>
-                                <span class="text-danger fs-4"><strong class="text-dark">{{ __('registerPage.daira') }}:
-                                    </strong>{{ $donor->daira->name }}</span>
+                            <div class="infos col-9 d-flex align-items-center">
+                                <span class="text-danger fs-4"><strong class="text-dark">{{ __('registerPage.baladia') }}:
+                                    </strong>{{ $donor->baladia->name }}
+                                </span>
                             </div>
 
                             <div class="bloodGroup col-3 d-flex align-items-center">
@@ -103,12 +99,11 @@
             @foreach ($allReadyToGiveDonors as $donor)
                 <div class="container shadow-lg donorCard d-flex flex-column">
                     <div class="donorInfo px-3 py-3 row">
-                        <div class="infos col-9">
-                            <span class="text-danger fs-4"><strong class="text-dark">{{ __('registerPage.wilaya') }}:
-                                </strong>{{ $donor->wilaya->name }}</span>
-                            <br>
-                            <span class="text-danger fs-4"><strong class="text-dark">{{ __('registerPage.daira') }}:
-                                </strong>{{ $donor->daira->name }}</span>
+                        <div class="infos col-9 d-flex align-items-center">
+                            <span class="text-danger fs-4">
+                                <strong class="text-dark">{{ __('registerPage.baladia') }}:
+                                </strong>{{ $donor->baladia->name }}
+                            </span>
                         </div>
 
                         <div class="bloodGroup col-3 d-flex align-items-center">
@@ -143,7 +138,6 @@
             {{ $allReadyToGiveDonors->withQueryString()->links() }}
         @endif
 
-
     </div>
 
     @if (isset($otherDonors))
@@ -152,22 +146,17 @@
                 <div class="resultTitle alert alert-success text-center fs-3 w-100" role="alert">
                     {{ __('donorsPage.otherDonorsMessage') }} <span
                         class="text-danger fw-bold">{{ $searchedBloodGroup }}</span>
-                    @isset($searchedWilaya)
-                        {{ __('registerPage.wilaya') }}: <span class="text-danger fw-bold">{{ $searchedWilaya }}</span>
-                    @endisset
-                    @isset($searchedDaira)
-                        {{ ',' . __('registerPage.daira') }}: <span class="text-danger fw-bold">{{ $searchedDaira }}</span>
+                    @isset($searchedBaladia)
+                        {{ __('registerPage.baladia') }}: <span class="text-danger fw-bold">{{ $searchedBaladia }}</span>
                     @endisset
                 </div>
                 @foreach ($otherDonors as $donor)
                     <div class="container shadow-lg donorCard d-flex flex-column">
                         <div class="donorInfo px-3 py-3 row">
-                            <div class="infos col-9">
-                                <span class="text-danger fs-4"><strong class="text-dark">{{ __('registerPage.wilaya') }}:
-                                    </strong>{{ $donor->wilaya->name }}</span>
-                                <br>
-                                <span class="text-danger fs-4"><strong class="text-dark">{{ __('registerPage.daira') }}:
-                                    </strong>{{ $donor->daira->name }}</span>
+                            <div class="infos col-9 d-flex align-items-center">
+                                <span class="text-danger fs-4"><strong class="text-dark">{{ __('registerPage.baladia') }}:
+                                    </strong>{{ $donor->baladia->name }}
+                                </span>
                             </div>
 
                             <div class="bloodGroup col-3 d-flex align-items-center">
@@ -209,5 +198,5 @@
 @endsection
 
 @section('beforeBodyEnd')
-    @vite(['resources/js/donorsPage.js', 'resources/js/donorsSearchFormValidation.js', 'resources/js/gettingDairas.js'])
+    @vite(['resources/js/donorsPage.js', 'resources/js/donorsSearchFormValidation.js'])
 @endsection
