@@ -1,3 +1,6 @@
+## Note:
+**You are watching the branch "forGaza", which is a modified version of Linatabara3 specifically for Gaza.**
+
 <p align="center"><a href="https://github.com/theHocineSaad/linatabra3" target="_blank"><img src="https://i.imgur.com/pU6Uatt.png"></a></p>
 
 
