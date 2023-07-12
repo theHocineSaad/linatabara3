@@ -1,18 +1,18 @@
 @extends('layout')
 
 @section('title', __('registerPage.title', ['websiteTitle' => __('general.websiteTitle')]))
-<!-- Primary Meta Tags -->
 
+{{-- Primary Meta Tags --}}
 @section('metaDescription', __('homePage.register'))
 
-<!-- Open Graph / Facebook -->
+{{-- Open Graph / Facebook --}}
 @section('metaOGurl', url()->full())
 @section('metaOGtitle', __('registerPage.title', ['websiteTitle' => __('general.websiteTitle')]))
 @section('metaOGdescription', __('homePage.register'))
 @section('metaOGimage', asset('imgs/vialsOfBlood.jpg'))
 @section('metaOGLocale', Lang::locale() === 'ar' ? Lang::locale() . '_DZ' : Lang::locale() . '_FR')
 
-<!-- Twitter -->
+{{-- Twitter --}}
 @section('metaTwitterUrl', url()->full())
 @section('metaTwitterTitle', __('registerPage.title', ['websiteTitle' => __('general.websiteTitle')]))
 @section('metaTwitterDescription', __('homePage.register'))

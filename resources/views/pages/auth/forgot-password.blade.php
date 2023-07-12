@@ -1,18 +1,18 @@
 @extends('layout')
 
 @section('title',__('forgotPassword.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
-<!-- Primary Meta Tags -->
 
+{{-- Primary Meta Tags --}}
 @section('metaDescription', __('forgotPassword.passwordReset'))
 
-<!-- Open Graph / Facebook -->
+{{-- Open Graph / Facebook --}}
 @section('metaOGurl', url()->full())
 @section('metaOGtitle', __('forgotPassword.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
 @section('metaOGdescription', __('forgotPassword.passwordReset'))
 @section('metaOGimage', asset('imgs/passwordImage.jpg'))
 @section('metaOGLocale', Lang::locale() === "ar" ? Lang::locale()."_DZ" : Lang::locale()."_FR")
 
-<!-- Twitter -->
+{{-- Twitter --}}
 @section('metaTwitterUrl', url()->full())
 @section('metaTwitterTitle', __('forgotPassword.tabTitle', ["websiteTitle" => __('general.websiteTitle')]))
 @section('metaTwitterDescription', __('forgotPassword.passwordReset'))

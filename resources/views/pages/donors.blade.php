@@ -2,10 +2,11 @@
 
 @section('title', !isset($donors) ? __('donorsPage.title', ['websiteTitle' => __('general.websiteTitle')]) :
     __('donorsPage.tabTitleWhileResults', ['websiteTitle' => __('general.websiteTitle')]))
-    <!-- Primary Meta Tags -->
+
+{{-- Primary Meta Tags --}}
 @section('metaDescription', __('donorsPage.pageDescription'))
 
-<!-- Open Graph / Facebook -->
+{{-- Open Graph / Facebook --}}
 @section('metaOGurl', url()->full())
 @section('metaOGtitle', !isset($donors) ? __('donorsPage.title', ['websiteTitle' => __('general.websiteTitle')]) :
     __('donorsPage.tabTitleWhileResults', ['websiteTitle' => __('general.websiteTitle')]))
@@ -13,7 +14,7 @@
 @section('metaOGimage', asset('imgs/vialsOfBlood.jpg'))
 @section('metaOGLocale', Lang::locale() === 'ar' ? Lang::locale() . '_DZ' : Lang::locale() . '_FR')
 
-<!-- Twitter -->
+{{-- Twitter --}}
 @section('metaTwitterUrl', url()->full())
 @section('metaTwitterTitle', !isset($donors) ? __('donorsPage.title', ['websiteTitle' => __('general.websiteTitle')]) :
     __('donorsPage.tabTitleWhileResults', ['websiteTitle' => __('general.websiteTitle')]))
