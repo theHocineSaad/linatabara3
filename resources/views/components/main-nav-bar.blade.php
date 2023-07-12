@@ -11,9 +11,8 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarToggler">
 
             <div class="languageSwitcher text-center">
-                <a href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'ar' : 'fr', null, [], true) }}"
-                    style="{{ LaravelLocalization::getCurrentLocale() === 'fr' ? " font-family: 'Noto Kufi Arabic' ,
-                    sans-serif;" : "font-family: 'Nunito', sans-serif;" }}"
+                <a rel="alternate" hreflang="{{ LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'ar' : 'fr' }}" href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'ar' : 'fr', null, [], true) }}"
+                    style="{{ LaravelLocalization::getCurrentLocale() === 'fr' ? " font-family: 'Noto Kufi Arabic', sans-serif;" : "font-family: 'Nunito', sans-serif;" }}"
                     class="px-3 mt-2 mt-lg-0 btn btn-danger btn-sm py-1">{{
                     LaravelLocalization::getCurrentLocaleNative() === 'Français' ? 'العربية' : 'Francais' }}</a>
             </div>
