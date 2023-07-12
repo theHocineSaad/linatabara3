@@ -48,15 +48,23 @@
                     {{ __('donorsPage.noDonorsMsg') }}
                 </div>
             @else
-                <div class="resultTitle alert alert-success text-center fs-3 w-100" role="alert">
-                    {{ __('donorsPage.donorsSearchResultText') }} <span
-                        class="text-danger fw-bold">{{ $searchedBloodGroup }}</span>
-                    @isset($searchedWilaya)
-                        {{ __('registerPage.wilaya') }}: <span class="text-danger fw-bold">{{ $searchedWilaya }}</span>
-                        @endisset @isset($searchedDaira)
-                        {{ ',' . __('registerPage.daira') }}: <span class="text-danger fw-bold">{{ $searchedDaira }}</span>
-                    @endisset
-                </div>
+                @if ($searchedBloodGroup or $searchedWilaya or $searchedDaira)
+                    <div class="resultTitle alert alert-success text-center fs-3 w-100" role="alert">
+                        @isset($searchedBloodGroup)
+                            {{ __('donorsPage.donorsSearchResultText') }} <span
+                                class="text-danger fw-bold">{{ $searchedBloodGroup }}</span>
+                        @endisset
+
+                        @isset($searchedWilaya)
+                            {{ __('registerPage.wilaya') }}: <span class="text-danger fw-bold">{{ $searchedWilaya }}</span>
+                        @endisset
+
+                        @isset($searchedDaira)
+                            {{ ',' . __('registerPage.daira') }}: <span class="text-danger fw-bold">{{ $searchedDaira }}</span>
+                        @endisset
+                    </div>
+                @endif
+
                 @foreach ($donors as $donor)
                     <div class="container shadow-lg donorCard d-flex flex-column">
                         <div class="donorInfo px-3 py-3 row">
@@ -142,7 +150,6 @@
             @endforeach
             {{ $allReadyToGiveDonors->withQueryString()->links() }}
         @endif
-
 
     </div>
 
