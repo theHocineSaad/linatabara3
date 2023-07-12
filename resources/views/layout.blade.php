@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="{{ Lang::locale() }}" dir="{{ Lang::locale() === "ar" ? "rtl" : "ltr" }}">
+<html lang="{{ Lang::locale() }}" dir="{{ Lang::locale() === 'ar' ? 'rtl' : 'ltr' }}">
 <head>
     <title>@yield('title')</title>
 
-    <!-- Primary Meta Tags -->
+    {{-- Primary Meta Tags --}}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="@yield('metaDescription')">
 
-    <!-- Open Graph / Facebook -->
+    {{-- Open Graph / Facebook --}}
     <meta property="og:type" content="website">
     <meta property="og:url" content="@yield('metaOGurl')">
     <meta property="og:title" content="@yield('metaOGtitle')">
@@ -17,7 +17,7 @@
     <meta property="og:image" content="@yield('metaOGimage')">
     <meta property="og:locale" content="@yield('metaOGLocale')">
 
-    <!-- Twitter -->
+    {{-- Twitter --}}
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="@yield('metaTwitterUrl')">
     <meta property="twitter:title" content="@yield('metaTwitterTitle')">
