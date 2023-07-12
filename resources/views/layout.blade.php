@@ -24,7 +24,13 @@
     <meta property="twitter:description" content="@yield('metaTwitterDescription')">
     <meta property="twitter:image" content="@yield('metaTwitterImage')">
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600&family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+    {{-- Localized Versions  --}}
+    <link rel="alternate" href="{{ LaravelLocalization::getLocalizedURL('ar') }}" hreflang="ar" />
+    <link rel="alternate" href="{{ LaravelLocalization::getLocalizedURL('fr') }}" hreflang="fr" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600&family=Nunito:wght@600;700&display=swap"
+        rel="stylesheet">
 
     @if(Lang::locale() === 'ar')
         @vite(['resources/css/bootstrap-rtl.css'])
@@ -36,6 +42,7 @@
 
     @yield('head')
 </head>
+
 <body>
 
     <x-contact-modal />
@@ -45,4 +52,5 @@
     @vite(['resources/js/app.js'])
     @yield('beforeBodyEnd')
 </body>
+
 </html>
