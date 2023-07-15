@@ -41,7 +41,7 @@ Copy .env.example to .env and fill it.
 - noCaptcha SITEKEY and SECRET, for the reCaptcha in register page, get them from: https://www.google.com/recaptcha/admin.
 
 **Note:** While creating a new site on Google ReCAPTCHA, make sure to choose reCAPTCHA v2 ("I'm not a robot" Checkbox):
-<img src="https://i.imgur.com/u1ngDam.png">
+[<img src="https://i.imgur.com/u1ngDam.png">](https://i.imgur.com/u1ngDam.png)
 
 - Mail info, for forgot password feature.
 
