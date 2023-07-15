@@ -15,11 +15,15 @@ class DonorController extends Controller
     {
         $request->flush();
 
+        $searchParams = ['blood_group', 'wilaya', 'daira'];
+
         $donors = User::with('wilaya', 'daira', 'bloodGroup')
-            ->filter(request(['blood_group', 'wilaya', 'daira']))
+            ->filter(request($searchParams))
             ->where('readyToGive', 1)
             ->inRandomOrder()
             ->paginate(10);
+
+        $isSearch = $request->hasAny($searchParams) ? true : false;
 
         return view('pages.donors', [
             'donors' => $donors,
@@ -27,6 +31,7 @@ class DonorController extends Controller
             'searchedWilaya' => Wilaya::find($request['wilaya'])?->name,
             'searchedDaira' => Daira::find($request['daira'])?->name,
             'otherDonors' => User::getOtherDonorsCanDonateTo($request['blood_group'], $request['wilaya'], $request['daira']),
+            'isSearch' => $isSearch,
         ]);
     }
 }

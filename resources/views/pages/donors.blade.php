@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', !isset($donors) ? __('donorsPage.title', ['websiteTitle' => __('general.websiteTitle')]) :
+@section('title', !$isSearch ? __('donorsPage.title', ['websiteTitle' => __('general.websiteTitle')]) :
     __('donorsPage.tabTitleWhileResults', ['websiteTitle' => __('general.websiteTitle')]))
 
 {{-- Primary Meta Tags --}}
@@ -8,7 +8,7 @@
 
 {{-- Open Graph / Facebook --}}
 @section('metaOGurl', url()->full())
-@section('metaOGtitle', !isset($donors) ? __('donorsPage.title', ['websiteTitle' => __('general.websiteTitle')]) :
+@section('metaOGtitle', !$isSearch ? __('donorsPage.title', ['websiteTitle' => __('general.websiteTitle')]) :
     __('donorsPage.tabTitleWhileResults', ['websiteTitle' => __('general.websiteTitle')]))
 @section('metaOGdescription', __('donorsPage.pageDescription'))
 @section('metaOGimage', asset('imgs/vialsOfBlood.jpg'))
@@ -16,7 +16,7 @@
 
 {{-- Twitter --}}
 @section('metaTwitterUrl', url()->full())
-@section('metaTwitterTitle', !isset($donors) ? __('donorsPage.title', ['websiteTitle' => __('general.websiteTitle')]) :
+@section('metaTwitterTitle', !$isSearch ? __('donorsPage.title', ['websiteTitle' => __('general.websiteTitle')]) :
     __('donorsPage.tabTitleWhileResults', ['websiteTitle' => __('general.websiteTitle')]))
 @section('metaTwitterDescription', __('donorsPage.pageDescription'))
 @section('metaTwitterImage', asset('imgs/vialsOfBlood.jpg'))
