@@ -3,7 +3,7 @@
         <a class="navbar-brand d-flex" href="{{ url('') }}">
             <img src="{{ asset('imgs/algerianMapFlag.svg') }}" class="pb-2" alt="Algerian Map Flag" height="40px">
             <span class="mx-2">|</span>
-            <img src="{{ asset(Lang::locale() === 'ar' ? 'imgs/linatabara3Logo.png' : 'imgs/linatabara3LogoAscii.png' ) }}" alt="Linatabara3 Logo" height="40px">
+            <img src="{{ asset(Lang::locale() === 'ar' ? 'imgs/linatabara3Logo.png' : 'imgs/linatabara3LogoAscii.png' ) }}" alt="Linatabara3 Logo" height="{{ LaravelLocalization::getCurrentLocale() === 'ar' ? '40px' : '35px' }}">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
             aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
