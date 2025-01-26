@@ -2,13 +2,11 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Daira;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class DairaSeeder extends Seeder
 {
-
     private $dairas = [
         1 => [
             'arName' => 'أدرار',
@@ -2752,20 +2750,10 @@ class DairaSeeder extends Seeder
         ],
     ];
 
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
-        foreach($this->dairas as $key=>$daira){
-            DB::table('dairas')->insert([
-                'id' => $key,
-                'name' => $daira['name'],
-                'arName' => $daira['arName'],
-                'wilaya_id' => $daira['wilaya_id'],
-            ]);
-        }
+        array_walk($this->dairas, function ($daira, $key) {
+            Daira::create(array_merge(['id' => $key], $daira));
+        });
     }
 }

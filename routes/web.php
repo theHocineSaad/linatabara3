@@ -1,41 +1,34 @@
 <?php
 
-use App\Http\Controllers\WebController;
+use App\Http\Controllers\DonorController;
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
 */
-Route::group([
-    'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ],
-], function()
-{
 
-    // Fortify routes
-    require(base_path('vendor/laravel/fortify/routes/routes.php'));
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
+    ],
+    function () {
+        Route::get('/', function (Illuminate\Http\Request $request) {
+            $request->flush();
 
-    // Home page
-    Route::get('/', [WebController::class, 'homePage'])->name('homePage');
+            return view('pages.home');
+        })->name('homePage');
 
-    // Donors page
-    Route::get('/donors', [WebController::class, 'donorsPage'])->name('donorsPage');
-    Route::get('/donors/search', [WebController::class, 'donorsSearch'])->name('donorsSearch');
+        Route::get('/about', function () {
+            return view('pages.about');
+        })->name('aboutPage');
 
-    //About page
-    Route::get('/about', [WebController::class, 'aboutPage'])->name('aboutPage');
+        Route::get('/dashboard', function () {
+            return view('pages.dashboards.user');
+        })->middleware('auth')->name('dashboard');
 
-    //Loged in users routes
-    Route::group(['middleware' => 'auth'], function(){
-        Route::get('/dashboard', [WebController::class, 'dashboard'])->name('dashboard');
+        Route::get('/donors', [DonorController::class, 'index'])->name('donorsPage');
     });
-});
-
-

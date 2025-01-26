@@ -3,9 +3,8 @@
 } */
 
 /* share buttons */
-.shareBtns i {
-    font-size: 20px;
-    padding-inline-end: 10px;
+.shareBtns .fa-brands {
+    width: 20px;
 }
 
 .shareBtns .btn {
@@ -16,26 +15,25 @@
     height: 60px;
 }
 
-.instagramShare {
-    color: #24af3a;
+.whatsappShare {
+    fill: #24af3a;
 }
 
 .fbShare {
-    color: #286ed6;
+    fill: #286ed6;
 }
 
 .messengerShare {
-    color: #006aff;
+    fill: #006aff;
 }
 
-.instagramShare:hover,
+.whatsappShare:hover,
 .fbShare:hover,
 .messengerShare:hover {
-    color: white;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    fill: white;
 }
 
-.instagramShare:hover {
+.whatsappShare:hover {
     background: #24af3a;
 }
 
@@ -47,4 +45,9 @@
 .messengerShare:hover {
     color: white;
     background: linear-gradient(to right, #00b2ff 0%, #006aff 100%);
+}
+
+.whatsappShare:hover {
+    color: white;
+    background: #24af3a;
 }

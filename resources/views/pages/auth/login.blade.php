@@ -1,18 +1,18 @@
 @extends('layout')
 
 @section('title',__('loginPage.title', ["websiteTitle" => __('general.websiteTitle')]))
-<!-- Primary Meta Tags -->
-@section('metaTitle', __('loginPage.title', ["websiteTitle" => __('general.websiteTitle')]))
+
+{{-- Primary Meta Tags --}}
 @section('metaDescription', __('registerPage.login'))
 
-<!-- Open Graph / Facebook -->
+{{-- Open Graph / Facebook --}}
 @section('metaOGurl', url()->full())
 @section('metaOGtitle', __('loginPage.title', ["websiteTitle" => __('general.websiteTitle')]))
 @section('metaOGdescription',  __('registerPage.login'))
 @section('metaOGimage', asset('imgs/passwordImage.jpg'))
 @section('metaOGLocale', Lang::locale() === "ar" ? Lang::locale()."_DZ" : Lang::locale()."_FR")
 
-<!-- Twitter -->
+{{-- Twitter --}}
 @section('metaTwitterUrl', url()->full())
 @section('metaTwitterTitle', __('loginPage.title', ["websiteTitle" => __('general.websiteTitle')]))
 @section('metaTwitterDescription', __('registerPage.login'))

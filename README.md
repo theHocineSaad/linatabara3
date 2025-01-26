@@ -23,7 +23,7 @@ Linatabara3 is an open source blood donation platform that connects blood seeker
 - **For blood donors:** they register using their phone number, blood group, address...
 - **For blood seekers:** they do a quick search where they choose the blood group and the region, then they will get a list of donors with their phone number.
 
-**Here is a working demo:  http://linatabara3-demo.herokuapp.com/**
+**Here is a live version to check it out:  https://linatabara3.com (for Algeria)**
 
 ## Just Arabic and French?
 I created this platform to launch it first in Algeria (My country ❤) that's why I used Arabic and French (they are the most used languages in Algeria).
@@ -39,6 +39,10 @@ I also used Algerian Provinces and Districts.
 Copy .env.example to .env and fill it.
 - Database info.
 - noCaptcha SITEKEY and SECRET, for the reCaptcha in register page, get them from: https://www.google.com/recaptcha/admin.
+
+**Note:** While creating a new site on Google ReCAPTCHA, make sure to choose reCAPTCHA v2 ("I'm not a robot" Checkbox):
+[<img src="https://i.imgur.com/u1ngDam.png">](https://i.imgur.com/u1ngDam.png)
+
 - Mail info, for forgot password feature.
 
 #### Step 3: Run the following commands

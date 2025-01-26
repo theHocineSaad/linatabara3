@@ -15,6 +15,6 @@ return [
     'password' => 'كلمة المرور',
     'forgetPassword' => 'نسيت كلمة المرور ؟',
     'loginBtn' => 'تسجيل الدخول',
-    'notRegistered' => "ليس لديك حساب ؟",
-    'register' => "تسجيل حساب جديد",
+    'notRegistered' => 'ليس لديك حساب ؟',
+    'register' => 'تسجيل حساب جديد',
 ];

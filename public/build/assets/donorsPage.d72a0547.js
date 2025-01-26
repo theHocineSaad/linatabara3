@@ -1,0 +1,1 @@
+const o=document.querySelector(".searchResult"),e=document.getElementsByClassName("noDonorsMsg"),s=document.getElementsByClassName("donorCard");(e.length||s.length)&&window.scrollTo({top:o.offsetTop-100,behavior:"smooth"});

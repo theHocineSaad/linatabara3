@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -12,11 +11,6 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'email',
         'password',
@@ -24,50 +18,80 @@ class User extends Authenticatable
         'phone',
         'wilaya_id',
         'daira_id',
-        'blood_group_id'
+        'blood_group_id',
     ];
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
     protected $hidden = [
         'password',
         'remember_token',
     ];
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
 
-    /**
-     * Get user's blood group.
-     */
     public function bloodGroup()
     {
-        return $this->belongsTo(Blood::class);
+        return $this->belongsTo(BloodGroup::class);
     }
 
-    /**
-     * Get user's wilaya.
-     */
     public function wilaya()
     {
         return $this->belongsTo(Wilaya::class);
     }
 
-    /**
-     * Get user's daira.
-     */
     public function daira()
     {
         return $this->belongsTo(Daira::class);
     }
 
+    public function scopeFilter($query, array $filters)
+    {
+        $query->when(
+            $filters['blood_group'] ?? false,
+            fn ($query, $blood_group) => $query->whereHas(
+                'bloodGroup',
+                fn ($query) => $query->where('id', $blood_group)
+            )
+        );
+        $query->when(
+            $filters['wilaya'] ?? false,
+            fn ($query, $wilaya) => $query->whereHas(
+                'wilaya',
+                fn ($query) => $query->where('id', $wilaya)
+            )
+        );
+        $query->when(
+            $filters['daira'] ?? false,
+            fn ($query, $daira) => $query->whereHas(
+                'daira',
+                fn ($query) => $query->where('id', $daira)
+            )
+        );
+    }
+
+    public static function getOtherDonorsCanDonateTo($bloodGroupId, $wilaya = null, $daira = null)
+    {
+        if (! empty(otherBloodGroupsDonorsOf($bloodGroupId))) {
+            return User::with('bloodGroup')
+                ->whereIn('blood_group_id', otherBloodGroupsDonorsOf($bloodGroupId))
+                ->where('readyToGive', '=', 1)
+                ->when($wilaya, function ($q) use ($wilaya) {
+                    return $q->where('wilaya_id', $wilaya);
+                })
+                ->when($daira, function ($q) use ($daira) {
+                    return $q->where('daira_id', $daira);
+                })
+                ->inRandomOrder()
+                ->paginate(10, ['*'], 'other-donors')
+                ->appends(request()->except('other-donors'));
+        }
+
+        return []; // add abiliy of wilay and daira
+    }
+
+    public static function getAllReadyToGiveDonors()
+    {
+        return User::with('wilaya', 'daira', 'bloodGroup')->where('readyToGive', 1)->inRandomOrder()->paginate(10);
+    }
 }

@@ -53,7 +53,7 @@ return [
         //'ewo'         => ['name' => 'Ewondo',                 'script' => 'Latn', 'native' => 'ewondo', 'regional' => ''],
         //'ee'          => ['name' => 'Ewe',                    'script' => 'Latn', 'native' => 'eʋegbe', 'regional' => ''],
         //'fil'         => ['name' => 'Filipino',               'script' => 'Latn', 'native' => 'Filipino', 'regional' => 'fil_PH'],
-        'fr'          => ['name' => 'French',                 'script' => 'Latn', 'native' => 'Français', 'regional' => 'fr_FR'],
+        'fr' => ['name' => 'French',                 'script' => 'Latn', 'native' => 'Français', 'regional' => 'fr_FR'],
         //'fr-CA'       => ['name' => 'Canadian French',        'script' => 'Latn', 'native' => 'français canadien', 'regional' => 'fr_CA'],
         //'fy'          => ['name' => 'Western Frisian',        'script' => 'Latn', 'native' => 'frysk', 'regional' => 'fy_DE'],
         //'fur'         => ['name' => 'Friulian',               'script' => 'Latn', 'native' => 'furlan', 'regional' => 'fur_IT'],
@@ -236,7 +236,7 @@ return [
         //'he'          => ['name' => 'Hebrew',                 'script' => 'Hebr', 'native' => 'עברית', 'regional' => 'he_IL'],
         //'ug'          => ['name' => 'Uyghur',                 'script' => 'Arab', 'native' => 'ئۇيغۇرچە', 'regional' => 'ug_CN'],
         //'ur'          => ['name' => 'Urdu',                   'script' => 'Arab', 'native' => 'اردو', 'regional' => 'ur_PK'],
-        'ar'          => ['name' => 'Arabic',                 'script' => 'Arab', 'native' => 'العربية', 'regional' => 'ar_AE'],
+        'ar' => ['name' => 'Arabic',                 'script' => 'Arab', 'native' => 'العربية', 'regional' => 'ar_AE'],
         //'uz-Arab'     => ['name' => 'Uzbek (Arabic)',         'script' => 'Arab', 'native' => 'اۉزبېک', 'regional' => ''],
         //'tg-Arab'     => ['name' => 'Tajik (Arabic)',         'script' => 'Arab', 'native' => 'تاجیکی', 'regional' => 'tg_TJ'],
         //'sd'          => ['name' => 'Sindhi',                 'script' => 'Arab', 'native' => 'سنڌي', 'regional' => 'sd_IN'],
@@ -326,7 +326,7 @@ return [
     // If `useAcceptLanguageHeader` is true, then the first time
     // the locale will be determined from browser and redirect to that language.
     // After that, `hideDefaultLocaleInURL` behaves as usual.
-    'hideDefaultLocaleInURL' => false,
+    'hideDefaultLocaleInURL' => true,
 
     // If you want to display the locales in particular order in the language selector you should write the order here.
     //CAUTION: Please consider using the appropriate locale code otherwise it will not work

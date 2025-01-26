@@ -1,41 +1,39 @@
-const queryString = window.location.search;
-
-body = document.body
 
 // form js
-wilayaSelect = document.getElementById('wilayaSelect')
-userWilayaCode = document.getElementById('userWilayaCode')
+const wilayaSelect = document.getElementById('wilayaSelect')
+const userWilayaCode = document.getElementById('userWilayaCode')
 wilayaSelect.value = userWilayaCode.innerText
 
-dairaSelect = document.getElementById('dairaSelect')
-userDairaCode = document.getElementById('userDairaCode')
+const dairaSelect = document.getElementById('dairaSelect')
+const userDairaCode = document.getElementById('userDairaCode')
 
 const [html] = document.getElementsByTagName("html")
 const lang = html.getAttribute("lang");
 
-var xhttp = new XMLHttpRequest();
+const xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var dairas = JSON.parse(this.responseText);
+    if (this.readyState === 4 && this.status === 200) {
+        let dairas = JSON.parse(this.responseText);
 
         dairas.forEach(element => {
-            option = document.createElement("option");
+            var option = document.createElement("option");
             option.value = element.id;
             option.text = lang === 'ar' ? element.arName : element.name;
             dairaSelect.add(option);
             dairaSelect.removeAttribute("disabled");
         });
+
+        dairaSelect.value = userDairaCode.innerText
     }
 };
 xhttp.open("GET", "/api/dairas/" + userWilayaCode.innerText, true);
 xhttp.send();
-dairaSelect.value = userDairaCode.innerText
 
 
-readyToGive = document.getElementById('readyToGive')
-userIsReadyToGive = document.getElementById('userIsReadyToGive')
+const readyToGive = document.getElementById('readyToGive')
+const userIsReadyToGive = document.getElementById('userIsReadyToGive')
 
-var boolUserIsReadyToGive = userIsReadyToGive.innerText == "1"
+var boolUserIsReadyToGive = userIsReadyToGive.innerText === "1"
 readyToGive.checked = boolUserIsReadyToGive
 // form js
 

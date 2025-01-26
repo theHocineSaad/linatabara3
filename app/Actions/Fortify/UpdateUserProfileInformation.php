@@ -32,8 +32,8 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             'daira' => ['required', 'exists:dairas,id'],
         ],
             [
-                'email.unique'=>__('registerPage.alreadyUsedEmail'),
-                'phone.unique'=>__('registerPage.alreadyUsedPhoneNumber'),
+                'email.unique' => __('registerPage.alreadyUsedEmail'),
+                'phone.unique' => __('registerPage.alreadyUsedPhoneNumber'),
             ])->validateWithBag('updateProfileInformation');
 
         if ($input['email'] !== $user->email &&
@@ -44,7 +44,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
                 'email' => $input['email'],
                 'phone' => $input['phone'],
                 'wilaya_id' => $input['wilaya'],
-                'daira_id'=> $input['daira'],
+                'daira_id' => $input['daira'],
                 'readyToGive' => array_key_exists('ready_to_give', $input) ? 1 : 0,
             ])->save();
         }
@@ -59,12 +59,11 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
      */
     protected function updateVerifiedUser($user, array $input)
     {
-
         $user->forceFill([
             'email' => $input['name'],
             'phone' => $input['email'],
             'wilaya_id' => $input['name'],
-            'daira_id'=> $input['name'],
+            'daira_id' => $input['name'],
             'readyToGive' => $input['ready_to_give'] === 'on' ? 1 : 0,
             'email_verified_at' => null,
         ])->save();
