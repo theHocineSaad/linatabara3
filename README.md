@@ -17,7 +17,7 @@ Linatabara3 is "**لنتبرع**" written with latin alphabets, which is an Arab
 
 Linatabara3 is an open source blood donation platform that connects blood seekers with blood donors in their region.
 
-**I used Laravel 9 and Bootstrap.**
+**I used Laravel and Bootstrap.**
 
 ## How it works?
 - **For blood donors:** they register using their phone number, blood group, address...
