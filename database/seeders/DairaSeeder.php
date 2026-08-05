@@ -7,8 +7,6 @@ use Illuminate\Database\Seeder;
 
 class DairaSeeder extends Seeder
 {
-
-
     private $dairas = [
         [
             'id' => 2,
@@ -3509,6 +3507,7 @@ class DairaSeeder extends Seeder
             'arName' => 'الأبيض سيدي الشيخ',
         ],
     ];
+
     public function run()
     {
         array_walk($this->dairas, function ($daira, $key) {
