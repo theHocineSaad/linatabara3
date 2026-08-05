@@ -8,2745 +8,3503 @@ use Illuminate\Database\Seeder;
 class DairaSeeder extends Seeder
 {
     private $dairas = [
-        1 => [
-            'arName' => 'أدرار',
+        [
+            'id' => 2,
+            'wilaya_id' => 1,
             'name' => 'Adrar',
-            'wilaya_id' => '01',
+            'arName' => 'أدرار',
         ],
-        2 => [
-            'arName' => 'أولف',
+        [
+            'id' => 1,
+            'wilaya_id' => 1,
             'name' => 'Aoulef',
-            'wilaya_id' => '01',
+            'arName' => 'أولف',
         ],
-        3 => [
-            'arName' => 'أوقروت',
-            'name' => 'Aougrout',
-            'wilaya_id' => '49',
-        ],
-        5 => [
-            'arName' => 'برج باجي مختار',
-            'name' => 'Bordj Badji Mokhtar',
-            'wilaya_id' => '50',
-        ],
-        7 => [
-            'arName' => 'شروين',
-            'name' => 'Charouine',
-            'wilaya_id' => '49',
-        ],
-        9 => [
-            'arName' => 'فنوغيل',
+        [
+            'id' => 3,
+            'wilaya_id' => 1,
             'name' => 'Fenoughil',
-            'wilaya_id' => '01',
+            'arName' => 'فنوغيل',
         ],
-        10 => [
-            'arName' => 'زاوية كنتة',
-            'name' => 'Zaouiat Kounta',
-            'wilaya_id' => '01',
-        ],
-        11 => [
-            'arName' => 'تنركوك',
-            'name' => 'Tinerkouk',
-            'wilaya_id' => '49',
-        ],
-        15 => [
-            'arName' => 'تيميمون',
-            'name' => 'Timimoun',
-            'wilaya_id' => '49',
-        ],
-        16 => [
-            'arName' => 'رقان',
+        [
+            'id' => 5,
+            'wilaya_id' => 1,
             'name' => 'Reggane',
-            'wilaya_id' => '01',
+            'arName' => 'رقان',
         ],
-        18 => [
-            'arName' => 'تسابيت',
+        [
+            'id' => 6,
+            'wilaya_id' => 1,
             'name' => 'Tsabit',
-            'wilaya_id' => '01',
+            'arName' => 'تسابيت',
         ],
-        29 => [
-            'arName' => 'أبو الحسن',
+        [
+            'id' => 4,
+            'wilaya_id' => 1,
+            'name' => 'Zaouiat Kounta',
+            'arName' => 'زاوية كنتة',
+        ],
+        [
+            'id' => 7,
+            'wilaya_id' => 2,
             'name' => 'Abou El Hassane',
-            'wilaya_id' => '02',
+            'arName' => 'أبو الحسن',
         ],
-        30 => [
-            'arName' => 'عين مران',
+        [
+            'id' => 10,
+            'wilaya_id' => 2,
             'name' => 'Ain Merane',
-            'wilaya_id' => '02',
+            'arName' => 'عين مران',
         ],
-        31 => [
-            'arName' => 'الزبوجة',
-            'name' => 'Zeboudja',
-            'wilaya_id' => '02',
-        ],
-        32 => [
-            'arName' => 'الكريمية',
-            'name' => 'El Karimia',
-            'wilaya_id' => '02',
-        ],
-        33 => [
-            'arName' => 'بني حواء',
+        [
+            'id' => 11,
+            'wilaya_id' => 2,
             'name' => 'Beni Haoua',
-            'wilaya_id' => '02',
+            'arName' => 'بني حواء',
         ],
-        34 => [
-            'arName' => 'وادي الفضة',
-            'name' => 'Oued Fodda',
-            'wilaya_id' => '02',
-        ],
-        35 => [
-            'arName' => 'بوقادير',
+        [
+            'id' => 19,
+            'wilaya_id' => 2,
             'name' => 'Boukadir',
-            'wilaya_id' => '02',
+            'arName' => 'بوقادير',
         ],
-        38 => [
-            'arName' => 'أولاد فارس',
-            'name' => 'Ouled Fares',
-            'wilaya_id' => '02',
-        ],
-        39 => [
-            'arName' => 'الشلف',
+        [
+            'id' => 14,
+            'wilaya_id' => 2,
             'name' => 'Chlef',
-            'wilaya_id' => '02',
+            'arName' => 'الشلف',
         ],
-        40 => [
-            'arName' => 'تاوقريت',
-            'name' => 'Taougrit',
-            'wilaya_id' => '02',
+        [
+            'id' => 16,
+            'wilaya_id' => 2,
+            'name' => 'El Karimia',
+            'arName' => 'الكريمية',
         ],
-        41 => [
-            'arName' => 'أولاد بن عبد القادر',
-            'name' => 'Ouled Ben Abdelkader',
-            'wilaya_id' => '02',
-        ],
-        43 => [
-            'arName' => 'المرسى',
+        [
+            'id' => 13,
+            'wilaya_id' => 2,
             'name' => 'El Marsa',
-            'wilaya_id' => '02',
+            'arName' => 'المرسى',
         ],
-        56 => [
-            'arName' => 'تنس',
+        [
+            'id' => 12,
+            'wilaya_id' => 2,
+            'name' => 'Oued Fodda',
+            'arName' => 'وادي الفضة',
+        ],
+        [
+            'id' => 9,
+            'wilaya_id' => 2,
+            'name' => 'Ouled Ben Abdelkader',
+            'arName' => 'أولاد بن عبد القادر',
+        ],
+        [
+            'id' => 18,
+            'wilaya_id' => 2,
+            'name' => 'Ouled Fares',
+            'arName' => 'أولاد فارس',
+        ],
+        [
+            'id' => 17,
+            'wilaya_id' => 2,
+            'name' => 'Taougrit',
+            'arName' => 'تاوقريت',
+        ],
+        [
+            'id' => 15,
+            'wilaya_id' => 2,
             'name' => 'Tenes',
-            'wilaya_id' => '02',
+            'arName' => 'تنس',
         ],
-        64 => [
-            'arName' => 'أفلو',
+        [
+            'id' => 8,
+            'wilaya_id' => 2,
+            'name' => 'Zeboudja',
+            'arName' => 'الزبوجة',
+        ],
+        [
+            'id' => 24,
+            'wilaya_id' => 3,
             'name' => 'Aflou',
-            'wilaya_id' => '03',
+            'arName' => 'أفلو',
         ],
-        65 => [
-            'arName' => 'عين ماضي',
+        [
+            'id' => 22,
+            'wilaya_id' => 3,
             'name' => 'Ain Madhi',
-            'wilaya_id' => '03',
+            'arName' => 'عين ماضي',
         ],
-        66 => [
-            'arName' => 'قتلة سيدي سعيد',
-            'name' => 'Gueltat Sidi Saad',
-            'wilaya_id' => '03',
-        ],
-        68 => [
-            'arName' => 'قصر الحيران',
-            'name' => 'Ksar El Hirane',
-            'wilaya_id' => '03',
-        ],
-        69 => [
-            'arName' => 'بريدة',
+        [
+            'id' => 21,
+            'wilaya_id' => 3,
             'name' => 'Brida',
-            'wilaya_id' => '03',
+            'arName' => 'بريدة',
         ],
-        70 => [
-            'arName' => 'سيدي مخلوف',
-            'name' => 'Sidi Makhlouf',
-            'wilaya_id' => '03',
-        ],
-        71 => [
-            'arName' => 'الغيشة',
+        [
+            'id' => 23,
+            'wilaya_id' => 3,
             'name' => 'El Ghicha',
-            'wilaya_id' => '03',
+            'arName' => 'الغيشة',
         ],
-        75 => [
-            'arName' => 'حاسي الرمل',
+        [
+            'id' => 20,
+            'wilaya_id' => 3,
+            'name' => 'Gueltat Sidi Saad',
+            'arName' => 'قتلة سيدي سعيد',
+        ],
+        [
+            'id' => 29,
+            'wilaya_id' => 3,
             'name' => 'Hassi R\'mel',
-            'wilaya_id' => '03',
+            'arName' => 'حاسي الرمل',
         ],
-        79 => [
-            'arName' => 'الأغواط',
+        [
+            'id' => 27,
+            'wilaya_id' => 3,
+            'name' => 'Ksar El Hirane',
+            'arName' => 'قصر الحيران',
+        ],
+        [
+            'id' => 26,
+            'wilaya_id' => 3,
             'name' => 'Laghouat',
-            'wilaya_id' => '03',
+            'arName' => 'الأغواط',
         ],
-        80 => [
-            'arName' => 'وادي مرة',
+        [
+            'id' => 25,
+            'wilaya_id' => 3,
             'name' => 'Oued Morra',
-            'wilaya_id' => '03',
+            'arName' => 'وادي مرة',
         ],
-        88 => [
-            'arName' => 'عين ببوش',
+        [
+            'id' => 28,
+            'wilaya_id' => 3,
+            'name' => 'Sidi Makhlouf',
+            'arName' => 'سيدي مخلوف',
+        ],
+        [
+            'id' => 36,
+            'wilaya_id' => 4,
             'name' => 'Ain Babouche',
-            'wilaya_id' => '04',
+            'arName' => 'عين ببوش',
         ],
-        89 => [
-            'arName' => 'عين البيضاء',
+        [
+            'id' => 37,
+            'wilaya_id' => 4,
             'name' => 'Ain Beida',
-            'wilaya_id' => '04',
+            'arName' => 'عين البيضاء',
         ],
-        91 => [
-            'arName' => 'عين فكرون',
+        [
+            'id' => 31,
+            'wilaya_id' => 4,
             'name' => 'Ain Fekroun',
-            'wilaya_id' => '04',
+            'arName' => 'عين فكرون',
         ],
-        92 => [
-            'arName' => 'عين كرشة',
+        [
+            'id' => 41,
+            'wilaya_id' => 4,
             'name' => 'Ain Kercha',
-            'wilaya_id' => '04',
+            'arName' => 'عين كرشة',
         ],
-        93 => [
-            'arName' => 'عين مليلة',
+        [
+            'id' => 38,
+            'wilaya_id' => 4,
             'name' => 'Ain M\'lila',
-            'wilaya_id' => '04',
+            'arName' => 'عين مليلة',
         ],
-        94 => [
-            'arName' => 'أم البواقي',
-            'name' => 'Oum El Bouaghi',
-            'wilaya_id' => '04',
-        ],
-        95 => [
-            'arName' => 'مسكيانة',
-            'name' => 'Meskiana',
-            'wilaya_id' => '04',
-        ],
-        97 => [
-            'arName' => 'سوق نعمان',
-            'name' => 'Souk Naamane',
-            'wilaya_id' => '04',
-        ],
-        98 => [
-            'arName' => 'الضلعة',
+        [
+            'id' => 40,
+            'wilaya_id' => 4,
             'name' => 'Dhalaa',
-            'wilaya_id' => '04',
+            'arName' => 'الضلعة',
         ],
-        99 => [
-            'arName' => 'سيقوس',
-            'name' => 'Sigus',
-            'wilaya_id' => '04',
-        ],
-        104 => [
-            'arName' => 'فكيرينة',
+        [
+            'id' => 30,
+            'wilaya_id' => 4,
             'name' => 'F\'kirina',
-            'wilaya_id' => '04',
+            'arName' => 'فكيرينة',
         ],
-        106 => [
-            'arName' => 'قصر الصباحي',
+        [
+            'id' => 33,
+            'wilaya_id' => 4,
             'name' => 'Ksar Sbahi',
-            'wilaya_id' => '04',
+            'arName' => 'قصر الصباحي',
         ],
-        117 => [
-            'arName' => 'عين جاسر',
+        [
+            'id' => 32,
+            'wilaya_id' => 4,
+            'name' => 'Meskiana',
+            'arName' => 'مسكيانة',
+        ],
+        [
+            'id' => 35,
+            'wilaya_id' => 4,
+            'name' => 'Oum El Bouaghi',
+            'arName' => 'أم البواقي',
+        ],
+        [
+            'id' => 39,
+            'wilaya_id' => 4,
+            'name' => 'Sigus',
+            'arName' => 'سيقوس',
+        ],
+        [
+            'id' => 34,
+            'wilaya_id' => 4,
+            'name' => 'Souk Naamane',
+            'arName' => 'سوق نعمان',
+        ],
+        [
+            'id' => 55,
+            'wilaya_id' => 5,
             'name' => 'Ain Djasser',
-            'wilaya_id' => '05',
+            'arName' => 'عين جاسر',
         ],
-        118 => [
-            'arName' => 'عين التوتة',
+        [
+            'id' => 42,
+            'wilaya_id' => 5,
             'name' => 'Ain Touta',
-            'wilaya_id' => '05',
+            'arName' => 'عين التوتة',
         ],
-        119 => [
-            'arName' => 'المعذر',
-            'name' => 'El Madher',
-            'wilaya_id' => '05',
-        ],
-        120 => [
-            'arName' => 'أريس',
+        [
+            'id' => 54,
+            'wilaya_id' => 5,
             'name' => 'Arris',
-            'wilaya_id' => '05',
+            'arName' => 'أريس',
         ],
-        121 => [
-            'arName' => 'الجزار',
-            'name' => 'Djezzar',
-            'wilaya_id' => '05',
-        ],
-        122 => [
-            'arName' => 'بريكة',
+        [
+            'id' => 60,
+            'wilaya_id' => 5,
             'name' => 'Barika',
-            'wilaya_id' => '05',
+            'arName' => 'بريكة',
         ],
-        123 => [
-            'arName' => 'باتنة',
+        [
+            'id' => 47,
+            'wilaya_id' => 5,
             'name' => 'Batna',
-            'wilaya_id' => '05',
+            'arName' => 'باتنة',
         ],
-        126 => [
-            'arName' => 'الشمرة',
-            'name' => 'Chemora',
-            'wilaya_id' => '05',
-        ],
-        127 => [
-            'arName' => 'نقاوس',
-            'name' => 'N\'gaous',
-            'wilaya_id' => '05',
-        ],
-        129 => [
-            'arName' => 'بوزينة',
+        [
+            'id' => 58,
+            'wilaya_id' => 5,
             'name' => 'Bouzina',
-            'wilaya_id' => '05',
+            'arName' => 'بوزينة',
         ],
-        131 => [
-            'arName' => 'ثنية العابد',
-            'name' => 'Theniet El Abed',
-            'wilaya_id' => '05',
+        [
+            'id' => 59,
+            'wilaya_id' => 5,
+            'name' => 'Chemora',
+            'arName' => 'الشمرة',
         ],
-        137 => [
-            'arName' => 'إشمول',
+        [
+            'id' => 61,
+            'wilaya_id' => 5,
+            'name' => 'Djezzar',
+            'arName' => 'الجزار',
+        ],
+        [
+            'id' => 51,
+            'wilaya_id' => 5,
+            'name' => 'El Madher',
+            'arName' => 'المعذر',
+        ],
+        [
+            'id' => 57,
+            'wilaya_id' => 5,
             'name' => 'Ichemoul',
-            'wilaya_id' => '05',
+            'arName' => 'إشمول',
         ],
-        138 => [
-            'arName' => 'تكوت',
-            'name' => 'Tkout',
-            'wilaya_id' => '05',
-        ],
-        139 => [
-            'arName' => 'رأس العيون',
-            'name' => 'Ras El Aioun',
-            'wilaya_id' => '05',
-        ],
-        141 => [
-            'arName' => 'مروانة',
-            'name' => 'Merouana',
-            'wilaya_id' => '05',
-        ],
-        147 => [
-            'arName' => 'سريانة',
-            'name' => 'Seriana',
-            'wilaya_id' => '05',
-        ],
-        148 => [
-            'arName' => 'أولاد سي سليمان',
-            'name' => 'Ouled Si Slimane',
-            'wilaya_id' => '05',
-        ],
-        151 => [
-            'arName' => 'منعة',
+        [
+            'id' => 50,
+            'wilaya_id' => 5,
             'name' => 'Menaa',
-            'wilaya_id' => '05',
+            'arName' => 'منعة',
         ],
-        159 => [
-            'arName' => 'تيمقاد',
-            'name' => 'Timgad',
-            'wilaya_id' => '05',
+        [
+            'id' => 48,
+            'wilaya_id' => 5,
+            'name' => 'Merouana',
+            'arName' => 'مروانة',
         ],
-        162 => [
-            'arName' => 'تازولت',
-            'name' => 'Tazoult',
-            'wilaya_id' => '05',
+        [
+            'id' => 53,
+            'wilaya_id' => 5,
+            'name' => 'N\'gaous',
+            'arName' => 'نقاوس',
         ],
-        166 => [
-            'arName' => 'سقانة',
+        [
+            'id' => 45,
+            'wilaya_id' => 5,
+            'name' => 'Ouled Si Slimane',
+            'arName' => 'أولاد سي سليمان',
+        ],
+        [
+            'id' => 43,
+            'wilaya_id' => 5,
+            'name' => 'Ras El Aioun',
+            'arName' => 'رأس العيون',
+        ],
+        [
+            'id' => 56,
+            'wilaya_id' => 5,
             'name' => 'Seggana',
-            'wilaya_id' => '05',
+            'arName' => 'سقانة',
         ],
-        178 => [
-            'arName' => 'أدكار',
+        [
+            'id' => 49,
+            'wilaya_id' => 5,
+            'name' => 'Seriana',
+            'arName' => 'سريانة',
+        ],
+        [
+            'id' => 52,
+            'wilaya_id' => 5,
+            'name' => 'Tazoult',
+            'arName' => 'تازولت',
+        ],
+        [
+            'id' => 46,
+            'wilaya_id' => 5,
+            'name' => 'Theniet El Abed',
+            'arName' => 'ثنية العابد',
+        ],
+        [
+            'id' => 44,
+            'wilaya_id' => 5,
+            'name' => 'Timgad',
+            'arName' => 'تيمقاد',
+        ],
+        [
+            'id' => 62,
+            'wilaya_id' => 5,
+            'name' => 'Tkout',
+            'arName' => 'تكوت',
+        ],
+        [
+            'id' => 76,
+            'wilaya_id' => 6,
             'name' => 'Adekar',
-            'wilaya_id' => '06',
+            'arName' => 'أدكار',
         ],
-        179 => [
-            'arName' => 'إغيل علي',
-            'name' => 'Ighil Ali',
-            'wilaya_id' => '06',
-        ],
-        180 => [
-            'arName' => 'درقينة',
-            'name' => 'Darguina',
-            'wilaya_id' => '06',
-        ],
-        181 => [
-            'arName' => 'أقبو',
+        [
+            'id' => 77,
+            'wilaya_id' => 6,
             'name' => 'Akbou',
-            'wilaya_id' => '06',
+            'arName' => 'أقبو',
         ],
-        182 => [
-            'arName' => 'شميني',
-            'name' => 'Chemini',
-            'wilaya_id' => '06',
-        ],
-        183 => [
-            'arName' => 'صدوق',
-            'name' => 'Seddouk',
-            'wilaya_id' => '06',
-        ],
-        184 => [
-            'arName' => 'أميزور',
+        [
+            'id' => 69,
+            'wilaya_id' => 6,
             'name' => 'Amizour',
-            'wilaya_id' => '06',
+            'arName' => 'أميزور',
         ],
-        185 => [
-            'arName' => 'أوقاس',
+        [
+            'id' => 75,
+            'wilaya_id' => 6,
             'name' => 'Aokas',
-            'wilaya_id' => '06',
+            'arName' => 'أوقاس',
         ],
-        186 => [
-            'arName' => 'برباشة',
+        [
+            'id' => 64,
+            'wilaya_id' => 6,
             'name' => 'Barbacha',
-            'wilaya_id' => '06',
+            'arName' => 'برباشة',
         ],
-        187 => [
-            'arName' => 'بجاية',
+        [
+            'id' => 67,
+            'wilaya_id' => 6,
             'name' => 'Bejaia',
-            'wilaya_id' => '06',
+            'arName' => 'بجاية',
         ],
-        190 => [
-            'arName' => 'تازملت',
-            'name' => 'Tazmalt',
-            'wilaya_id' => '06',
-        ],
-        191 => [
-            'arName' => 'بني معوش',
+        [
+            'id' => 68,
+            'wilaya_id' => 6,
             'name' => 'Beni Maouche',
-            'wilaya_id' => '06',
+            'arName' => 'بني معوش',
         ],
-        194 => [
-            'arName' => 'تيشي',
-            'name' => 'Tichy',
-            'wilaya_id' => '06',
+        [
+            'id' => 80,
+            'wilaya_id' => 6,
+            'name' => 'Chemini',
+            'arName' => 'شميني',
         ],
-        198 => [
-            'arName' => 'خراطة',
-            'name' => 'Kherrata',
-            'wilaya_id' => '06',
+        [
+            'id' => 74,
+            'wilaya_id' => 6,
+            'name' => 'Darguina',
+            'arName' => 'درقينة',
         ],
-        199 => [
-            'arName' => 'سيدي عيش',
-            'name' => 'Sidi Aich',
-            'wilaya_id' => '06',
-        ],
-        200 => [
-            'arName' => 'القصر',
+        [
+            'id' => 65,
+            'wilaya_id' => 6,
             'name' => 'El Kseur',
-            'wilaya_id' => '06',
+            'arName' => 'القصر',
         ],
-        203 => [
-            'arName' => 'إفري أوزلاقن',
+        [
+            'id' => 81,
+            'wilaya_id' => 6,
             'name' => 'Ifri Ouzellaguene',
-            'wilaya_id' => '06',
+            'arName' => 'إفري أوزلاقن',
         ],
-        209 => [
-            'arName' => 'سوق الإثنين',
+        [
+            'id' => 73,
+            'wilaya_id' => 6,
+            'name' => 'Ighil Ali',
+            'arName' => 'إغيل علي',
+        ],
+        [
+            'id' => 66,
+            'wilaya_id' => 6,
+            'name' => 'Kherrata',
+            'arName' => 'خراطة',
+        ],
+        [
+            'id' => 78,
+            'wilaya_id' => 6,
+            'name' => 'Seddouk',
+            'arName' => 'صدوق',
+        ],
+        [
+            'id' => 63,
+            'wilaya_id' => 6,
+            'name' => 'Sidi Aich',
+            'arName' => 'سيدي عيش',
+        ],
+        [
+            'id' => 71,
+            'wilaya_id' => 6,
             'name' => 'Souk El Tenine',
-            'wilaya_id' => '06',
+            'arName' => 'سوق الإثنين',
         ],
-        226 => [
-            'arName' => 'تيمزريت',
+        [
+            'id' => 79,
+            'wilaya_id' => 6,
+            'name' => 'Tazmalt',
+            'arName' => 'تازملت',
+        ],
+        [
+            'id' => 72,
+            'wilaya_id' => 6,
+            'name' => 'Tichy',
+            'arName' => 'تيشي',
+        ],
+        [
+            'id' => 70,
+            'wilaya_id' => 6,
             'name' => 'Timezrit',
-            'wilaya_id' => '06',
+            'arName' => 'تيمزريت',
         ],
-        230 => [
-            'arName' => 'سيدي عقبة',
-            'name' => 'Sidi Okba',
-            'wilaya_id' => '07',
-        ],
-        231 => [
-            'arName' => 'القنطرة',
-            'name' => 'El Kantara',
-            'wilaya_id' => '07',
-        ],
-        232 => [
-            'arName' => 'سيدي  خالد',
-            'name' => 'Sidi Khaled',
-            'wilaya_id' => '51',
-        ],
-        233 => [
-            'arName' => 'بسكرة',
+        [
+            'id' => 88,
+            'wilaya_id' => 7,
             'name' => 'Biskra',
-            'wilaya_id' => '07',
+            'arName' => 'بسكرة',
         ],
-        234 => [
-            'arName' => 'طولقة',
-            'name' => 'Tolga',
-            'wilaya_id' => '07',
-        ],
-        236 => [
-            'arName' => 'جمورة',
+        [
+            'id' => 85,
+            'wilaya_id' => 7,
             'name' => 'Djemorah',
-            'wilaya_id' => '07',
+            'arName' => 'جمورة',
         ],
-        237 => [
-            'arName' => 'أولاد جلال',
-            'name' => 'Ouled Djellal',
-            'wilaya_id' => '51',
+        [
+            'id' => 87,
+            'wilaya_id' => 7,
+            'name' => 'El Kantara',
+            'arName' => 'القنطرة',
         ],
-        241 => [
-            'arName' => 'زريبة الوادي',
-            'name' => 'Zeribet El Oued',
-            'wilaya_id' => '07',
-        ],
-        242 => [
-            'arName' => 'فوغالة',
-            'name' => 'Foughala',
-            'wilaya_id' => '07',
-        ],
-        246 => [
-            'arName' => 'الوطاية',
+        [
+            'id' => 86,
+            'wilaya_id' => 7,
             'name' => 'El Outaya',
-            'wilaya_id' => '07',
+            'arName' => 'الوطاية',
         ],
-        250 => [
-            'arName' => 'أورلال',
-            'name' => 'Ourlal',
-            'wilaya_id' => '07',
+        [
+            'id' => 89,
+            'wilaya_id' => 7,
+            'name' => 'Foughala',
+            'arName' => 'فوغالة',
         ],
-        251 => [
-            'arName' => 'مشونش',
+        [
+            'id' => 91,
+            'wilaya_id' => 7,
             'name' => 'Mechouneche',
-            'wilaya_id' => '07',
+            'arName' => 'مشونش',
         ],
-        263 => [
-            'arName' => 'العبادلة',
+        [
+            'id' => 84,
+            'wilaya_id' => 7,
+            'name' => 'Ourlal',
+            'arName' => 'أورلال',
+        ],
+        [
+            'id' => 90,
+            'wilaya_id' => 7,
+            'name' => 'Sidi Okba',
+            'arName' => 'سيدي عقبة',
+        ],
+        [
+            'id' => 83,
+            'wilaya_id' => 7,
+            'name' => 'Tolga',
+            'arName' => 'طولقة',
+        ],
+        [
+            'id' => 82,
+            'wilaya_id' => 7,
+            'name' => 'Zeribet El Oued',
+            'arName' => 'زريبة الوادي',
+        ],
+        [
+            'id' => 96,
+            'wilaya_id' => 8,
             'name' => 'Abadla',
-            'wilaya_id' => '08',
+            'arName' => 'العبادلة',
         ],
-        264 => [
-            'arName' => 'بشار',
+        [
+            'id' => 92,
+            'wilaya_id' => 8,
             'name' => 'Bechar',
-            'wilaya_id' => '08',
+            'arName' => 'بشار',
         ],
-        265 => [
-            'arName' => 'بني عباس',
-            'name' => 'Beni Abbes',
-            'wilaya_id' => '52',
-        ],
-        266 => [
-            'arName' => 'كرزاز',
-            'name' => 'Kerzaz',
-            'wilaya_id' => '52',
-        ],
-        267 => [
-            'arName' => 'بني ونيف',
+        [
+            'id' => 97,
+            'wilaya_id' => 8,
             'name' => 'Beni Ounif',
-            'wilaya_id' => '08',
+            'arName' => 'بني ونيف',
         ],
-        268 => [
-            'arName' => 'لحمر',
-            'name' => 'Lahmar',
-            'wilaya_id' => '08',
-        ],
-        269 => [
-            'arName' => 'الواتة',
-            'name' => 'El Ouata',
-            'wilaya_id' => '52',
-        ],
-        271 => [
-            'arName' => 'إقلي',
-            'name' => 'Igli',
-            'wilaya_id' => '52',
-        ],
-        272 => [
-            'arName' => 'القنادسة',
+        [
+            'id' => 94,
+            'wilaya_id' => 8,
             'name' => 'Kenadsa',
-            'wilaya_id' => '08',
+            'arName' => 'القنادسة',
         ],
-        274 => [
-            'arName' => 'أولاد خضير',
-            'name' => 'Ouled Khodeir',
-            'wilaya_id' => '52',
+        [
+            'id' => 93,
+            'wilaya_id' => 8,
+            'name' => 'Lahmar',
+            'arName' => 'لحمر',
         ],
-        280 => [
-            'arName' => 'تبلبالة',
+        [
+            'id' => 98,
+            'wilaya_id' => 8,
             'name' => 'Tabelbala',
-            'wilaya_id' => '08',
+            'arName' => 'تبلبالة',
         ],
-        281 => [
-            'arName' => 'تاغيت',
+        [
+            'id' => 95,
+            'wilaya_id' => 8,
             'name' => 'Taghit',
-            'wilaya_id' => '08',
+            'arName' => 'تاغيت',
         ],
-        284 => [
-            'arName' => 'موزاية',
-            'name' => 'Mouzaia',
-            'wilaya_id' => '09',
-        ],
-        285 => [
-            'arName' => 'أولاد يعيش',
-            'name' => 'Ouled Yaich',
-            'wilaya_id' => '09',
-        ],
-        286 => [
-            'arName' => 'وادي العلايق',
-            'name' => 'Oued El Alleug',
-            'wilaya_id' => '09',
-        ],
-        288 => [
-            'arName' => 'البليدة',
+        [
+            'id' => 108,
+            'wilaya_id' => 9,
             'name' => 'Blida',
-            'wilaya_id' => '09',
+            'arName' => 'البليدة',
         ],
-        290 => [
-            'arName' => 'بوفاريك',
+        [
+            'id' => 103,
+            'wilaya_id' => 9,
             'name' => 'Boufarik',
-            'wilaya_id' => '09',
+            'arName' => 'بوفاريك',
         ],
-        291 => [
-            'arName' => 'بوقرة',
+        [
+            'id' => 100,
+            'wilaya_id' => 9,
             'name' => 'Bougara',
-            'wilaya_id' => '09',
+            'arName' => 'بوقرة',
         ],
-        292 => [
-            'arName' => 'بوعينان',
+        [
+            'id' => 107,
+            'wilaya_id' => 9,
             'name' => 'Bouinan',
-            'wilaya_id' => '09',
+            'arName' => 'بوعينان',
         ],
-        296 => [
-            'arName' => 'مفتاح',
-            'name' => 'Meftah',
-            'wilaya_id' => '09',
-        ],
-        297 => [
-            'arName' => 'العفرون',
+        [
+            'id' => 105,
+            'wilaya_id' => 9,
             'name' => 'El Affroun',
-            'wilaya_id' => '09',
+            'arName' => 'العفرون',
         ],
-        300 => [
-            'arName' => 'الأربعاء',
+        [
+            'id' => 102,
+            'wilaya_id' => 9,
             'name' => 'Larbaa',
-            'wilaya_id' => '09',
+            'arName' => 'الأربعاء',
         ],
-        309 => [
-            'arName' => 'مشد الله',
-            'name' => 'M\'chedallah',
-            'wilaya_id' => '10',
+        [
+            'id' => 104,
+            'wilaya_id' => 9,
+            'name' => 'Meftah',
+            'arName' => 'مفتاح',
         ],
-        310 => [
-            'arName' => 'بشلول',
-            'name' => 'Bechloul',
-            'wilaya_id' => '10',
+        [
+            'id' => 101,
+            'wilaya_id' => 9,
+            'name' => 'Mouzaia',
+            'arName' => 'موزاية',
         ],
-        311 => [
-            'arName' => 'عين بسام',
+        [
+            'id' => 106,
+            'wilaya_id' => 9,
+            'name' => 'Oued El Alleug',
+            'arName' => 'وادي العلايق',
+        ],
+        [
+            'id' => 99,
+            'wilaya_id' => 9,
+            'name' => 'Ouled Yaich',
+            'arName' => 'أولاد يعيش',
+        ],
+        [
+            'id' => 109,
+            'wilaya_id' => 10,
             'name' => 'Ain Bessem',
-            'wilaya_id' => '10',
+            'arName' => 'عين بسام',
         ],
-        313 => [
-            'arName' => 'البويرة',
-            'name' => 'Bouira',
-            'wilaya_id' => '10',
+        [
+            'id' => 112,
+            'wilaya_id' => 10,
+            'name' => 'Bechloul',
+            'arName' => 'بشلول',
         ],
-        316 => [
-            'arName' => 'القادرية',
-            'name' => 'Kadiria',
-            'wilaya_id' => '10',
-        ],
-        318 => [
-            'arName' => 'بئر غبالو',
+        [
+            'id' => 114,
+            'wilaya_id' => 10,
             'name' => 'Bir Ghbalou',
-            'wilaya_id' => '10',
+            'arName' => 'بئر غبالو',
         ],
-        319 => [
-            'arName' => 'برج أوخريص',
+        [
+            'id' => 110,
+            'wilaya_id' => 10,
             'name' => 'Bordj Okhriss',
-            'wilaya_id' => '10',
+            'arName' => 'برج أوخريص',
         ],
-        320 => [
-            'arName' => 'الأخضرية',
-            'name' => 'Lakhdaria',
-            'wilaya_id' => '10',
+        [
+            'id' => 115,
+            'wilaya_id' => 10,
+            'name' => 'Bouira',
+            'arName' => 'البويرة',
         ],
-        324 => [
-            'arName' => 'سور الغزلان',
-            'name' => 'Sour El Ghozlane',
-            'wilaya_id' => '10',
-        ],
-        329 => [
-            'arName' => 'الهاشمية',
+        [
+            'id' => 118,
+            'wilaya_id' => 10,
             'name' => 'El Hachimia',
-            'wilaya_id' => '10',
+            'arName' => 'الهاشمية',
         ],
-        332 => [
-            'arName' => 'سوق الخميس',
-            'name' => 'Souk El Khemis',
-            'wilaya_id' => '10',
-        ],
-        335 => [
-            'arName' => 'الحيزر',
+        [
+            'id' => 119,
+            'wilaya_id' => 10,
             'name' => 'Haizer',
-            'wilaya_id' => '10',
+            'arName' => 'الحيزر',
         ],
-        354 => [
-            'arName' => 'سيلت',
+        [
+            'id' => 117,
+            'wilaya_id' => 10,
+            'name' => 'Kadiria',
+            'arName' => 'القادرية',
+        ],
+        [
+            'id' => 120,
+            'wilaya_id' => 10,
+            'name' => 'Lakhdaria',
+            'arName' => 'الأخضرية',
+        ],
+        [
+            'id' => 113,
+            'wilaya_id' => 10,
+            'name' => 'M\'chedallah',
+            'arName' => 'مشد الله',
+        ],
+        [
+            'id' => 116,
+            'wilaya_id' => 10,
+            'name' => 'Souk El Khemis',
+            'arName' => 'سوق الخميس',
+        ],
+        [
+            'id' => 111,
+            'wilaya_id' => 10,
+            'name' => 'Sour El Ghozlane',
+            'arName' => 'سور الغزلان',
+        ],
+        [
+            'id' => 122,
+            'wilaya_id' => 11,
             'name' => 'Silet',
-            'wilaya_id' => '11',
+            'arName' => 'سيلت',
         ],
-        355 => [
-            'arName' => 'تمنراست',
+        [
+            'id' => 123,
+            'wilaya_id' => 11,
             'name' => 'Tamanrasset',
-            'wilaya_id' => '11',
+            'arName' => 'تمنراست',
         ],
-        356 => [
-            'arName' => 'عين قزام',
-            'name' => 'In Guezzam',
-            'wilaya_id' => '54',
-        ],
-        357 => [
-            'arName' => 'عين صالح',
-            'name' => 'In Salah',
-            'wilaya_id' => '53',
-        ],
-        359 => [
-            'arName' => 'تاظروك',
+        [
+            'id' => 121,
+            'wilaya_id' => 11,
             'name' => 'Tazrouk',
-            'wilaya_id' => '11',
+            'arName' => 'تاظروك',
         ],
-        360 => [
-            'arName' => 'إينغر',
-            'name' => 'In Ghar',
-            'wilaya_id' => '53',
-        ],
-        363 => [
-            'arName' => 'تين زواتين',
-            'name' => 'Tin Zouatine',
-            'wilaya_id' => '54',
-        ],
-        364 => [
-            'arName' => 'الونزة',
-            'name' => 'Ouenza',
-            'wilaya_id' => '12',
-        ],
-        365 => [
-            'arName' => 'العقلة',
-            'name' => 'El Ogla',
-            'wilaya_id' => '12',
-        ],
-        366 => [
-            'arName' => 'الكويف',
-            'name' => 'El Kouif',
-            'wilaya_id' => '12',
-        ],
-        367 => [
-            'arName' => 'مرسط',
-            'name' => 'Morsott',
-            'wilaya_id' => '12',
-        ],
-        368 => [
-            'arName' => 'بئر مقدم',
-            'name' => 'Bir Mokadem',
-            'wilaya_id' => '12',
-        ],
-        369 => [
-            'arName' => 'بئر العاتر',
+        [
+            'id' => 134,
+            'wilaya_id' => 12,
             'name' => 'Bir El Ater',
-            'wilaya_id' => '12',
+            'arName' => 'بئر العاتر',
         ],
-        370 => [
-            'arName' => 'العوينات',
-            'name' => 'El Aouinet',
-            'wilaya_id' => '12',
+        [
+            'id' => 127,
+            'wilaya_id' => 12,
+            'name' => 'Bir Mokadem',
+            'arName' => 'بئر مقدم',
         ],
-        372 => [
-            'arName' => 'الشريعة',
+        [
+            'id' => 133,
+            'wilaya_id' => 12,
             'name' => 'Cheria',
-            'wilaya_id' => '12',
+            'arName' => 'الشريعة',
         ],
-        374 => [
-            'arName' => 'الماء الابيض',
+        [
+            'id' => 125,
+            'wilaya_id' => 12,
+            'name' => 'El Aouinet',
+            'arName' => 'العوينات',
+        ],
+        [
+            'id' => 130,
+            'wilaya_id' => 12,
+            'name' => 'El Kouif',
+            'arName' => 'الكويف',
+        ],
+        [
+            'id' => 124,
+            'wilaya_id' => 12,
             'name' => 'El Malabiod',
-            'wilaya_id' => '12',
+            'arName' => 'الماء الابيض',
         ],
-        381 => [
-            'arName' => 'نقرين',
+        [
+            'id' => 132,
+            'wilaya_id' => 12,
+            'name' => 'El Ogla',
+            'arName' => 'العقلة',
+        ],
+        [
+            'id' => 128,
+            'wilaya_id' => 12,
+            'name' => 'Morsott',
+            'arName' => 'مرسط',
+        ],
+        [
+            'id' => 126,
+            'wilaya_id' => 12,
             'name' => 'Negrine',
-            'wilaya_id' => '12',
+            'arName' => 'نقرين',
         ],
-        387 => [
-            'arName' => 'أم علي',
+        [
+            'id' => 131,
+            'wilaya_id' => 12,
+            'name' => 'Ouenza',
+            'arName' => 'الونزة',
+        ],
+        [
+            'id' => 129,
+            'wilaya_id' => 12,
             'name' => 'Oum Ali',
-            'wilaya_id' => '12',
+            'arName' => 'أم علي',
         ],
-        390 => [
-            'arName' => 'تبسة',
+        [
+            'id' => 135,
+            'wilaya_id' => 12,
             'name' => 'Tebessa',
-            'wilaya_id' => '12',
+            'arName' => 'تبسة',
         ],
-        392 => [
-            'arName' => 'فلاوسن',
-            'name' => 'Fellaoucene',
-            'wilaya_id' => '13',
-        ],
-        393 => [
-            'arName' => 'شتوان',
-            'name' => 'Chetouane',
-            'wilaya_id' => '13',
-        ],
-        394 => [
-            'arName' => 'منصورة',
-            'name' => 'Mansourah',
-            'wilaya_id' => '13',
-        ],
-        396 => [
-            'arName' => 'عين تالوت',
+        [
+            'id' => 151,
+            'wilaya_id' => 13,
             'name' => 'Ain Tellout',
-            'wilaya_id' => '13',
+            'arName' => 'عين تالوت',
         ],
-        398 => [
-            'arName' => 'الرمشي',
-            'name' => 'Remchi',
-            'wilaya_id' => '13',
-        ],
-        400 => [
-            'arName' => 'باب العسة',
+        [
+            'id' => 136,
+            'wilaya_id' => 13,
             'name' => 'Bab El Assa',
-            'wilaya_id' => '13',
+            'arName' => 'باب العسة',
         ],
-        401 => [
-            'arName' => 'بني سنوس',
-            'name' => 'Beni Snous',
-            'wilaya_id' => '13',
-        ],
-        402 => [
-            'arName' => 'بني بوسعيد',
+        [
+            'id' => 143,
+            'wilaya_id' => 13,
             'name' => 'Beni Boussaid',
-            'wilaya_id' => '13',
+            'arName' => 'بني بوسعيد',
         ],
-        403 => [
-            'arName' => 'هنين',
-            'name' => 'Honnaine',
-            'wilaya_id' => '13',
+        [
+            'id' => 155,
+            'wilaya_id' => 13,
+            'name' => 'Beni Snous',
+            'arName' => 'بني سنوس',
         ],
-        406 => [
-            'arName' => 'أولاد ميمون',
-            'name' => 'Ouled Mimoun',
-            'wilaya_id' => '13',
-        ],
-        408 => [
-            'arName' => 'بن سكران',
+        [
+            'id' => 148,
+            'wilaya_id' => 13,
             'name' => 'Bensekrane',
-            'wilaya_id' => '13',
+            'arName' => 'بن سكران',
         ],
-        409 => [
-            'arName' => 'صبرة',
-            'name' => 'Sabra',
-            'wilaya_id' => '13',
+        [
+            'id' => 138,
+            'wilaya_id' => 13,
+            'name' => 'Chetouane',
+            'arName' => 'شتوان',
         ],
-        410 => [
-            'arName' => 'سيدي الجيلالي',
-            'name' => 'Sidi Djillali',
-            'wilaya_id' => '13',
+        [
+            'id' => 149,
+            'wilaya_id' => 13,
+            'name' => 'Fellaoucene',
+            'arName' => 'فلاوسن',
         ],
-        412 => [
-            'arName' => 'الغزوات',
+        [
+            'id' => 153,
+            'wilaya_id' => 13,
             'name' => 'Ghazaouet',
-            'wilaya_id' => '13',
+            'arName' => 'الغزوات',
         ],
-        413 => [
-            'arName' => 'ندرومة',
-            'name' => 'Nedroma',
-            'wilaya_id' => '13',
-        ],
-        414 => [
-            'arName' => 'سبدو',
-            'name' => 'Sebdou',
-            'wilaya_id' => '13',
-        ],
-        420 => [
-            'arName' => 'مغنية',
-            'name' => 'Maghnia',
-            'wilaya_id' => '13',
-        ],
-        421 => [
-            'arName' => 'الحناية',
+        [
+            'id' => 147,
+            'wilaya_id' => 13,
             'name' => 'Hennaya',
-            'wilaya_id' => '13',
+            'arName' => 'الحناية',
         ],
-        425 => [
-            'arName' => 'مرسى بن مهيدي',
+        [
+            'id' => 139,
+            'wilaya_id' => 13,
+            'name' => 'Honnaine',
+            'arName' => 'هنين',
+        ],
+        [
+            'id' => 146,
+            'wilaya_id' => 13,
+            'name' => 'Maghnia',
+            'arName' => 'مغنية',
+        ],
+        [
+            'id' => 137,
+            'wilaya_id' => 13,
+            'name' => 'Mansourah',
+            'arName' => 'منصورة',
+        ],
+        [
+            'id' => 142,
+            'wilaya_id' => 13,
             'name' => 'Marsa Ben Mehdi',
-            'wilaya_id' => '13',
+            'arName' => 'مرسى بن مهيدي',
         ],
-        443 => [
-            'arName' => 'تلمسان',
+        [
+            'id' => 141,
+            'wilaya_id' => 13,
+            'name' => 'Nedroma',
+            'arName' => 'ندرومة',
+        ],
+        [
+            'id' => 154,
+            'wilaya_id' => 13,
+            'name' => 'Ouled Mimoun',
+            'arName' => 'أولاد ميمون',
+        ],
+        [
+            'id' => 152,
+            'wilaya_id' => 13,
+            'name' => 'Remchi',
+            'arName' => 'الرمشي',
+        ],
+        [
+            'id' => 145,
+            'wilaya_id' => 13,
+            'name' => 'Sabra',
+            'arName' => 'صبرة',
+        ],
+        [
+            'id' => 144,
+            'wilaya_id' => 13,
+            'name' => 'Sebdou',
+            'arName' => 'سبدو',
+        ],
+        [
+            'id' => 140,
+            'wilaya_id' => 13,
+            'name' => 'Sidi Djillali',
+            'arName' => 'سيدي الجيلالي',
+        ],
+        [
+            'id' => 150,
+            'wilaya_id' => 13,
             'name' => 'Tlemcen',
-            'wilaya_id' => '13',
+            'arName' => 'تلمسان',
         ],
-        445 => [
-            'arName' => 'دحموني',
-            'name' => 'Dahmouni',
-            'wilaya_id' => '14',
-        ],
-        446 => [
-            'arName' => 'عين الذهب',
+        [
+            'id' => 168,
+            'wilaya_id' => 14,
             'name' => 'Ain Deheb',
-            'wilaya_id' => '14',
+            'arName' => 'عين الذهب',
         ],
-        447 => [
-            'arName' => 'مهدية',
-            'name' => 'Mahdia',
-            'wilaya_id' => '14',
-        ],
-        448 => [
-            'arName' => 'فرندة',
-            'name' => 'Frenda',
-            'wilaya_id' => '14',
-        ],
-        449 => [
-            'arName' => 'عين كرمس',
+        [
+            'id' => 160,
+            'wilaya_id' => 14,
             'name' => 'Ain Kermes',
-            'wilaya_id' => '14',
+            'arName' => 'عين كرمس',
         ],
-        450 => [
-            'arName' => 'حمادية',
+        [
+            'id' => 169,
+            'wilaya_id' => 14,
+            'name' => 'Dahmouni',
+            'arName' => 'دحموني',
+        ],
+        [
+            'id' => 159,
+            'wilaya_id' => 14,
+            'name' => 'Frenda',
+            'arName' => 'فرندة',
+        ],
+        [
+            'id' => 165,
+            'wilaya_id' => 14,
             'name' => 'Hamadia',
-            'wilaya_id' => '14',
+            'arName' => 'حمادية',
         ],
-        454 => [
-            'arName' => 'مشرع الصفا',
-            'name' => 'Mechraa Sfa',
-            'wilaya_id' => '14',
-        ],
-        455 => [
-            'arName' => 'السوقر',
-            'name' => 'Sougueur',
-            'wilaya_id' => '14',
-        ],
-        457 => [
-            'arName' => 'رحوية',
-            'name' => 'Rahouia',
-            'wilaya_id' => '14',
-        ],
-        459 => [
-            'arName' => 'قصر الشلالة',
+        [
+            'id' => 161,
+            'wilaya_id' => 14,
             'name' => 'Ksar Chellala',
-            'wilaya_id' => '14',
+            'arName' => 'قصر الشلالة',
         ],
-        464 => [
-            'arName' => 'مدروسة',
+        [
+            'id' => 156,
+            'wilaya_id' => 14,
+            'name' => 'Mahdia',
+            'arName' => 'مهدية',
+        ],
+        [
+            'id' => 164,
+            'wilaya_id' => 14,
+            'name' => 'Mechraa Sfa',
+            'arName' => 'مشرع الصفا',
+        ],
+        [
+            'id' => 167,
+            'wilaya_id' => 14,
             'name' => 'Medroussa',
-            'wilaya_id' => '14',
+            'arName' => 'مدروسة',
         ],
-        465 => [
-            'arName' => 'مغيلة',
+        [
+            'id' => 158,
+            'wilaya_id' => 14,
             'name' => 'Meghila',
-            'wilaya_id' => '14',
+            'arName' => 'مغيلة',
         ],
-        469 => [
-            'arName' => 'وادي ليلي',
+        [
+            'id' => 163,
+            'wilaya_id' => 14,
             'name' => 'Oued Lili',
-            'wilaya_id' => '14',
+            'arName' => 'وادي ليلي',
         ],
-        483 => [
-            'arName' => 'تيارت',
+        [
+            'id' => 162,
+            'wilaya_id' => 14,
+            'name' => 'Rahouia',
+            'arName' => 'رحوية',
+        ],
+        [
+            'id' => 157,
+            'wilaya_id' => 14,
+            'name' => 'Sougueur',
+            'arName' => 'السوقر',
+        ],
+        [
+            'id' => 166,
+            'wilaya_id' => 14,
             'name' => 'Tiaret',
-            'wilaya_id' => '14',
+            'arName' => 'تيارت',
         ],
-        487 => [
-            'arName' => 'عين الحمام',
+        [
+            'id' => 181,
+            'wilaya_id' => 15,
             'name' => 'Ain El Hammam',
-            'wilaya_id' => '15',
+            'arName' => 'عين الحمام',
         ],
-        488 => [
-            'arName' => 'أزفون',
-            'name' => 'Azeffoun',
-            'wilaya_id' => '15',
-        ],
-        489 => [
-            'arName' => 'واضية',
-            'name' => 'Ouadhias',
-            'wilaya_id' => '15',
-        ],
-        491 => [
-            'arName' => 'ذراع الميزان',
-            'name' => 'Draa El Mizan',
-            'wilaya_id' => '15',
-        ],
-        492 => [
-            'arName' => 'الأربعاء ناث إيراثن',
-            'name' => 'Larbaa Nath Iraten',
-            'wilaya_id' => '15',
-        ],
-        494 => [
-            'arName' => 'واسيف',
-            'name' => 'Ouacif',
-            'wilaya_id' => '15',
-        ],
-        495 => [
-            'arName' => 'مقلع',
-            'name' => 'Mekla',
-            'wilaya_id' => '15',
-        ],
-        497 => [
-            'arName' => 'واقنون',
-            'name' => 'Ouaguenoun',
-            'wilaya_id' => '15',
-        ],
-        499 => [
-            'arName' => 'بني دوالة',
-            'name' => 'Beni Douala',
-            'wilaya_id' => '15',
-        ],
-        500 => [
-            'arName' => 'تيزي راشد',
-            'name' => 'Tizi Rached',
-            'wilaya_id' => '15',
-        ],
-        505 => [
-            'arName' => 'بوغني',
-            'name' => 'Boghni',
-            'wilaya_id' => '15',
-        ],
-        506 => [
-            'arName' => 'عزازقة',
+        [
+            'id' => 186,
+            'wilaya_id' => 15,
             'name' => 'Azazga',
-            'wilaya_id' => '15',
+            'arName' => 'عزازقة',
         ],
-        511 => [
-            'arName' => 'بني يني',
+        [
+            'id' => 174,
+            'wilaya_id' => 15,
+            'name' => 'Azeffoun',
+            'arName' => 'أزفون',
+        ],
+        [
+            'id' => 172,
+            'wilaya_id' => 15,
+            'name' => 'Beni Douala',
+            'arName' => 'بني دوالة',
+        ],
+        [
+            'id' => 179,
+            'wilaya_id' => 15,
             'name' => 'Benni Yenni',
-            'wilaya_id' => '15',
+            'arName' => 'بني يني',
         ],
-        512 => [
-            'arName' => 'بوزقن',
+        [
+            'id' => 175,
+            'wilaya_id' => 15,
+            'name' => 'Boghni',
+            'arName' => 'بوغني',
+        ],
+        [
+            'id' => 171,
+            'wilaya_id' => 15,
             'name' => 'Bouzeguene',
-            'wilaya_id' => '15',
+            'arName' => 'بوزقن',
         ],
-        514 => [
-            'arName' => 'ماكودة',
-            'name' => 'Makouda',
-            'wilaya_id' => '15',
-        ],
-        517 => [
-            'arName' => 'ذراع بن خدة',
+        [
+            'id' => 176,
+            'wilaya_id' => 15,
             'name' => 'Draa Ben Khedda',
-            'wilaya_id' => '15',
+            'arName' => 'ذراع بن خدة',
         ],
-        523 => [
-            'arName' => 'إفرحونان',
+        [
+            'id' => 183,
+            'wilaya_id' => 15,
+            'name' => 'Draa El Mizan',
+            'arName' => 'ذراع الميزان',
+        ],
+        [
+            'id' => 185,
+            'wilaya_id' => 15,
             'name' => 'Iferhounene',
-            'wilaya_id' => '15',
+            'arName' => 'إفرحونان',
         ],
-        525 => [
-            'arName' => 'تيقزيرت',
-            'name' => 'Tigzirt',
-            'wilaya_id' => '15',
+        [
+            'id' => 187,
+            'wilaya_id' => 15,
+            'name' => 'Larbaa Nath Iraten',
+            'arName' => 'الأربعاء ناث إيراثن',
         ],
-        531 => [
-            'arName' => 'معاتقة',
+        [
+            'id' => 190,
+            'wilaya_id' => 15,
             'name' => 'Maatkas',
-            'wilaya_id' => '15',
+            'arName' => 'معاتقة',
         ],
-        536 => [
-            'arName' => 'تيزي غنيف',
-            'name' => 'Tizi-Ghenif',
-            'wilaya_id' => '15',
+        [
+            'id' => 182,
+            'wilaya_id' => 15,
+            'name' => 'Makouda',
+            'arName' => 'ماكودة',
         ],
-        549 => [
-            'arName' => 'تيزي وزو',
+        [
+            'id' => 178,
+            'wilaya_id' => 15,
+            'name' => 'Mekla',
+            'arName' => 'مقلع',
+        ],
+        [
+            'id' => 177,
+            'wilaya_id' => 15,
+            'name' => 'Ouacif',
+            'arName' => 'واسيف',
+        ],
+        [
+            'id' => 173,
+            'wilaya_id' => 15,
+            'name' => 'Ouadhias',
+            'arName' => 'واضية',
+        ],
+        [
+            'id' => 189,
+            'wilaya_id' => 15,
+            'name' => 'Ouaguenoun',
+            'arName' => 'واقنون',
+        ],
+        [
+            'id' => 170,
+            'wilaya_id' => 15,
+            'name' => 'Tigzirt',
+            'arName' => 'تيقزيرت',
+        ],
+        [
+            'id' => 180,
+            'wilaya_id' => 15,
             'name' => 'Tizi Ouzou',
-            'wilaya_id' => '15',
+            'arName' => 'تيزي وزو',
         ],
-        554 => [
-            'arName' => 'الشراقة',
-            'name' => 'Cheraga',
-            'wilaya_id' => '16',
+        [
+            'id' => 188,
+            'wilaya_id' => 15,
+            'name' => 'Tizi Rached',
+            'arName' => 'تيزي راشد',
         ],
-        555 => [
-            'arName' => 'الدار البيضاء',
-            'name' => 'Dar El Beida',
-            'wilaya_id' => '16',
+        [
+            'id' => 184,
+            'wilaya_id' => 15,
+            'name' => 'Tizi-Ghenif',
+            'arName' => 'تيزي غنيف',
         ],
-        556 => [
-            'arName' => 'سيدي امحمد',
-            'name' => 'Sidi M\'hamed',
-            'wilaya_id' => '16',
-        ],
-        557 => [
-            'arName' => 'باب الوادي',
+        [
+            'id' => 201,
+            'wilaya_id' => 16,
             'name' => 'Bab El Oued',
-            'wilaya_id' => '16',
+            'arName' => 'باب الوادي',
         ],
-        559 => [
-            'arName' => 'الدرارية',
-            'name' => 'Draria',
-            'wilaya_id' => '16',
-        ],
-        560 => [
-            'arName' => 'الحراش',
-            'name' => 'El Harrach',
-            'wilaya_id' => '16',
-        ],
-        561 => [
-            'arName' => 'براقي',
+        [
+            'id' => 192,
+            'wilaya_id' => 16,
             'name' => 'Baraki',
-            'wilaya_id' => '16',
+            'arName' => 'براقي',
         ],
-        562 => [
-            'arName' => 'بوزريعة',
-            'name' => 'Bouzareah',
-            'wilaya_id' => '16',
-        ],
-        564 => [
-            'arName' => 'بئر مراد رايس',
+        [
+            'id' => 200,
+            'wilaya_id' => 16,
             'name' => 'Bir Mourad Rais',
-            'wilaya_id' => '16',
+            'arName' => 'بئر مراد رايس',
         ],
-        566 => [
-            'arName' => 'بئر توتة',
+        [
+            'id' => 194,
+            'wilaya_id' => 16,
             'name' => 'Birtouta',
-            'wilaya_id' => '16',
+            'arName' => 'بئر توتة',
         ],
-        583 => [
-            'arName' => 'حسين داي',
+        [
+            'id' => 202,
+            'wilaya_id' => 16,
+            'name' => 'Bouzareah',
+            'arName' => 'بوزريعة',
+        ],
+        [
+            'id' => 198,
+            'wilaya_id' => 16,
+            'name' => 'Cheraga',
+            'arName' => 'الشراقة',
+        ],
+        [
+            'id' => 193,
+            'wilaya_id' => 16,
+            'name' => 'Dar El Beida',
+            'arName' => 'الدار البيضاء',
+        ],
+        [
+            'id' => 197,
+            'wilaya_id' => 16,
+            'name' => 'Draria',
+            'arName' => 'الدرارية',
+        ],
+        [
+            'id' => 203,
+            'wilaya_id' => 16,
+            'name' => 'El Harrach',
+            'arName' => 'الحراش',
+        ],
+        [
+            'id' => 191,
+            'wilaya_id' => 16,
             'name' => 'Hussein Dey',
-            'wilaya_id' => '16',
+            'arName' => 'حسين داي',
         ],
-        587 => [
-            'arName' => 'الرويبة',
+        [
+            'id' => 195,
+            'wilaya_id' => 16,
             'name' => 'Rouiba',
-            'wilaya_id' => '16',
+            'arName' => 'الرويبة',
         ],
-        593 => [
-            'arName' => 'زرالدة',
+        [
+            'id' => 199,
+            'wilaya_id' => 16,
+            'name' => 'Sidi M\'hamed',
+            'arName' => 'سيدي امحمد',
+        ],
+        [
+            'id' => 196,
+            'wilaya_id' => 16,
             'name' => 'Zeralda',
-            'wilaya_id' => '16',
+            'arName' => 'زرالدة',
         ],
-        611 => [
-            'arName' => 'الادريسية',
-            'name' => 'El Idrissia',
-            'wilaya_id' => '17',
-        ],
-        612 => [
-            'arName' => 'عين الإبل',
+        [
+            'id' => 205,
+            'wilaya_id' => 17,
             'name' => 'Ain El Ibel',
-            'wilaya_id' => '17',
+            'arName' => 'عين الإبل',
         ],
-        613 => [
-            'arName' => 'حد الصحاري',
-            'name' => 'Had Sahary',
-            'wilaya_id' => '17',
-        ],
-        614 => [
-            'arName' => 'حاسي بحبح',
-            'name' => 'Hassi Bahbah',
-            'wilaya_id' => '17',
-        ],
-        615 => [
-            'arName' => 'عين وسارة',
+        [
+            'id' => 215,
+            'wilaya_id' => 17,
             'name' => 'Ain Oussera',
-            'wilaya_id' => '17',
+            'arName' => 'عين وسارة',
         ],
-        616 => [
-            'arName' => 'فيض البطمة',
-            'name' => 'Faidh El Botma',
-            'wilaya_id' => '17',
-        ],
-        617 => [
-            'arName' => 'بيرين',
+        [
+            'id' => 213,
+            'wilaya_id' => 17,
             'name' => 'Birine',
-            'wilaya_id' => '17',
+            'arName' => 'بيرين',
         ],
-        618 => [
-            'arName' => 'الشارف',
+        [
+            'id' => 206,
+            'wilaya_id' => 17,
             'name' => 'Charef',
-            'wilaya_id' => '17',
+            'arName' => 'الشارف',
         ],
-        622 => [
-            'arName' => 'دار الشيوخ',
+        [
+            'id' => 207,
+            'wilaya_id' => 17,
             'name' => 'Dar Chioukh',
-            'wilaya_id' => '17',
+            'arName' => 'دار الشيوخ',
         ],
-        623 => [
-            'arName' => 'مسعد',
-            'name' => 'Messaad',
-            'wilaya_id' => '17',
-        ],
-        624 => [
-            'arName' => 'الجلفة',
+        [
+            'id' => 212,
+            'wilaya_id' => 17,
             'name' => 'Djelfa',
-            'wilaya_id' => '17',
+            'arName' => 'الجلفة',
         ],
-        628 => [
-            'arName' => 'سيدي لعجال',
+        [
+            'id' => 211,
+            'wilaya_id' => 17,
+            'name' => 'El Idrissia',
+            'arName' => 'الادريسية',
+        ],
+        [
+            'id' => 214,
+            'wilaya_id' => 17,
+            'name' => 'Faidh El Botma',
+            'arName' => 'فيض البطمة',
+        ],
+        [
+            'id' => 208,
+            'wilaya_id' => 17,
+            'name' => 'Had Sahary',
+            'arName' => 'حد الصحاري',
+        ],
+        [
+            'id' => 204,
+            'wilaya_id' => 17,
+            'name' => 'Hassi Bahbah',
+            'arName' => 'حاسي بحبح',
+        ],
+        [
+            'id' => 210,
+            'wilaya_id' => 17,
+            'name' => 'Messaad',
+            'arName' => 'مسعد',
+        ],
+        [
+            'id' => 209,
+            'wilaya_id' => 17,
             'name' => 'Sidi Laadjel',
-            'wilaya_id' => '17',
+            'arName' => 'سيدي لعجال',
         ],
-        647 => [
-            'arName' => 'الشقفة',
+        [
+            'id' => 220,
+            'wilaya_id' => 18,
             'name' => 'Chekfa',
-            'wilaya_id' => '18',
+            'arName' => 'الشقفة',
         ],
-        648 => [
-            'arName' => 'جيملة',
+        [
+            'id' => 225,
+            'wilaya_id' => 18,
             'name' => 'Djimla',
-            'wilaya_id' => '18',
+            'arName' => 'جيملة',
         ],
-        649 => [
-            'arName' => 'العنصر',
+        [
+            'id' => 224,
+            'wilaya_id' => 18,
             'name' => 'El Ancer',
-            'wilaya_id' => '18',
+            'arName' => 'العنصر',
         ],
-        650 => [
-            'arName' => 'الطاهير',
-            'name' => 'Taher',
-            'wilaya_id' => '18',
-        ],
-        656 => [
-            'arName' => 'العوانة',
+        [
+            'id' => 217,
+            'wilaya_id' => 18,
             'name' => 'El Aouana',
-            'wilaya_id' => '18',
+            'arName' => 'العوانة',
         ],
-        658 => [
-            'arName' => 'الميلية',
+        [
+            'id' => 221,
+            'wilaya_id' => 18,
             'name' => 'El Milia',
-            'wilaya_id' => '18',
+            'arName' => 'الميلية',
         ],
-        660 => [
-            'arName' => 'زيامة منصورية',
-            'name' => 'Ziamah Mansouriah',
-            'wilaya_id' => '18',
-        ],
-        661 => [
-            'arName' => 'السطارة',
-            'name' => 'Settara',
-            'wilaya_id' => '18',
-        ],
-        662 => [
-            'arName' => 'جيجل',
+        [
+            'id' => 216,
+            'wilaya_id' => 18,
             'name' => 'Jijel',
-            'wilaya_id' => '18',
+            'arName' => 'جيجل',
         ],
-        663 => [
-            'arName' => 'تاكسنة',
-            'name' => 'Texenna',
-            'wilaya_id' => '18',
+        [
+            'id' => 223,
+            'wilaya_id' => 18,
+            'name' => 'Settara',
+            'arName' => 'السطارة',
         ],
-        666 => [
-            'arName' => 'سيدي معروف',
+        [
+            'id' => 222,
+            'wilaya_id' => 18,
             'name' => 'Sidi Marouf',
-            'wilaya_id' => '18',
+            'arName' => 'سيدي معروف',
         ],
-        675 => [
-            'arName' => 'عين أرنات',
+        [
+            'id' => 219,
+            'wilaya_id' => 18,
+            'name' => 'Taher',
+            'arName' => 'الطاهير',
+        ],
+        [
+            'id' => 226,
+            'wilaya_id' => 18,
+            'name' => 'Texenna',
+            'arName' => 'تاكسنة',
+        ],
+        [
+            'id' => 218,
+            'wilaya_id' => 18,
+            'name' => 'Ziamah Mansouriah',
+            'arName' => 'زيامة منصورية',
+        ],
+        [
+            'id' => 229,
+            'wilaya_id' => 19,
             'name' => 'Ain Arnat',
-            'wilaya_id' => '19',
+            'arName' => 'عين أرنات',
         ],
-        677 => [
-            'arName' => 'عين أزال',
+        [
+            'id' => 233,
+            'wilaya_id' => 19,
             'name' => 'Ain Azel',
-            'wilaya_id' => '19',
+            'arName' => 'عين أزال',
         ],
-        678 => [
-            'arName' => 'عين الكبيرة',
+        [
+            'id' => 238,
+            'wilaya_id' => 19,
             'name' => 'Ain El Kebira',
-            'wilaya_id' => '19',
+            'arName' => 'عين الكبيرة',
         ],
-        680 => [
-            'arName' => 'عين ولمان',
+        [
+            'id' => 230,
+            'wilaya_id' => 19,
             'name' => 'Ain Oulmene',
-            'wilaya_id' => '19',
+            'arName' => 'عين ولمان',
         ],
-        681 => [
-            'arName' => 'بني ورتيلان',
-            'name' => 'Beni Ourtilane',
-            'wilaya_id' => '19',
-        ],
-        682 => [
-            'arName' => 'بوقاعة',
-            'name' => 'Bougaa',
-            'wilaya_id' => '19',
-        ],
-        683 => [
-            'arName' => 'بني عزيز',
-            'name' => 'Beni Aziz',
-            'wilaya_id' => '19',
-        ],
-        684 => [
-            'arName' => 'بوعنداس',
-            'name' => 'Bouandas',
-            'wilaya_id' => '19',
-        ],
-        686 => [
-            'arName' => 'عموشة',
+        [
+            'id' => 228,
+            'wilaya_id' => 19,
             'name' => 'Amoucha',
-            'wilaya_id' => '19',
+            'arName' => 'عموشة',
         ],
-        687 => [
-            'arName' => 'بابور',
+        [
+            'id' => 242,
+            'wilaya_id' => 19,
             'name' => 'Babor',
-            'wilaya_id' => '19',
+            'arName' => 'بابور',
         ],
-        688 => [
-            'arName' => 'العلمة',
-            'name' => 'El Eulma',
-            'wilaya_id' => '19',
+        [
+            'id' => 239,
+            'wilaya_id' => 19,
+            'name' => 'Beni Aziz',
+            'arName' => 'بني عزيز',
         ],
-        690 => [
-            'arName' => 'بئر العرش',
+        [
+            'id' => 246,
+            'wilaya_id' => 19,
+            'name' => 'Beni Ourtilane',
+            'arName' => 'بني ورتيلان',
+        ],
+        [
+            'id' => 240,
+            'wilaya_id' => 19,
             'name' => 'Bir El Arch',
-            'wilaya_id' => '19',
+            'arName' => 'بئر العرش',
         ],
-        692 => [
-            'arName' => 'جميلة',
+        [
+            'id' => 231,
+            'wilaya_id' => 19,
+            'name' => 'Bouandas',
+            'arName' => 'بوعنداس',
+        ],
+        [
+            'id' => 235,
+            'wilaya_id' => 19,
+            'name' => 'Bougaa',
+            'arName' => 'بوقاعة',
+        ],
+        [
+            'id' => 245,
+            'wilaya_id' => 19,
             'name' => 'Djemila',
-            'wilaya_id' => '19',
+            'arName' => 'جميلة',
         ],
-        702 => [
-            'arName' => 'صالح باي',
-            'name' => 'Salah Bey',
-            'wilaya_id' => '19',
+        [
+            'id' => 244,
+            'wilaya_id' => 19,
+            'name' => 'El Eulma',
+            'arName' => 'العلمة',
         ],
-        705 => [
-            'arName' => 'حمام قرقور',
-            'name' => 'Hammam Guergour',
-            'wilaya_id' => '19',
-        ],
-        711 => [
-            'arName' => 'قنزات',
+        [
+            'id' => 234,
+            'wilaya_id' => 19,
             'name' => 'Guenzet',
-            'wilaya_id' => '19',
+            'arName' => 'قنزات',
         ],
-        712 => [
-            'arName' => 'قجال',
+        [
+            'id' => 243,
+            'wilaya_id' => 19,
             'name' => 'Guidjel',
-            'wilaya_id' => '19',
+            'arName' => 'قجال',
         ],
-        713 => [
-            'arName' => 'حمام السخنة',
+        [
+            'id' => 236,
+            'wilaya_id' => 19,
+            'name' => 'Hammam Guergour',
+            'arName' => 'حمام قرقور',
+        ],
+        [
+            'id' => 232,
+            'wilaya_id' => 19,
             'name' => 'Hammam Sokhna',
-            'wilaya_id' => '19',
+            'arName' => 'حمام السخنة',
         ],
-        719 => [
-            'arName' => 'ماوكلان',
+        [
+            'id' => 241,
+            'wilaya_id' => 19,
             'name' => 'Maoklane',
-            'wilaya_id' => '19',
+            'arName' => 'ماوكلان',
         ],
-        729 => [
-            'arName' => 'سطيف',
+        [
+            'id' => 227,
+            'wilaya_id' => 19,
+            'name' => 'Salah Bey',
+            'arName' => 'صالح باي',
+        ],
+        [
+            'id' => 237,
+            'wilaya_id' => 19,
             'name' => 'Setif',
-            'wilaya_id' => '19',
+            'arName' => 'سطيف',
         ],
-        735 => [
-            'arName' => 'عين الحجر',
+        [
+            'id' => 252,
+            'wilaya_id' => 20,
             'name' => 'Ain El Hadjar',
-            'wilaya_id' => '20',
+            'arName' => 'عين الحجر',
         ],
-        736 => [
-            'arName' => 'الحساسنة',
+        [
+            'id' => 249,
+            'wilaya_id' => 20,
             'name' => 'El Hassasna',
-            'wilaya_id' => '20',
+            'arName' => 'الحساسنة',
         ],
-        737 => [
-            'arName' => 'أولاد ابراهيم',
+        [
+            'id' => 248,
+            'wilaya_id' => 20,
             'name' => 'Ouled Brahim',
-            'wilaya_id' => '20',
+            'arName' => 'أولاد ابراهيم',
         ],
-        738 => [
-            'arName' => 'يوب',
-            'name' => 'Youb',
-            'wilaya_id' => '20',
-        ],
-        740 => [
-            'arName' => 'سيدي بوبكر',
-            'name' => 'Sidi Boubekeur',
-            'wilaya_id' => '20',
-        ],
-        745 => [
-            'arName' => 'سعيدة',
+        [
+            'id' => 247,
+            'wilaya_id' => 20,
             'name' => 'Saida',
-            'wilaya_id' => '20',
+            'arName' => 'سعيدة',
         ],
-        751 => [
-            'arName' => 'سيدي مزغيش',
-            'name' => 'Sidi Mezghiche',
-            'wilaya_id' => '21',
+        [
+            'id' => 250,
+            'wilaya_id' => 20,
+            'name' => 'Sidi Boubekeur',
+            'arName' => 'سيدي بوبكر',
         ],
-        752 => [
-            'arName' => 'عزابة',
-            'name' => 'Azzaba',
-            'wilaya_id' => '21',
+        [
+            'id' => 251,
+            'wilaya_id' => 20,
+            'name' => 'Youb',
+            'arName' => 'يوب',
         ],
-        753 => [
-            'arName' => 'عين قشرة',
+        [
+            'id' => 258,
+            'wilaya_id' => 21,
             'name' => 'Ain Kechra',
-            'wilaya_id' => '21',
+            'arName' => 'عين قشرة',
         ],
-        754 => [
-            'arName' => 'الحدائق',
-            'name' => 'El Hadaiek',
-            'wilaya_id' => '21',
+        [
+            'id' => 260,
+            'wilaya_id' => 21,
+            'name' => 'Azzaba',
+            'arName' => 'عزابة',
         ],
-        756 => [
-            'arName' => 'بن عزوز',
+        [
+            'id' => 264,
+            'wilaya_id' => 21,
             'name' => 'Ben Azzouz',
-            'wilaya_id' => '21',
+            'arName' => 'بن عزوز',
         ],
-        758 => [
-            'arName' => 'رمضان جمال',
-            'name' => 'Ramdane Djamel',
-            'wilaya_id' => '21',
-        ],
-        760 => [
-            'arName' => 'القل',
+        [
+            'id' => 263,
+            'wilaya_id' => 21,
             'name' => 'Collo',
-            'wilaya_id' => '21',
+            'arName' => 'القل',
         ],
-        761 => [
-            'arName' => 'تمالوس',
-            'name' => 'Tamalous',
-            'wilaya_id' => '21',
+        [
+            'id' => 255,
+            'wilaya_id' => 21,
+            'name' => 'El Hadaiek',
+            'arName' => 'الحدائق',
         ],
-        766 => [
-            'arName' => 'الحروش',
+        [
+            'id' => 254,
+            'wilaya_id' => 21,
             'name' => 'El Harrouch',
-            'wilaya_id' => '21',
+            'arName' => 'الحروش',
         ],
-        772 => [
-            'arName' => 'سكيكدة',
-            'name' => 'Skikda',
-            'wilaya_id' => '21',
-        ],
-        774 => [
-            'arName' => 'الزيتونة',
-            'name' => 'Zitouna',
-            'wilaya_id' => '21',
-        ],
-        776 => [
-            'arName' => 'أولاد عطية',
+        [
+            'id' => 262,
+            'wilaya_id' => 21,
             'name' => 'Ouled Attia',
-            'wilaya_id' => '21',
+            'arName' => 'أولاد عطية',
         ],
-        781 => [
-            'arName' => 'أم الطوب',
+        [
+            'id' => 259,
+            'wilaya_id' => 21,
             'name' => 'Oum Toub',
-            'wilaya_id' => '21',
+            'arName' => 'أم الطوب',
         ],
-        789 => [
-            'arName' => 'عين البرد',
+        [
+            'id' => 256,
+            'wilaya_id' => 21,
+            'name' => 'Ramdane Djamel',
+            'arName' => 'رمضان جمال',
+        ],
+        [
+            'id' => 253,
+            'wilaya_id' => 21,
+            'name' => 'Sidi Mezghiche',
+            'arName' => 'سيدي مزغيش',
+        ],
+        [
+            'id' => 265,
+            'wilaya_id' => 21,
+            'name' => 'Skikda',
+            'arName' => 'سكيكدة',
+        ],
+        [
+            'id' => 257,
+            'wilaya_id' => 21,
+            'name' => 'Tamalous',
+            'arName' => 'تمالوس',
+        ],
+        [
+            'id' => 261,
+            'wilaya_id' => 21,
+            'name' => 'Zitouna',
+            'arName' => 'الزيتونة',
+        ],
+        [
+            'id' => 271,
+            'wilaya_id' => 22,
             'name' => 'Ain El Berd',
-            'wilaya_id' => '22',
+            'arName' => 'عين البرد',
         ],
-        790 => [
-            'arName' => 'سيدي علي بوسيدي',
-            'name' => 'Sidi Ali Boussidi',
-            'wilaya_id' => '22',
-        ],
-        791 => [
-            'arName' => 'تسالة',
-            'name' => 'Tessala',
-            'wilaya_id' => '22',
-        ],
-        792 => [
-            'arName' => 'مولاي سليسن',
-            'name' => 'Moulay Slissen',
-            'wilaya_id' => '22',
-        ],
-        793 => [
-            'arName' => 'سفيزف',
-            'name' => 'Sfisef',
-            'wilaya_id' => '22',
-        ],
-        794 => [
-            'arName' => 'سيدي لحسن',
-            'name' => 'Sidi Lahcene',
-            'wilaya_id' => '22',
-        ],
-        795 => [
-            'arName' => 'بن باديس',
+        [
+            'id' => 272,
+            'wilaya_id' => 22,
             'name' => 'Ben Badis',
-            'wilaya_id' => '22',
+            'arName' => 'بن باديس',
         ],
-        796 => [
-            'arName' => 'مصطفى بن ابراهيم',
-            'name' => 'Mostefa  Ben Brahim',
-            'wilaya_id' => '22',
-        ],
-        798 => [
-            'arName' => 'تنيرة',
-            'name' => 'Tenira',
-            'wilaya_id' => '22',
-        ],
-        799 => [
-            'arName' => 'مرحوم',
+        [
+            'id' => 274,
+            'wilaya_id' => 22,
             'name' => 'Marhoum',
-            'wilaya_id' => '22',
+            'arName' => 'مرحوم',
         ],
-        801 => [
-            'arName' => 'سيدي علي بن يوب',
-            'name' => 'Sidi Ali Ben Youb',
-            'wilaya_id' => '22',
-        ],
-        803 => [
-            'arName' => 'تلاغ',
-            'name' => 'Telagh',
-            'wilaya_id' => '22',
-        ],
-        811 => [
-            'arName' => 'مرين',
+        [
+            'id' => 269,
+            'wilaya_id' => 22,
             'name' => 'Merine',
-            'wilaya_id' => '22',
+            'arName' => 'مرين',
         ],
-        815 => [
-            'arName' => 'راس الماء',
+        [
+            'id' => 278,
+            'wilaya_id' => 22,
+            'name' => 'Mostefa  Ben Brahim',
+            'arName' => 'مصطفى بن ابراهيم',
+        ],
+        [
+            'id' => 267,
+            'wilaya_id' => 22,
+            'name' => 'Moulay Slissen',
+            'arName' => 'مولاي سليسن',
+        ],
+        [
+            'id' => 275,
+            'wilaya_id' => 22,
             'name' => 'Ras El Ma',
-            'wilaya_id' => '22',
+            'arName' => 'راس الماء',
         ],
-        824 => [
-            'arName' => 'سيدي بلعباس',
+        [
+            'id' => 273,
+            'wilaya_id' => 22,
+            'name' => 'Sfisef',
+            'arName' => 'سفيزف',
+        ],
+        [
+            'id' => 266,
+            'wilaya_id' => 22,
+            'name' => 'Sidi Ali Ben Youb',
+            'arName' => 'سيدي علي بن يوب',
+        ],
+        [
+            'id' => 280,
+            'wilaya_id' => 22,
+            'name' => 'Sidi Ali Boussidi',
+            'arName' => 'سيدي علي بوسيدي',
+        ],
+        [
+            'id' => 276,
+            'wilaya_id' => 22,
             'name' => 'Sidi Bel Abbes',
-            'wilaya_id' => '22',
+            'arName' => 'سيدي بلعباس',
         ],
-        841 => [
-            'arName' => 'عين الباردة',
+        [
+            'id' => 270,
+            'wilaya_id' => 22,
+            'name' => 'Sidi Lahcene',
+            'arName' => 'سيدي لحسن',
+        ],
+        [
+            'id' => 279,
+            'wilaya_id' => 22,
+            'name' => 'Telagh',
+            'arName' => 'تلاغ',
+        ],
+        [
+            'id' => 268,
+            'wilaya_id' => 22,
+            'name' => 'Tenira',
+            'arName' => 'تنيرة',
+        ],
+        [
+            'id' => 277,
+            'wilaya_id' => 22,
+            'name' => 'Tessala',
+            'arName' => 'تسالة',
+        ],
+        [
+            'id' => 285,
+            'wilaya_id' => 23,
             'name' => 'Ain El Berda',
-            'wilaya_id' => '23',
+            'arName' => 'عين الباردة',
         ],
-        842 => [
-            'arName' => 'عنابة',
+        [
+            'id' => 281,
+            'wilaya_id' => 23,
             'name' => 'Annaba',
-            'wilaya_id' => '23',
+            'arName' => 'عنابة',
         ],
-        843 => [
-            'arName' => 'برحال',
+        [
+            'id' => 282,
+            'wilaya_id' => 23,
             'name' => 'Berrahal',
-            'wilaya_id' => '23',
+            'arName' => 'برحال',
         ],
-        844 => [
-            'arName' => 'شطايبي',
+        [
+            'id' => 286,
+            'wilaya_id' => 23,
             'name' => 'Chetaibi',
-            'wilaya_id' => '23',
+            'arName' => 'شطايبي',
         ],
-        846 => [
-            'arName' => 'البوني',
+        [
+            'id' => 284,
+            'wilaya_id' => 23,
             'name' => 'El Bouni',
-            'wilaya_id' => '23',
+            'arName' => 'البوني',
         ],
-        848 => [
-            'arName' => 'الحجار',
+        [
+            'id' => 283,
+            'wilaya_id' => 23,
             'name' => 'El Hadjar',
-            'wilaya_id' => '23',
+            'arName' => 'الحجار',
         ],
-        853 => [
-            'arName' => 'بوشقوف',
-            'name' => 'Bouchegouf',
-            'wilaya_id' => '24',
-        ],
-        854 => [
-            'arName' => 'عين مخلوف',
-            'name' => 'Ain Makhlouf',
-            'wilaya_id' => '24',
-        ],
-        856 => [
-            'arName' => 'وادي الزناتي',
-            'name' => 'Oued Zenati',
-            'wilaya_id' => '24',
-        ],
-        857 => [
-            'arName' => 'خزارة',
-            'name' => 'Khezaras',
-            'wilaya_id' => '24',
-        ],
-        858 => [
-            'arName' => 'قلعة بوصبع',
-            'name' => 'Guelaat Bousbaa',
-            'wilaya_id' => '24',
-        ],
-        859 => [
-            'arName' => 'قالمة',
-            'name' => 'Guelma',
-            'wilaya_id' => '24',
-        ],
-        863 => [
-            'arName' => 'حمام دباغ',
-            'name' => 'Hammam Debagh',
-            'wilaya_id' => '24',
-        ],
-        864 => [
-            'arName' => 'هيليوبوليس',
-            'name' => 'Heliopolis',
-            'wilaya_id' => '24',
-        ],
-        867 => [
-            'arName' => 'حمام النبايل',
-            'name' => 'Hammam N\'bails',
-            'wilaya_id' => '24',
-        ],
-        877 => [
-            'arName' => 'عين حساينية',
+        [
+            'id' => 293,
+            'wilaya_id' => 24,
             'name' => 'Ain Hessainia',
-            'wilaya_id' => '24',
+            'arName' => 'عين حساينية',
         ],
-        887 => [
-            'arName' => 'عين عبيد',
+        [
+            'id' => 295,
+            'wilaya_id' => 24,
+            'name' => 'Ain Makhlouf',
+            'arName' => 'عين مخلوف',
+        ],
+        [
+            'id' => 291,
+            'wilaya_id' => 24,
+            'name' => 'Bouchegouf',
+            'arName' => 'بوشقوف',
+        ],
+        [
+            'id' => 287,
+            'wilaya_id' => 24,
+            'name' => 'Guelaat Bousbaa',
+            'arName' => 'قلعة بوصبع',
+        ],
+        [
+            'id' => 290,
+            'wilaya_id' => 24,
+            'name' => 'Guelma',
+            'arName' => 'قالمة',
+        ],
+        [
+            'id' => 288,
+            'wilaya_id' => 24,
+            'name' => 'Hammam Debagh',
+            'arName' => 'حمام دباغ',
+        ],
+        [
+            'id' => 289,
+            'wilaya_id' => 24,
+            'name' => 'Hammam N\'bails',
+            'arName' => 'حمام النبايل',
+        ],
+        [
+            'id' => 292,
+            'wilaya_id' => 24,
+            'name' => 'Heliopolis',
+            'arName' => 'هيليوبوليس',
+        ],
+        [
+            'id' => 296,
+            'wilaya_id' => 24,
+            'name' => 'Khezaras',
+            'arName' => 'خزارة',
+        ],
+        [
+            'id' => 294,
+            'wilaya_id' => 24,
+            'name' => 'Oued Zenati',
+            'arName' => 'وادي الزناتي',
+        ],
+        [
+            'id' => 300,
+            'wilaya_id' => 25,
             'name' => 'Ain Abid',
-            'wilaya_id' => '25',
+            'arName' => 'عين عبيد',
         ],
-        888 => [
-            'arName' => 'الخروب',
-            'name' => 'El Khroub',
-            'wilaya_id' => '25',
-        ],
-        890 => [
-            'arName' => 'زيغود يوسف',
-            'name' => 'Zighoud Youcef',
-            'wilaya_id' => '25',
-        ],
-        891 => [
-            'arName' => 'قسنطينة',
+        [
+            'id' => 302,
+            'wilaya_id' => 25,
             'name' => 'Constantine',
-            'wilaya_id' => '25',
+            'arName' => 'قسنطينة',
         ],
-        892 => [
-            'arName' => 'حامة بوزيان',
+        [
+            'id' => 299,
+            'wilaya_id' => 25,
+            'name' => 'El Khroub',
+            'arName' => 'الخروب',
+        ],
+        [
+            'id' => 297,
+            'wilaya_id' => 25,
             'name' => 'Hamma Bouziane',
-            'wilaya_id' => '25',
+            'arName' => 'حامة بوزيان',
         ],
-        895 => [
-            'arName' => 'ابن زياد',
+        [
+            'id' => 301,
+            'wilaya_id' => 25,
             'name' => 'Ibn Ziad',
-            'wilaya_id' => '25',
+            'arName' => 'ابن زياد',
         ],
-        899 => [
-            'arName' => 'عين بوسيف',
+        [
+            'id' => 298,
+            'wilaya_id' => 25,
+            'name' => 'Zighoud Youcef',
+            'arName' => 'زيغود يوسف',
+        ],
+        [
+            'id' => 316,
+            'wilaya_id' => 26,
             'name' => 'Ain Boucif',
-            'wilaya_id' => '26',
+            'arName' => 'عين بوسيف',
         ],
-        900 => [
-            'arName' => 'شلالة العذاورة',
-            'name' => 'Chellalat El Adhaoura',
-            'wilaya_id' => '26',
-        ],
-        901 => [
-            'arName' => 'تابلاط',
-            'name' => 'Tablat',
-            'wilaya_id' => '26',
-        ],
-        902 => [
-            'arName' => 'عزيز',
+        [
+            'id' => 321,
+            'wilaya_id' => 26,
             'name' => 'Aziz',
-            'wilaya_id' => '26',
+            'arName' => 'عزيز',
         ],
-        903 => [
-            'arName' => 'العمارية',
-            'name' => 'El Omaria',
-            'wilaya_id' => '26',
-        ],
-        904 => [
-            'arName' => 'وزرة',
-            'name' => 'Ouzera',
-            'wilaya_id' => '26',
-        ],
-        905 => [
-            'arName' => 'بني سليمان',
+        [
+            'id' => 309,
+            'wilaya_id' => 26,
             'name' => 'Beni Slimane',
-            'wilaya_id' => '26',
+            'arName' => 'بني سليمان',
         ],
-        906 => [
-            'arName' => 'البرواقية',
+        [
+            'id' => 311,
+            'wilaya_id' => 26,
             'name' => 'Berrouaghia',
-            'wilaya_id' => '26',
+            'arName' => 'البرواقية',
         ],
-        907 => [
-            'arName' => 'القلب الكبير',
-            'name' => 'Guelb El Kebir',
-            'wilaya_id' => '26',
-        ],
-        908 => [
-            'arName' => 'أولاد عنتر',
-            'name' => 'Ouled Antar',
-            'wilaya_id' => '26',
-        ],
-        909 => [
-            'arName' => 'الشهبونية',
+        [
+            'id' => 307,
+            'wilaya_id' => 26,
             'name' => 'Chahbounia',
-            'wilaya_id' => '26',
+            'arName' => 'الشهبونية',
         ],
-        910 => [
-            'arName' => 'سي المحجوب',
-            'name' => 'Si Mahdjoub',
-            'wilaya_id' => '26',
+        [
+            'id' => 319,
+            'wilaya_id' => 26,
+            'name' => 'Chellalat El Adhaoura',
+            'arName' => 'شلالة العذاورة',
         ],
-        911 => [
-            'arName' => 'سيدي نعمان',
-            'name' => 'Sidi Naamane',
-            'wilaya_id' => '26',
-        ],
-        918 => [
-            'arName' => 'السواقي',
-            'name' => 'Souaghi',
-            'wilaya_id' => '26',
-        ],
-        919 => [
-            'arName' => 'المدية',
-            'name' => 'Medea',
-            'wilaya_id' => '26',
-        ],
-        920 => [
-            'arName' => 'العزيزية',
+        [
+            'id' => 306,
+            'wilaya_id' => 26,
             'name' => 'El Azizia',
-            'wilaya_id' => '26',
+            'arName' => 'العزيزية',
         ],
-        926 => [
-            'arName' => 'عوامري',
-            'name' => 'Ouamri',
-            'wilaya_id' => '26',
+        [
+            'id' => 317,
+            'wilaya_id' => 26,
+            'name' => 'El Omaria',
+            'arName' => 'العمارية',
         ],
-        929 => [
-            'arName' => 'قصر البخاري',
+        [
+            'id' => 318,
+            'wilaya_id' => 26,
+            'name' => 'Guelb El Kebir',
+            'arName' => 'القلب الكبير',
+        ],
+        [
+            'id' => 305,
+            'wilaya_id' => 26,
             'name' => 'Ksar El Boukhari',
-            'wilaya_id' => '26',
+            'arName' => 'قصر البخاري',
         ],
-        932 => [
-            'arName' => 'سغوان',
+        [
+            'id' => 314,
+            'wilaya_id' => 26,
+            'name' => 'Medea',
+            'arName' => 'المدية',
+        ],
+        [
+            'id' => 308,
+            'wilaya_id' => 26,
+            'name' => 'Ouamri',
+            'arName' => 'عوامري',
+        ],
+        [
+            'id' => 303,
+            'wilaya_id' => 26,
+            'name' => 'Ouled Antar',
+            'arName' => 'أولاد عنتر',
+        ],
+        [
+            'id' => 315,
+            'wilaya_id' => 26,
+            'name' => 'Ouzera',
+            'arName' => 'وزرة',
+        ],
+        [
+            'id' => 312,
+            'wilaya_id' => 26,
             'name' => 'Seghouane',
-            'wilaya_id' => '26',
+            'arName' => 'سغوان',
         ],
-        963 => [
-            'arName' => 'عشعاشة',
+        [
+            'id' => 310,
+            'wilaya_id' => 26,
+            'name' => 'Si Mahdjoub',
+            'arName' => 'سي المحجوب',
+        ],
+        [
+            'id' => 320,
+            'wilaya_id' => 26,
+            'name' => 'Sidi Naamane',
+            'arName' => 'سيدي نعمان',
+        ],
+        [
+            'id' => 304,
+            'wilaya_id' => 26,
+            'name' => 'Souaghi',
+            'arName' => 'السواقي',
+        ],
+        [
+            'id' => 313,
+            'wilaya_id' => 26,
+            'name' => 'Tablat',
+            'arName' => 'تابلاط',
+        ],
+        [
+            'id' => 329,
+            'wilaya_id' => 27,
             'name' => 'Achaacha',
-            'wilaya_id' => '27',
+            'arName' => 'عشعاشة',
         ],
-        964 => [
-            'arName' => 'خير الدين',
-            'name' => 'Kheir Eddine',
-            'wilaya_id' => '27',
-        ],
-        965 => [
-            'arName' => 'عين نويسي',
+        [
+            'id' => 322,
+            'wilaya_id' => 27,
             'name' => 'Ain Nouicy',
-            'wilaya_id' => '27',
+            'arName' => 'عين نويسي',
         ],
-        966 => [
-            'arName' => 'ماسرة',
-            'name' => 'Mesra',
-            'wilaya_id' => '27',
-        ],
-        967 => [
-            'arName' => 'عين تادلس',
+        [
+            'id' => 323,
+            'wilaya_id' => 27,
             'name' => 'Ain Tedeles',
-            'wilaya_id' => '27',
+            'arName' => 'عين تادلس',
         ],
-        968 => [
-            'arName' => 'سيدي لخضر',
-            'name' => 'Sidi Lakhdar',
-            'wilaya_id' => '27',
-        ],
-        969 => [
-            'arName' => 'بوقيراط',
+        [
+            'id' => 330,
+            'wilaya_id' => 27,
             'name' => 'Bouguirat',
-            'wilaya_id' => '27',
+            'arName' => 'بوقيراط',
         ],
-        972 => [
-            'arName' => 'حاسي ماماش',
+        [
+            'id' => 324,
+            'wilaya_id' => 27,
             'name' => 'Hassi Mameche',
-            'wilaya_id' => '27',
+            'arName' => 'حاسي ماماش',
         ],
-        979 => [
-            'arName' => 'مستغانم',
+        [
+            'id' => 325,
+            'wilaya_id' => 27,
+            'name' => 'Kheir Eddine',
+            'arName' => 'خير الدين',
+        ],
+        [
+            'id' => 331,
+            'wilaya_id' => 27,
+            'name' => 'Mesra',
+            'arName' => 'ماسرة',
+        ],
+        [
+            'id' => 328,
+            'wilaya_id' => 27,
             'name' => 'Mostaganem',
-            'wilaya_id' => '27',
+            'arName' => 'مستغانم',
         ],
-        983 => [
-            'arName' => 'سيدي علي',
+        [
+            'id' => 326,
+            'wilaya_id' => 27,
             'name' => 'Sidi Ali',
-            'wilaya_id' => '27',
+            'arName' => 'سيدي علي',
         ],
-        995 => [
-            'arName' => 'عين الحجل',
+        [
+            'id' => 327,
+            'wilaya_id' => 27,
+            'name' => 'Sidi Lakhdar',
+            'arName' => 'سيدي لخضر',
+        ],
+        [
+            'id' => 335,
+            'wilaya_id' => 28,
             'name' => 'Ain El Hadjel',
-            'wilaya_id' => '28',
+            'arName' => 'عين الحجل',
         ],
-        996 => [
-            'arName' => 'عين الملح',
+        [
+            'id' => 340,
+            'wilaya_id' => 28,
             'name' => 'Ain El Melh',
-            'wilaya_id' => '28',
+            'arName' => 'عين الملح',
         ],
-        998 => [
-            'arName' => 'مقرة',
-            'name' => 'Magra',
-            'wilaya_id' => '28',
-        ],
-        1001 => [
-            'arName' => 'بن سرور',
+        [
+            'id' => 339,
+            'wilaya_id' => 28,
             'name' => 'Ben Srour',
-            'wilaya_id' => '28',
+            'arName' => 'بن سرور',
         ],
-        1002 => [
-            'arName' => 'سيدي عيسى',
-            'name' => 'Sidi Aissa',
-            'wilaya_id' => '28',
-        ],
-        1003 => [
-            'arName' => 'أولاد سيدي ابراهيم',
-            'name' => 'Ouled Sidi Brahim',
-            'wilaya_id' => '28',
-        ],
-        1006 => [
-            'arName' => 'بوسعادة',
+        [
+            'id' => 336,
+            'wilaya_id' => 28,
             'name' => 'Bousaada',
-            'wilaya_id' => '28',
+            'arName' => 'بوسعادة',
         ],
-        1008 => [
-            'arName' => 'شلال',
+        [
+            'id' => 332,
+            'wilaya_id' => 28,
             'name' => 'Chellal',
-            'wilaya_id' => '28',
+            'arName' => 'شلال',
         ],
-        1010 => [
-            'arName' => 'جبل مساعد',
+        [
+            'id' => 342,
+            'wilaya_id' => 28,
             'name' => 'Djebel Messaad',
-            'wilaya_id' => '28',
+            'arName' => 'جبل مساعد',
         ],
-        1012 => [
-            'arName' => 'خبانة',
-            'name' => 'Khoubana',
-            'wilaya_id' => '28',
-        ],
-        1013 => [
-            'arName' => 'حمام الضلعة',
+        [
+            'id' => 344,
+            'wilaya_id' => 28,
             'name' => 'Hammam Dalaa',
-            'wilaya_id' => '28',
+            'arName' => 'حمام الضلعة',
         ],
-        1016 => [
-            'arName' => 'أولاد دراج',
-            'name' => 'Ouled Derradj',
-            'wilaya_id' => '28',
+        [
+            'id' => 346,
+            'wilaya_id' => 28,
+            'name' => 'Khoubana',
+            'arName' => 'خبانة',
         ],
-        1020 => [
-            'arName' => 'امجدل',
-            'name' => 'Medjedel',
-            'wilaya_id' => '28',
-        ],
-        1023 => [
-            'arName' => 'المسيلة',
+        [
+            'id' => 343,
+            'wilaya_id' => 28,
             'name' => 'M\'sila',
-            'wilaya_id' => '28',
+            'arName' => 'المسيلة',
         ],
-        1034 => [
-            'arName' => 'سيدي عامر',
+        [
+            'id' => 333,
+            'wilaya_id' => 28,
+            'name' => 'Magra',
+            'arName' => 'مقرة',
+        ],
+        [
+            'id' => 341,
+            'wilaya_id' => 28,
+            'name' => 'Medjedel',
+            'arName' => 'امجدل',
+        ],
+        [
+            'id' => 345,
+            'wilaya_id' => 28,
+            'name' => 'Ouled Derradj',
+            'arName' => 'أولاد دراج',
+        ],
+        [
+            'id' => 337,
+            'wilaya_id' => 28,
+            'name' => 'Ouled Sidi Brahim',
+            'arName' => 'أولاد سيدي ابراهيم',
+        ],
+        [
+            'id' => 334,
+            'wilaya_id' => 28,
+            'name' => 'Sidi Aissa',
+            'arName' => 'سيدي عيسى',
+        ],
+        [
+            'id' => 338,
+            'wilaya_id' => 28,
             'name' => 'Sidi Ameur',
-            'wilaya_id' => '28',
+            'arName' => 'سيدي عامر',
         ],
-        1042 => [
-            'arName' => 'عين فارس',
+        [
+            'id' => 353,
+            'wilaya_id' => 29,
             'name' => 'Ain Fares',
-            'wilaya_id' => '29',
+            'arName' => 'عين فارس',
         ],
-        1043 => [
-            'arName' => 'عين فكان',
+        [
+            'id' => 357,
+            'wilaya_id' => 29,
             'name' => 'Ain Fekan',
-            'wilaya_id' => '29',
+            'arName' => 'عين فكان',
         ],
-        1044 => [
-            'arName' => 'وادي الأبطال',
-            'name' => 'Oued El Abtal',
-            'wilaya_id' => '29',
-        ],
-        1046 => [
-            'arName' => 'عقاز',
-            'name' => 'Oggaz',
-            'wilaya_id' => '29',
-        ],
-        1047 => [
-            'arName' => 'عوف',
+        [
+            'id' => 355,
+            'wilaya_id' => 29,
             'name' => 'Aouf',
-            'wilaya_id' => '29',
+            'arName' => 'عوف',
         ],
-        1049 => [
-            'arName' => 'سيق',
-            'name' => 'Sig',
-            'wilaya_id' => '29',
-        ],
-        1050 => [
-            'arName' => 'بوحنيفية',
+        [
+            'id' => 354,
+            'wilaya_id' => 29,
             'name' => 'Bouhanifia',
-            'wilaya_id' => '29',
+            'arName' => 'بوحنيفية',
         ],
-        1052 => [
-            'arName' => 'البرج',
+        [
+            'id' => 358,
+            'wilaya_id' => 29,
             'name' => 'El Bordj',
-            'wilaya_id' => '29',
+            'arName' => 'البرج',
         ],
-        1053 => [
-            'arName' => 'زهانة',
-            'name' => 'Zahana',
-            'wilaya_id' => '29',
-        ],
-        1054 => [
-            'arName' => 'المحمدية',
-            'name' => 'Mohammadia',
-            'wilaya_id' => '29',
-        ],
-        1056 => [
-            'arName' => 'الحشم',
-            'name' => 'Hachem',
-            'wilaya_id' => '29',
-        ],
-        1057 => [
-            'arName' => 'تيزي',
-            'name' => 'Tizi',
-            'wilaya_id' => '29',
-        ],
-        1063 => [
-            'arName' => 'غريس',
+        [
+            'id' => 359,
+            'wilaya_id' => 29,
             'name' => 'Ghriss',
-            'wilaya_id' => '29',
+            'arName' => 'غريس',
         ],
-        1064 => [
-            'arName' => 'وادي التاغية',
-            'name' => 'Oued Taria',
-            'wilaya_id' => '29',
+        [
+            'id' => 362,
+            'wilaya_id' => 29,
+            'name' => 'Hachem',
+            'arName' => 'الحشم',
         ],
-        1069 => [
-            'arName' => 'معسكر',
+        [
+            'id' => 360,
+            'wilaya_id' => 29,
             'name' => 'Mascara',
-            'wilaya_id' => '29',
+            'arName' => 'معسكر',
         ],
-        1079 => [
-            'arName' => 'تيغنيف',
+        [
+            'id' => 348,
+            'wilaya_id' => 29,
+            'name' => 'Mohammadia',
+            'arName' => 'المحمدية',
+        ],
+        [
+            'id' => 351,
+            'wilaya_id' => 29,
+            'name' => 'Oggaz',
+            'arName' => 'عقاز',
+        ],
+        [
+            'id' => 347,
+            'wilaya_id' => 29,
+            'name' => 'Oued El Abtal',
+            'arName' => 'وادي الأبطال',
+        ],
+        [
+            'id' => 356,
+            'wilaya_id' => 29,
+            'name' => 'Oued Taria',
+            'arName' => 'وادي التاغية',
+        ],
+        [
+            'id' => 352,
+            'wilaya_id' => 29,
+            'name' => 'Sig',
+            'arName' => 'سيق',
+        ],
+        [
+            'id' => 349,
+            'wilaya_id' => 29,
             'name' => 'Tighennif',
-            'wilaya_id' => '29',
+            'arName' => 'تيغنيف',
         ],
-        1089 => [
-            'arName' => 'سيدي خويلد',
-            'name' => 'Sidi Khouiled',
-            'wilaya_id' => '30',
+        [
+            'id' => 361,
+            'wilaya_id' => 29,
+            'name' => 'Tizi',
+            'arName' => 'تيزي',
         ],
-        1090 => [
-            'arName' => 'الطيبات',
-            'name' => 'Taibet',
-            'wilaya_id' => '55',
+        [
+            'id' => 350,
+            'wilaya_id' => 29,
+            'name' => 'Zahana',
+            'arName' => 'زهانة',
         ],
-        1091 => [
-            'arName' => 'تماسين',
-            'name' => 'Temacine',
-            'wilaya_id' => '55',
-        ],
-        1092 => [
-            'arName' => 'الحجيرة',
-            'name' => 'El-Hadjira',
-            'wilaya_id' => '55',
-        ],
-        1093 => [
-            'arName' => 'البرمة',
+        [
+            'id' => 366,
+            'wilaya_id' => 30,
             'name' => 'El Borma',
-            'wilaya_id' => '30',
+            'arName' => 'البرمة',
         ],
-        1096 => [
-            'arName' => 'حاسي مسعود',
+        [
+            'id' => 364,
+            'wilaya_id' => 30,
             'name' => 'Hassi Messaoud',
-            'wilaya_id' => '30',
+            'arName' => 'حاسي مسعود',
         ],
-        1097 => [
-            'arName' => 'المقارين',
-            'name' => 'Megarine',
-            'wilaya_id' => '55',
-        ],
-        1099 => [
-            'arName' => 'تقرت',
-            'name' => 'Touggourt',
-            'wilaya_id' => '55',
-        ],
-        1100 => [
-            'arName' => 'انقوسة',
+        [
+            'id' => 367,
+            'wilaya_id' => 30,
             'name' => 'N\'goussa',
-            'wilaya_id' => '30',
+            'arName' => 'انقوسة',
         ],
-        1101 => [
-            'arName' => 'ورقلة',
+        [
+            'id' => 363,
+            'wilaya_id' => 30,
             'name' => 'Ouargla',
-            'wilaya_id' => '30',
+            'arName' => 'ورقلة',
         ],
-        1110 => [
-            'arName' => 'بطيوة',
-            'name' => 'Bethioua',
-            'wilaya_id' => '31',
+        [
+            'id' => 365,
+            'wilaya_id' => 30,
+            'name' => 'Sidi Khouiled',
+            'arName' => 'سيدي خويلد',
         ],
-        1111 => [
-            'arName' => 'بوتليليس',
-            'name' => 'Boutlelis',
-            'wilaya_id' => '31',
-        ],
-        1112 => [
-            'arName' => 'عين الترك',
+        [
+            'id' => 373,
+            'wilaya_id' => 31,
             'name' => 'Ain Turk',
-            'wilaya_id' => '31',
+            'arName' => 'عين الترك',
         ],
-        1113 => [
-            'arName' => 'أرزيو',
+        [
+            'id' => 371,
+            'wilaya_id' => 31,
             'name' => 'Arzew',
-            'wilaya_id' => '31',
+            'arName' => 'أرزيو',
         ],
-        1114 => [
-            'arName' => 'قديل',
-            'name' => 'Gdyel',
-            'wilaya_id' => '31',
+        [
+            'id' => 372,
+            'wilaya_id' => 31,
+            'name' => 'Bethioua',
+            'arName' => 'بطيوة',
         ],
-        1116 => [
-            'arName' => 'بئر الجير',
+        [
+            'id' => 370,
+            'wilaya_id' => 31,
             'name' => 'Bir El Djir',
-            'wilaya_id' => '31',
+            'arName' => 'بئر الجير',
         ],
-        1117 => [
-            'arName' => 'وادي تليلات',
-            'name' => 'Oued Tlelat',
-            'wilaya_id' => '31',
+        [
+            'id' => 376,
+            'wilaya_id' => 31,
+            'name' => 'Boutlelis',
+            'arName' => 'بوتليليس',
         ],
-        1122 => [
-            'arName' => 'السانية',
+        [
+            'id' => 368,
+            'wilaya_id' => 31,
             'name' => 'Es Senia',
-            'wilaya_id' => '31',
+            'arName' => 'السانية',
         ],
-        1131 => [
-            'arName' => 'وهران',
+        [
+            'id' => 369,
+            'wilaya_id' => 31,
+            'name' => 'Gdyel',
+            'arName' => 'قديل',
+        ],
+        [
+            'id' => 374,
+            'wilaya_id' => 31,
             'name' => 'Oran',
-            'wilaya_id' => '31',
+            'arName' => 'وهران',
         ],
-        1136 => [
-            'arName' => 'الأبيض سيدي الشيخ',
-            'name' => 'Labiodh Sidi Cheikh',
-            'wilaya_id' => '32',
+        [
+            'id' => 375,
+            'wilaya_id' => 31,
+            'name' => 'Oued Tlelat',
+            'arName' => 'وادي تليلات',
         ],
-        1138 => [
-            'arName' => 'بوعلام',
+        [
+            'id' => 379,
+            'wilaya_id' => 32,
             'name' => 'Boualem',
-            'wilaya_id' => '32',
+            'arName' => 'بوعلام',
         ],
-        1139 => [
-            'arName' => 'بوقطب',
+        [
+            'id' => 380,
+            'wilaya_id' => 32,
             'name' => 'Bougtoub',
-            'wilaya_id' => '32',
+            'arName' => 'بوقطب',
         ],
-        1140 => [
-            'arName' => 'بوسمغون',
+        [
+            'id' => 384,
+            'wilaya_id' => 32,
             'name' => 'Boussemghoun',
-            'wilaya_id' => '32',
+            'arName' => 'بوسمغون',
         ],
-        1141 => [
-            'arName' => 'بريزينة',
+        [
+            'id' => 378,
+            'wilaya_id' => 32,
             'name' => 'Brezina',
-            'wilaya_id' => '32',
+            'arName' => 'بريزينة',
         ],
-        1142 => [
-            'arName' => 'رقاصة',
-            'name' => 'Rogassa',
-            'wilaya_id' => '32',
-        ],
-        1143 => [
-            'arName' => 'شلالة',
+        [
+            'id' => 383,
+            'wilaya_id' => 32,
             'name' => 'Chellala',
-            'wilaya_id' => '32',
+            'arName' => 'شلالة',
         ],
-        1144 => [
-            'arName' => 'البيض',
+        [
+            'id' => 381,
+            'wilaya_id' => 32,
             'name' => 'El Bayadh',
-            'wilaya_id' => '32',
+            'arName' => 'البيض',
         ],
-        1158 => [
-            'arName' => 'جانت',
-            'name' => 'Djanet',
-            'wilaya_id' => '56',
+        [
+            'id' => 377,
+            'wilaya_id' => 32,
+            'name' => 'Labiodh Sidi Cheikh',
+            'arName' => 'الأبيض سيدي الشيخ',
         ],
-        1159 => [
-            'arName' => 'إن أمناس',
-            'name' => 'In Amenas',
-            'wilaya_id' => '33',
+        [
+            'id' => 382,
+            'wilaya_id' => 32,
+            'name' => 'Rogassa',
+            'arName' => 'رقاصة',
         ],
-        1162 => [
-            'arName' => 'إيليزي',
+        [
+            'id' => 386,
+            'wilaya_id' => 33,
             'name' => 'Illizi',
-            'wilaya_id' => '33',
+            'arName' => 'إيليزي',
         ],
-        1164 => [
-            'arName' => 'عين تاغروت',
+        [
+            'id' => 385,
+            'wilaya_id' => 33,
+            'name' => 'In Amenas',
+            'arName' => 'إن أمناس',
+        ],
+        [
+            'id' => 389,
+            'wilaya_id' => 34,
             'name' => 'Ain Taghrout',
-            'wilaya_id' => '34',
+            'arName' => 'عين تاغروت',
         ],
-        1165 => [
-            'arName' => 'رأس الوادي',
-            'name' => 'Ras El Oued',
-            'wilaya_id' => '34',
-        ],
-        1166 => [
-            'arName' => 'برج بوعريريج',
-            'name' => 'Bordj Bou Arreridj',
-            'wilaya_id' => '34',
-        ],
-        1167 => [
-            'arName' => 'برج الغدير',
-            'name' => 'Bordj Ghedir',
-            'wilaya_id' => '34',
-        ],
-        1168 => [
-            'arName' => 'المنصورة',
-            'name' => 'Mansourah',
-            'wilaya_id' => '34',
-        ],
-        1169 => [
-            'arName' => 'بئر قاصد علي',
+        [
+            'id' => 391,
+            'wilaya_id' => 34,
             'name' => 'Bir Kasdali',
-            'wilaya_id' => '34',
+            'arName' => 'بئر قاصد علي',
         ],
-        1171 => [
-            'arName' => 'برج زمورة',
+        [
+            'id' => 396,
+            'wilaya_id' => 34,
+            'name' => 'Bordj Bou Arreridj',
+            'arName' => 'برج بوعريريج',
+        ],
+        [
+            'id' => 390,
+            'wilaya_id' => 34,
+            'name' => 'Bordj Ghedir',
+            'arName' => 'برج الغدير',
+        ],
+        [
+            'id' => 395,
+            'wilaya_id' => 34,
             'name' => 'Bordj Zemmoura',
-            'wilaya_id' => '34',
+            'arName' => 'برج زمورة',
         ],
-        1172 => [
-            'arName' => 'جعافرة',
+        [
+            'id' => 392,
+            'wilaya_id' => 34,
             'name' => 'Djaafra',
-            'wilaya_id' => '34',
+            'arName' => 'جعافرة',
         ],
-        1174 => [
-            'arName' => 'الحمادية',
+        [
+            'id' => 387,
+            'wilaya_id' => 34,
             'name' => 'El Hamadia',
-            'wilaya_id' => '34',
+            'arName' => 'الحمادية',
         ],
-        1175 => [
-            'arName' => 'مجانة',
+        [
+            'id' => 388,
+            'wilaya_id' => 34,
+            'name' => 'Mansourah',
+            'arName' => 'المنصورة',
+        ],
+        [
+            'id' => 393,
+            'wilaya_id' => 34,
             'name' => 'Medjana',
-            'wilaya_id' => '34',
+            'arName' => 'مجانة',
         ],
-        1198 => [
-            'arName' => 'دلس',
-            'name' => 'Dellys',
-            'wilaya_id' => '35',
+        [
+            'id' => 394,
+            'wilaya_id' => 34,
+            'name' => 'Ras El Oued',
+            'arName' => 'رأس الوادي',
         ],
-        1199 => [
-            'arName' => 'الثنية',
-            'name' => 'Thenia',
-            'wilaya_id' => '35',
-        ],
-        1200 => [
-            'arName' => 'بغلية',
+        [
+            'id' => 404,
+            'wilaya_id' => 35,
             'name' => 'Baghlia',
-            'wilaya_id' => '35',
+            'arName' => 'بغلية',
         ],
-        1203 => [
-            'arName' => 'برج منايل',
+        [
+            'id' => 402,
+            'wilaya_id' => 35,
             'name' => 'Bordj Menaiel',
-            'wilaya_id' => '35',
+            'arName' => 'برج منايل',
         ],
-        1204 => [
-            'arName' => 'بودواو',
+        [
+            'id' => 397,
+            'wilaya_id' => 35,
             'name' => 'Boudouaou',
-            'wilaya_id' => '35',
+            'arName' => 'بودواو',
         ],
-        1206 => [
-            'arName' => 'بومرداس',
+        [
+            'id' => 405,
+            'wilaya_id' => 35,
             'name' => 'Boumerdes',
-            'wilaya_id' => '35',
+            'arName' => 'بومرداس',
         ],
-        1208 => [
-            'arName' => 'يسر',
+        [
+            'id' => 398,
+            'wilaya_id' => 35,
+            'name' => 'Dellys',
+            'arName' => 'دلس',
+        ],
+        [
+            'id' => 401,
+            'wilaya_id' => 35,
             'name' => 'Isser',
-            'wilaya_id' => '35',
+            'arName' => 'يسر',
         ],
-        1213 => [
-            'arName' => 'خميس الخشنة',
+        [
+            'id' => 400,
+            'wilaya_id' => 35,
             'name' => 'Khemis El Khechna',
-            'wilaya_id' => '35',
+            'arName' => 'خميس الخشنة',
         ],
-        1218 => [
-            'arName' => 'الناصرية',
+        [
+            'id' => 403,
+            'wilaya_id' => 35,
             'name' => 'Naciria',
-            'wilaya_id' => '35',
+            'arName' => 'الناصرية',
         ],
-        1230 => [
-            'arName' => 'الطارف',
-            'name' => 'El Tarf',
-            'wilaya_id' => '36',
+        [
+            'id' => 399,
+            'wilaya_id' => 35,
+            'name' => 'Thenia',
+            'arName' => 'الثنية',
         ],
-        1231 => [
-            'arName' => 'بوحجار',
-            'name' => 'Bouhadjar',
-            'wilaya_id' => '36',
-        ],
-        1232 => [
-            'arName' => 'البسباس',
-            'name' => 'Besbes',
-            'wilaya_id' => '36',
-        ],
-        1233 => [
-            'arName' => 'بن مهيدي',
+        [
+            'id' => 409,
+            'wilaya_id' => 36,
             'name' => 'Ben M\'hidi',
-            'wilaya_id' => '36',
+            'arName' => 'بن مهيدي',
         ],
-        1238 => [
-            'arName' => 'بوثلجة',
+        [
+            'id' => 407,
+            'wilaya_id' => 36,
+            'name' => 'Besbes',
+            'arName' => 'البسباس',
+        ],
+        [
+            'id' => 408,
+            'wilaya_id' => 36,
+            'name' => 'Bouhadjar',
+            'arName' => 'بوحجار',
+        ],
+        [
+            'id' => 412,
+            'wilaya_id' => 36,
             'name' => 'Bouteldja',
-            'wilaya_id' => '36',
+            'arName' => 'بوثلجة',
         ],
-        1239 => [
-            'arName' => 'الذرعان',
+        [
+            'id' => 410,
+            'wilaya_id' => 36,
             'name' => 'Drean',
-            'wilaya_id' => '36',
+            'arName' => 'الذرعان',
         ],
-        1244 => [
-            'arName' => 'القالة',
+        [
+            'id' => 411,
+            'wilaya_id' => 36,
             'name' => 'El Kala',
-            'wilaya_id' => '36',
+            'arName' => 'القالة',
         ],
-        1254 => [
-            'arName' => 'تندوف',
+        [
+            'id' => 406,
+            'wilaya_id' => 36,
+            'name' => 'El Tarf',
+            'arName' => 'الطارف',
+        ],
+        [
+            'id' => 413,
+            'wilaya_id' => 37,
             'name' => 'Tindouf',
-            'wilaya_id' => '37',
+            'arName' => 'تندوف',
         ],
-        1256 => [
-            'arName' => 'عماري',
+        [
+            'id' => 419,
+            'wilaya_id' => 38,
             'name' => 'Ammari',
-            'wilaya_id' => '38',
+            'arName' => 'عماري',
         ],
-        1257 => [
-            'arName' => 'برج بونعامة',
+        [
+            'id' => 418,
+            'wilaya_id' => 38,
             'name' => 'Bordj Bounaama',
-            'wilaya_id' => '38',
+            'arName' => 'برج بونعامة',
         ],
-        1260 => [
-            'arName' => 'برج الأمير عبد القادر',
+        [
+            'id' => 421,
+            'wilaya_id' => 38,
             'name' => 'Bordj Emir Abdelkader',
-            'wilaya_id' => '38',
+            'arName' => 'برج الأمير عبد القادر',
         ],
-        1261 => [
-            'arName' => 'الأزهرية',
-            'name' => 'Lazharia',
-            'wilaya_id' => '38',
-        ],
-        1262 => [
-            'arName' => 'خميستي',
+        [
+            'id' => 414,
+            'wilaya_id' => 38,
             'name' => 'Khemisti',
-            'wilaya_id' => '38',
+            'arName' => 'خميستي',
         ],
-        1264 => [
-            'arName' => 'لرجام',
+        [
+            'id' => 417,
+            'wilaya_id' => 38,
             'name' => 'Lardjem',
-            'wilaya_id' => '38',
+            'arName' => 'لرجام',
         ],
-        1269 => [
-            'arName' => 'تيسمسيلت',
-            'name' => 'Tissemsilt',
-            'wilaya_id' => '38',
+        [
+            'id' => 420,
+            'wilaya_id' => 38,
+            'name' => 'Lazharia',
+            'arName' => 'الأزهرية',
         ],
-        1271 => [
-            'arName' => 'ثنية الاحد',
+        [
+            'id' => 415,
+            'wilaya_id' => 38,
             'name' => 'Theniet El Had',
-            'wilaya_id' => '38',
+            'arName' => 'ثنية الاحد',
         ],
-        1278 => [
-            'arName' => 'البياضة',
+        [
+            'id' => 416,
+            'wilaya_id' => 38,
+            'name' => 'Tissemsilt',
+            'arName' => 'تيسمسيلت',
+        ],
+        [
+            'id' => 427,
+            'wilaya_id' => 39,
             'name' => 'Bayadha',
-            'wilaya_id' => '39',
+            'arName' => 'البياضة',
         ],
-        1279 => [
-            'arName' => 'الطالب العربي',
-            'name' => 'Taleb Larbi',
-            'wilaya_id' => '39',
-        ],
-        1280 => [
-            'arName' => 'الدبيلة',
+        [
+            'id' => 430,
+            'wilaya_id' => 39,
             'name' => 'Debila',
-            'wilaya_id' => '39',
+            'arName' => 'الدبيلة',
         ],
-        1281 => [
-            'arName' => 'جامعة',
-            'name' => 'Djamaa',
-            'wilaya_id' => '57',
-        ],
-        1283 => [
-            'arName' => 'الرباح',
-            'name' => 'Robbah',
-            'wilaya_id' => '39',
-        ],
-        1284 => [
-            'arName' => 'المغير',
-            'name' => 'El Meghaier',
-            'wilaya_id' => '57',
-        ],
-        1285 => [
-            'arName' => 'الوادي',
+        [
+            'id' => 426,
+            'wilaya_id' => 39,
             'name' => 'El Oued',
-            'wilaya_id' => '39',
+            'arName' => 'الوادي',
         ],
-        1286 => [
-            'arName' => 'قمار',
+        [
+            'id' => 428,
+            'wilaya_id' => 39,
             'name' => 'Guemar',
-            'wilaya_id' => '39',
+            'arName' => 'قمار',
         ],
-        1287 => [
-            'arName' => 'الرقيبة',
-            'name' => 'Reguiba',
-            'wilaya_id' => '39',
-        ],
-        1289 => [
-            'arName' => 'حاسي خليفة',
+        [
+            'id' => 431,
+            'wilaya_id' => 39,
             'name' => 'Hassi Khalifa',
-            'wilaya_id' => '39',
+            'arName' => 'حاسي خليفة',
         ],
-        1291 => [
-            'arName' => 'المقرن',
+        [
+            'id' => 424,
+            'wilaya_id' => 39,
             'name' => 'Magrane',
-            'wilaya_id' => '39',
+            'arName' => 'المقرن',
         ],
-        1292 => [
-            'arName' => 'اميه وانسة',
+        [
+            'id' => 425,
+            'wilaya_id' => 39,
             'name' => 'Mih Ouensa',
-            'wilaya_id' => '39',
+            'arName' => 'اميه وانسة',
         ],
-        1308 => [
-            'arName' => 'عين الطويلة',
+        [
+            'id' => 429,
+            'wilaya_id' => 39,
+            'name' => 'Reguiba',
+            'arName' => 'الرقيبة',
+        ],
+        [
+            'id' => 423,
+            'wilaya_id' => 39,
+            'name' => 'Robbah',
+            'arName' => 'الرباح',
+        ],
+        [
+            'id' => 422,
+            'wilaya_id' => 39,
+            'name' => 'Taleb Larbi',
+            'arName' => 'الطالب العربي',
+        ],
+        [
+            'id' => 439,
+            'wilaya_id' => 40,
             'name' => 'Ain Touila',
-            'wilaya_id' => '40',
+            'arName' => 'عين الطويلة',
         ],
-        1309 => [
-            'arName' => 'بابار',
+        [
+            'id' => 433,
+            'wilaya_id' => 40,
             'name' => 'Babar',
-            'wilaya_id' => '40',
+            'arName' => 'بابار',
         ],
-        1310 => [
-            'arName' => 'الحامة',
-            'name' => 'El Hamma',
-            'wilaya_id' => '40',
-        ],
-        1311 => [
-            'arName' => 'بوحمامة',
+        [
+            'id' => 435,
+            'wilaya_id' => 40,
             'name' => 'Bouhmama',
-            'wilaya_id' => '40',
+            'arName' => 'بوحمامة',
         ],
-        1312 => [
-            'arName' => 'ششار',
+        [
+            'id' => 432,
+            'wilaya_id' => 40,
             'name' => 'Chechar',
-            'wilaya_id' => '40',
+            'arName' => 'ششار',
         ],
-        1316 => [
-            'arName' => 'أولاد رشاش',
-            'name' => 'Ouled Rechache',
-            'wilaya_id' => '40',
+        [
+            'id' => 438,
+            'wilaya_id' => 40,
+            'name' => 'El Hamma',
+            'arName' => 'الحامة',
         ],
-        1319 => [
-            'arName' => 'قايس',
+        [
+            'id' => 437,
+            'wilaya_id' => 40,
             'name' => 'Kais',
-            'wilaya_id' => '40',
+            'arName' => 'قايس',
         ],
-        1320 => [
-            'arName' => 'خنشلة',
+        [
+            'id' => 436,
+            'wilaya_id' => 40,
             'name' => 'Khenchela',
-            'wilaya_id' => '40',
+            'arName' => 'خنشلة',
         ],
-        1329 => [
-            'arName' => 'سدراتة',
-            'name' => 'Sedrata',
-            'wilaya_id' => '41',
+        [
+            'id' => 434,
+            'wilaya_id' => 40,
+            'name' => 'Ouled Rechache',
+            'arName' => 'أولاد رشاش',
         ],
-        1330 => [
-            'arName' => 'أولاد إدريس',
-            'name' => 'Ouled Driss',
-            'wilaya_id' => '41',
-        ],
-        1331 => [
-            'arName' => 'بئر بوحوش',
+        [
+            'id' => 449,
+            'wilaya_id' => 41,
             'name' => 'Bir Bouhouche',
-            'wilaya_id' => '41',
+            'arName' => 'بئر بوحوش',
         ],
-        1332 => [
-            'arName' => 'تاورة',
-            'name' => 'Taoura',
-            'wilaya_id' => '41',
-        ],
-        1333 => [
-            'arName' => 'الحدادة',
+        [
+            'id' => 447,
+            'wilaya_id' => 41,
             'name' => 'Haddada',
-            'wilaya_id' => '41',
+            'arName' => 'الحدادة',
         ],
-        1334 => [
-            'arName' => 'المشروحة',
-            'name' => 'Mechroha',
-            'wilaya_id' => '41',
-        ],
-        1338 => [
-            'arName' => 'مداوروش',
+        [
+            'id' => 445,
+            'wilaya_id' => 41,
             'name' => 'M\'daourouche',
-            'wilaya_id' => '41',
+            'arName' => 'مداوروش',
         ],
-        1339 => [
-            'arName' => 'المراهنة',
+        [
+            'id' => 442,
+            'wilaya_id' => 41,
+            'name' => 'Mechroha',
+            'arName' => 'المشروحة',
+        ],
+        [
+            'id' => 448,
+            'wilaya_id' => 41,
             'name' => 'Merahna',
-            'wilaya_id' => '41',
+            'arName' => 'المراهنة',
         ],
-        1340 => [
-            'arName' => 'أم العظايم',
+        [
+            'id' => 443,
+            'wilaya_id' => 41,
+            'name' => 'Ouled Driss',
+            'arName' => 'أولاد إدريس',
+        ],
+        [
+            'id' => 444,
+            'wilaya_id' => 41,
             'name' => 'Oum El Adhaim',
-            'wilaya_id' => '41',
+            'arName' => 'أم العظايم',
         ],
-        1349 => [
-            'arName' => 'سوق أهراس',
+        [
+            'id' => 441,
+            'wilaya_id' => 41,
+            'name' => 'Sedrata',
+            'arName' => 'سدراتة',
+        ],
+        [
+            'id' => 440,
+            'wilaya_id' => 41,
             'name' => 'Souk Ahras',
-            'wilaya_id' => '41',
+            'arName' => 'سوق أهراس',
         ],
-        1355 => [
-            'arName' => 'قوراية',
-            'name' => 'Gouraya',
-            'wilaya_id' => '42',
+        [
+            'id' => 446,
+            'wilaya_id' => 41,
+            'name' => 'Taoura',
+            'arName' => 'تاورة',
         ],
-        1356 => [
-            'arName' => 'أحمر العين',
+        [
+            'id' => 457,
+            'wilaya_id' => 42,
             'name' => 'Ahmar El Ain',
-            'wilaya_id' => '42',
+            'arName' => 'أحمر العين',
         ],
-        1357 => [
-            'arName' => 'بواسماعيل',
+        [
+            'id' => 456,
+            'wilaya_id' => 42,
             'name' => 'Bou Ismail',
-            'wilaya_id' => '42',
+            'arName' => 'بواسماعيل',
         ],
-        1358 => [
-            'arName' => 'القليعة',
-            'name' => 'Kolea',
-            'wilaya_id' => '42',
-        ],
-        1359 => [
-            'arName' => 'الداموس',
-            'name' => 'Damous',
-            'wilaya_id' => '42',
-        ],
-        1364 => [
-            'arName' => 'شرشال',
+        [
+            'id' => 453,
+            'wilaya_id' => 42,
             'name' => 'Cherchell',
-            'wilaya_id' => '42',
+            'arName' => 'شرشال',
         ],
-        1366 => [
-            'arName' => 'فوكة',
+        [
+            'id' => 454,
+            'wilaya_id' => 42,
+            'name' => 'Damous',
+            'arName' => 'الداموس',
+        ],
+        [
+            'id' => 455,
+            'wilaya_id' => 42,
             'name' => 'Fouka',
-            'wilaya_id' => '42',
+            'arName' => 'فوكة',
         ],
-        1369 => [
-            'arName' => 'حجوط',
+        [
+            'id' => 452,
+            'wilaya_id' => 42,
+            'name' => 'Gouraya',
+            'arName' => 'قوراية',
+        ],
+        [
+            'id' => 450,
+            'wilaya_id' => 42,
             'name' => 'Hadjout',
-            'wilaya_id' => '42',
+            'arName' => 'حجوط',
         ],
-        1374 => [
-            'arName' => 'سيدي أعمر',
+        [
+            'id' => 458,
+            'wilaya_id' => 42,
+            'name' => 'Kolea',
+            'arName' => 'القليعة',
+        ],
+        [
+            'id' => 451,
+            'wilaya_id' => 42,
             'name' => 'Sidi Amar',
-            'wilaya_id' => '42',
+            'arName' => 'سيدي أعمر',
         ],
-        1382 => [
-            'arName' => 'تيبازة',
+        [
+            'id' => 459,
+            'wilaya_id' => 42,
             'name' => 'Tipaza',
-            'wilaya_id' => '42',
+            'arName' => 'تيبازة',
         ],
-        1383 => [
-            'arName' => 'وادي النجاء',
-            'name' => 'Oued Endja',
-            'wilaya_id' => '43',
-        ],
-        1384 => [
-            'arName' => 'عين البيضاء أحريش',
+        [
+            'id' => 461,
+            'wilaya_id' => 43,
             'name' => 'Ain Beida Harriche',
-            'wilaya_id' => '43',
+            'arName' => 'عين البيضاء أحريش',
         ],
-        1385 => [
-            'arName' => 'شلغوم العيد',
-            'name' => 'Chelghoum Laid',
-            'wilaya_id' => '43',
-        ],
-        1386 => [
-            'arName' => 'ميلة',
-            'name' => 'Mila',
-            'wilaya_id' => '43',
-        ],
-        1387 => [
-            'arName' => 'ترعي باينان',
-            'name' => 'Terrai Bainen',
-            'wilaya_id' => '43',
-        ],
-        1388 => [
-            'arName' => 'تاجنانت',
-            'name' => 'Tadjenanet',
-            'wilaya_id' => '43',
-        ],
-        1389 => [
-            'arName' => 'بوحاتم',
+        [
+            'id' => 467,
+            'wilaya_id' => 43,
             'name' => 'Bouhatem',
-            'wilaya_id' => '43',
+            'arName' => 'بوحاتم',
         ],
-        1391 => [
-            'arName' => 'سيدي مروان',
-            'name' => 'Sidi Merouane',
-            'wilaya_id' => '43',
+        [
+            'id' => 470,
+            'wilaya_id' => 43,
+            'name' => 'Chelghoum Laid',
+            'arName' => 'شلغوم العيد',
         ],
-        1394 => [
-            'arName' => 'التلاغمة',
-            'name' => 'Teleghma',
-            'wilaya_id' => '43',
-        ],
-        1395 => [
-            'arName' => 'فرجيوة',
+        [
+            'id' => 472,
+            'wilaya_id' => 43,
             'name' => 'Ferdjioua',
-            'wilaya_id' => '43',
+            'arName' => 'فرجيوة',
         ],
-        1396 => [
-            'arName' => 'القرارم قوقة',
+        [
+            'id' => 465,
+            'wilaya_id' => 43,
             'name' => 'Grarem Gouga',
-            'wilaya_id' => '43',
+            'arName' => 'القرارم قوقة',
         ],
-        1399 => [
-            'arName' => 'تسدان حدادة',
-            'name' => 'Tassadane Haddada',
-            'wilaya_id' => '43',
+        [
+            'id' => 471,
+            'wilaya_id' => 43,
+            'name' => 'Mila',
+            'arName' => 'ميلة',
         ],
-        1404 => [
-            'arName' => 'الرواشد',
+        [
+            'id' => 468,
+            'wilaya_id' => 43,
+            'name' => 'Oued Endja',
+            'arName' => 'وادي النجاء',
+        ],
+        [
+            'id' => 466,
+            'wilaya_id' => 43,
             'name' => 'Rouached',
-            'wilaya_id' => '43',
+            'arName' => 'الرواشد',
         ],
-        1415 => [
-            'arName' => 'حمام ريغة',
-            'name' => 'Hammam Righa',
-            'wilaya_id' => '44',
+        [
+            'id' => 464,
+            'wilaya_id' => 43,
+            'name' => 'Sidi Merouane',
+            'arName' => 'سيدي مروان',
         ],
-        1416 => [
-            'arName' => 'العبادية',
-            'name' => 'El Abadia',
-            'wilaya_id' => '44',
+        [
+            'id' => 469,
+            'wilaya_id' => 43,
+            'name' => 'Tadjenanet',
+            'arName' => 'تاجنانت',
         ],
-        1417 => [
-            'arName' => 'عين الدفلى',
+        [
+            'id' => 463,
+            'wilaya_id' => 43,
+            'name' => 'Tassadane Haddada',
+            'arName' => 'تسدان حدادة',
+        ],
+        [
+            'id' => 460,
+            'wilaya_id' => 43,
+            'name' => 'Teleghma',
+            'arName' => 'التلاغمة',
+        ],
+        [
+            'id' => 462,
+            'wilaya_id' => 43,
+            'name' => 'Terrai Bainen',
+            'arName' => 'ترعي باينان',
+        ],
+        [
+            'id' => 486,
+            'wilaya_id' => 44,
             'name' => 'Ain Defla',
-            'wilaya_id' => '44',
+            'arName' => 'عين الدفلى',
         ],
-        1418 => [
-            'arName' => 'عين الاشياخ',
+        [
+            'id' => 482,
+            'wilaya_id' => 44,
             'name' => 'Ain Lechiakh',
-            'wilaya_id' => '44',
+            'arName' => 'عين الاشياخ',
         ],
-        1421 => [
-            'arName' => 'العامرة',
-            'name' => 'El Amra',
-            'wilaya_id' => '44',
-        ],
-        1422 => [
-            'arName' => 'جندل',
-            'name' => 'Djendel',
-            'wilaya_id' => '44',
-        ],
-        1423 => [
-            'arName' => 'بطحية',
+        [
+            'id' => 485,
+            'wilaya_id' => 44,
             'name' => 'Bathia',
-            'wilaya_id' => '44',
+            'arName' => 'بطحية',
         ],
-        1425 => [
-            'arName' => 'مليانة',
-            'name' => 'Miliana',
-            'wilaya_id' => '44',
-        ],
-        1426 => [
-            'arName' => 'برج الأمير خالد',
+        [
+            'id' => 484,
+            'wilaya_id' => 44,
             'name' => 'Bordj El Emir Khaled',
-            'wilaya_id' => '44',
+            'arName' => 'برج الأمير خالد',
         ],
-        1428 => [
-            'arName' => 'بومدفع',
+        [
+            'id' => 476,
+            'wilaya_id' => 44,
             'name' => 'Boumedfaa',
-            'wilaya_id' => '44',
+            'arName' => 'بومدفع',
         ],
-        1429 => [
-            'arName' => 'جليدة',
+        [
+            'id' => 475,
+            'wilaya_id' => 44,
             'name' => 'Djelida',
-            'wilaya_id' => '44',
+            'arName' => 'جليدة',
         ],
-        1435 => [
-            'arName' => 'العطاف',
+        [
+            'id' => 480,
+            'wilaya_id' => 44,
+            'name' => 'Djendel',
+            'arName' => 'جندل',
+        ],
+        [
+            'id' => 479,
+            'wilaya_id' => 44,
+            'name' => 'El Abadia',
+            'arName' => 'العبادية',
+        ],
+        [
+            'id' => 477,
+            'wilaya_id' => 44,
+            'name' => 'El Amra',
+            'arName' => 'العامرة',
+        ],
+        [
+            'id' => 478,
+            'wilaya_id' => 44,
             'name' => 'El Attaf',
-            'wilaya_id' => '44',
+            'arName' => 'العطاف',
         ],
-        1436 => [
-            'arName' => 'الروينة',
-            'name' => 'Rouina',
-            'wilaya_id' => '44',
+        [
+            'id' => 474,
+            'wilaya_id' => 44,
+            'name' => 'Hammam Righa',
+            'arName' => 'حمام ريغة',
         ],
-        1440 => [
-            'arName' => 'خميس',
+        [
+            'id' => 473,
+            'wilaya_id' => 44,
             'name' => 'Khemis',
-            'wilaya_id' => '44',
+            'arName' => 'خميس',
         ],
-        1451 => [
-            'arName' => 'المشرية',
-            'name' => 'Mecheria',
-            'wilaya_id' => '45',
+        [
+            'id' => 481,
+            'wilaya_id' => 44,
+            'name' => 'Miliana',
+            'arName' => 'مليانة',
         ],
-        1452 => [
-            'arName' => 'عين الصفراء',
+        [
+            'id' => 483,
+            'wilaya_id' => 44,
+            'name' => 'Rouina',
+            'arName' => 'الروينة',
+        ],
+        [
+            'id' => 487,
+            'wilaya_id' => 45,
             'name' => 'Ain Sefra',
-            'wilaya_id' => '45',
+            'arName' => 'عين الصفراء',
         ],
-        1453 => [
-            'arName' => 'عسلة',
+        [
+            'id' => 489,
+            'wilaya_id' => 45,
             'name' => 'Asla',
-            'wilaya_id' => '45',
+            'arName' => 'عسلة',
         ],
-        1454 => [
-            'arName' => 'مغرار',
-            'name' => 'Moghrar',
-            'wilaya_id' => '45',
+        [
+            'id' => 491,
+            'wilaya_id' => 45,
+            'name' => 'Mecheria',
+            'arName' => 'المشرية',
         ],
-        1456 => [
-            'arName' => 'مكمن بن عمار',
+        [
+            'id' => 490,
+            'wilaya_id' => 45,
             'name' => 'Mekmen Ben Amar',
-            'wilaya_id' => '45',
+            'arName' => 'مكمن بن عمار',
         ],
-        1460 => [
-            'arName' => 'النعامة',
+        [
+            'id' => 488,
+            'wilaya_id' => 45,
+            'name' => 'Moghrar',
+            'arName' => 'مغرار',
+        ],
+        [
+            'id' => 492,
+            'wilaya_id' => 45,
             'name' => 'Naama',
-            'wilaya_id' => '45',
+            'arName' => 'النعامة',
         ],
-        1461 => [
-            'arName' => 'سفيسيفة',
+        [
+            'id' => 493,
+            'wilaya_id' => 45,
             'name' => 'Sfissifa',
-            'wilaya_id' => '45',
+            'arName' => 'سفيسيفة',
         ],
-        1463 => [
-            'arName' => 'عين الكيحل',
+        [
+            'id' => 498,
+            'wilaya_id' => 46,
             'name' => 'Ain Kihel',
-            'wilaya_id' => '46',
+            'arName' => 'عين الكيحل',
         ],
-        1464 => [
-            'arName' => 'عين الأربعاء',
+        [
+            'id' => 494,
+            'wilaya_id' => 46,
             'name' => 'Ain Larbaa',
-            'wilaya_id' => '46',
+            'arName' => 'عين الأربعاء',
         ],
-        1466 => [
-            'arName' => 'عين تموشنت',
+        [
+            'id' => 501,
+            'wilaya_id' => 46,
             'name' => 'Ain Temouchent',
-            'wilaya_id' => '46',
+            'arName' => 'عين تموشنت',
         ],
-        1469 => [
-            'arName' => 'بني صاف',
+        [
+            'id' => 499,
+            'wilaya_id' => 46,
             'name' => 'Beni Saf',
-            'wilaya_id' => '46',
+            'arName' => 'بني صاف',
         ],
-        1470 => [
-            'arName' => 'العامرية',
+        [
+            'id' => 497,
+            'wilaya_id' => 46,
             'name' => 'El Amria',
-            'wilaya_id' => '46',
+            'arName' => 'العامرية',
         ],
-        1471 => [
-            'arName' => 'المالح',
+        [
+            'id' => 495,
+            'wilaya_id' => 46,
             'name' => 'El Maleh',
-            'wilaya_id' => '46',
+            'arName' => 'المالح',
         ],
-        1472 => [
-            'arName' => 'حمام بوحجر',
+        [
+            'id' => 496,
+            'wilaya_id' => 46,
             'name' => 'Hammam Bou Hadjar',
-            'wilaya_id' => '46',
+            'arName' => 'حمام بوحجر',
         ],
-        1484 => [
-            'arName' => 'ولهاصة الغرابة',
+        [
+            'id' => 500,
+            'wilaya_id' => 46,
             'name' => 'Oulhassa Gheraba',
-            'wilaya_id' => '46',
+            'arName' => 'ولهاصة الغرابة',
         ],
-        1491 => [
-            'arName' => 'بريان',
+        [
+            'id' => 508,
+            'wilaya_id' => 47,
             'name' => 'Berriane',
-            'wilaya_id' => '47',
+            'arName' => 'بريان',
         ],
-        1492 => [
-            'arName' => 'بونورة',
+        [
+            'id' => 504,
+            'wilaya_id' => 47,
             'name' => 'Bounoura',
-            'wilaya_id' => '47',
+            'arName' => 'بونورة',
         ],
-        1493 => [
-            'arName' => 'ضاية بن ضحوة',
+        [
+            'id' => 502,
+            'wilaya_id' => 47,
             'name' => 'Dhayet Ben Dhahoua',
-            'wilaya_id' => '47',
+            'arName' => 'ضاية بن ضحوة',
         ],
-        1495 => [
-            'arName' => 'المنيعة',
-            'name' => 'El Menia',
-            'wilaya_id' => '58',
-        ],
-        1496 => [
-            'arName' => 'غرداية',
-            'name' => 'Ghardaia',
-            'wilaya_id' => '47',
-        ],
-        1497 => [
-            'arName' => 'القرارة',
+        [
+            'id' => 506,
+            'wilaya_id' => 47,
             'name' => 'El Guerrara',
-            'wilaya_id' => '47',
+            'arName' => 'القرارة',
         ],
-        1498 => [
-            'arName' => 'المنصورة',
+        [
+            'id' => 509,
+            'wilaya_id' => 47,
+            'name' => 'Ghardaia',
+            'arName' => 'غرداية',
+        ],
+        [
+            'id' => 503,
+            'wilaya_id' => 47,
             'name' => 'Mansourah',
-            'wilaya_id' => '58',
-        ],
-        1500 => [
             'arName' => 'المنصورة',
-            'name' => 'Mansourah',
-            'wilaya_id' => '47',
         ],
-        1501 => [
-            'arName' => 'متليلي',
+        [
+            'id' => 507,
+            'wilaya_id' => 47,
             'name' => 'Metlili',
-            'wilaya_id' => '47',
+            'arName' => 'متليلي',
         ],
-        1503 => [
-            'arName' => 'زلفانة',
+        [
+            'id' => 505,
+            'wilaya_id' => 47,
             'name' => 'Zelfana',
-            'wilaya_id' => '47',
+            'arName' => 'زلفانة',
         ],
-        1504 => [
-            'arName' => 'يلل',
-            'name' => 'Yellel',
-            'wilaya_id' => '48',
-        ],
-        1505 => [
-            'arName' => 'عين طارق',
+        [
+            'id' => 515,
+            'wilaya_id' => 48,
             'name' => 'Ain Tarek',
-            'wilaya_id' => '48',
+            'arName' => 'عين طارق',
         ],
-        1506 => [
-            'arName' => 'عمي موسى',
+        [
+            'id' => 511,
+            'wilaya_id' => 48,
             'name' => 'Ammi Moussa',
-            'wilaya_id' => '48',
+            'arName' => 'عمي موسى',
         ],
-        1507 => [
-            'arName' => 'المطمر',
-            'name' => 'El Matmar',
-            'wilaya_id' => '48',
-        ],
-        1508 => [
-            'arName' => 'غليزان',
-            'name' => 'Relizane',
-            'wilaya_id' => '48',
-        ],
-        1509 => [
-            'arName' => 'زمورة',
-            'name' => 'Zemmoura',
-            'wilaya_id' => '48',
-        ],
-        1510 => [
-            'arName' => 'سيدي أمحمد بن علي',
-            'name' => 'Sidi M\'hamed Ben Ali',
-            'wilaya_id' => '48',
-        ],
-        1512 => [
-            'arName' => 'جديوية',
+        [
+            'id' => 513,
+            'wilaya_id' => 48,
             'name' => 'Djidiouia',
-            'wilaya_id' => '48',
+            'arName' => 'جديوية',
         ],
-        1514 => [
-            'arName' => 'الحمادنة',
+        [
+            'id' => 522,
+            'wilaya_id' => 48,
             'name' => 'El H\'madna',
-            'wilaya_id' => '48',
+            'arName' => 'الحمادنة',
         ],
-        1516 => [
-            'arName' => 'مازونة',
+        [
+            'id' => 514,
+            'wilaya_id' => 48,
+            'name' => 'El Matmar',
+            'arName' => 'المطمر',
+        ],
+        [
+            'id' => 510,
+            'wilaya_id' => 48,
             'name' => 'Mazouna',
-            'wilaya_id' => '48',
+            'arName' => 'مازونة',
         ],
-        1521 => [
-            'arName' => 'وادي رهيو',
-            'name' => 'Oued Rhiou',
-            'wilaya_id' => '48',
-        ],
-        1524 => [
-            'arName' => 'منداس',
+        [
+            'id' => 518,
+            'wilaya_id' => 48,
             'name' => 'Mendes',
-            'wilaya_id' => '48',
+            'arName' => 'منداس',
         ],
-        1532 => [
-            'arName' => 'الرمكة',
+        [
+            'id' => 519,
+            'wilaya_id' => 48,
+            'name' => 'Oued Rhiou',
+            'arName' => 'وادي رهيو',
+        ],
+        [
+            'id' => 517,
+            'wilaya_id' => 48,
             'name' => 'Ramka',
-            'wilaya_id' => '48',
+            'arName' => 'الرمكة',
+        ],
+        [
+            'id' => 520,
+            'wilaya_id' => 48,
+            'name' => 'Relizane',
+            'arName' => 'غليزان',
+        ],
+        [
+            'id' => 521,
+            'wilaya_id' => 48,
+            'name' => 'Sidi M\'hamed Ben Ali',
+            'arName' => 'سيدي أمحمد بن علي',
+        ],
+        [
+            'id' => 516,
+            'wilaya_id' => 48,
+            'name' => 'Yellel',
+            'arName' => 'يلل',
+        ],
+        [
+            'id' => 512,
+            'wilaya_id' => 48,
+            'name' => 'Zemmoura',
+            'arName' => 'زمورة',
+        ],
+        [
+            'id' => 525,
+            'wilaya_id' => 49,
+            'name' => 'Aougrout',
+            'arName' => 'أوقروت',
+        ],
+        [
+            'id' => 526,
+            'wilaya_id' => 49,
+            'name' => 'Charouine',
+            'arName' => 'شروين',
+        ],
+        [
+            'id' => 524,
+            'wilaya_id' => 49,
+            'name' => 'Timimoun',
+            'arName' => 'تيميمون',
+        ],
+        [
+            'id' => 523,
+            'wilaya_id' => 49,
+            'name' => 'Tinerkouk',
+            'arName' => 'تنركوك',
+        ],
+        [
+            'id' => 527,
+            'wilaya_id' => 50,
+            'name' => 'Bordj Badji Mokhtar',
+            'arName' => 'برج باجي مختار',
+        ],
+        [
+            'id' => 529,
+            'wilaya_id' => 51,
+            'name' => 'Ouled Djellal',
+            'arName' => 'أولاد جلال',
+        ],
+        [
+            'id' => 528,
+            'wilaya_id' => 51,
+            'name' => 'Sidi Khaled',
+            'arName' => 'سيدي  خالد',
+        ],
+        [
+            'id' => 530,
+            'wilaya_id' => 52,
+            'name' => 'Beni Abbes',
+            'arName' => 'بني عباس',
+        ],
+        [
+            'id' => 532,
+            'wilaya_id' => 52,
+            'name' => 'El Ouata',
+            'arName' => 'الواتة',
+        ],
+        [
+            'id' => 531,
+            'wilaya_id' => 52,
+            'name' => 'Igli',
+            'arName' => 'إقلي',
+        ],
+        [
+            'id' => 534,
+            'wilaya_id' => 52,
+            'name' => 'Kerzaz',
+            'arName' => 'كرزاز',
+        ],
+        [
+            'id' => 533,
+            'wilaya_id' => 52,
+            'name' => 'Ouled Khodeir',
+            'arName' => 'أولاد خضير',
+        ],
+        [
+            'id' => 535,
+            'wilaya_id' => 53,
+            'name' => 'In Ghar',
+            'arName' => 'إينغر',
+        ],
+        [
+            'id' => 536,
+            'wilaya_id' => 53,
+            'name' => 'In Salah',
+            'arName' => 'عين صالح',
+        ],
+        [
+            'id' => 538,
+            'wilaya_id' => 54,
+            'name' => 'In Guezzam',
+            'arName' => 'عين قزام',
+        ],
+        [
+            'id' => 537,
+            'wilaya_id' => 54,
+            'name' => 'Tin Zouatine',
+            'arName' => 'تين زواتين',
+        ],
+        [
+            'id' => 543,
+            'wilaya_id' => 55,
+            'name' => 'El-Hadjira',
+            'arName' => 'الحجيرة',
+        ],
+        [
+            'id' => 540,
+            'wilaya_id' => 55,
+            'name' => 'Megarine',
+            'arName' => 'المقارين',
+        ],
+        [
+            'id' => 542,
+            'wilaya_id' => 55,
+            'name' => 'Taibet',
+            'arName' => 'الطيبات',
+        ],
+        [
+            'id' => 539,
+            'wilaya_id' => 55,
+            'name' => 'Temacine',
+            'arName' => 'تماسين',
+        ],
+        [
+            'id' => 541,
+            'wilaya_id' => 55,
+            'name' => 'Touggourt',
+            'arName' => 'تقرت',
+        ],
+        [
+            'id' => 544,
+            'wilaya_id' => 56,
+            'name' => 'Djanet',
+            'arName' => 'جانت',
+        ],
+        [
+            'id' => 546,
+            'wilaya_id' => 57,
+            'name' => 'Djamaa',
+            'arName' => 'جامعة',
+        ],
+        [
+            'id' => 545,
+            'wilaya_id' => 57,
+            'name' => 'El Meghaier',
+            'arName' => 'المغير',
+        ],
+        [
+            'id' => 547,
+            'wilaya_id' => 58,
+            'name' => 'El Menia',
+            'arName' => 'المنيعة',
+        ],
+        [
+            'id' => 548,
+            'wilaya_id' => 58,
+            'name' => 'Mansourah',
+            'arName' => 'المنصورة',
+        ],
+        [
+            'id' => 551,
+            'wilaya_id' => 59,
+            'name' => 'Aflou',
+            'arName' => 'أفلو',
+        ],
+        [
+            'id' => 549,
+            'wilaya_id' => 59,
+            'name' => 'Brida',
+            'arName' => 'بريدة',
+        ],
+        [
+            'id' => 550,
+            'wilaya_id' => 59,
+            'name' => 'El Ghicha',
+            'arName' => 'الغيشة',
+        ],
+        [
+            'id' => 552,
+            'wilaya_id' => 59,
+            'name' => 'Oued Morra',
+            'arName' => 'وادي مرة',
+        ],
+        [
+            'id' => 554,
+            'wilaya_id' => 60,
+            'name' => 'Barika',
+            'arName' => 'بريكة',
+        ],
+        [
+            'id' => 555,
+            'wilaya_id' => 60,
+            'name' => 'Djezzar',
+            'arName' => 'الجزار',
+        ],
+        [
+            'id' => 553,
+            'wilaya_id' => 60,
+            'name' => 'Seggana',
+            'arName' => 'سقانة',
+        ],
+        [
+            'id' => 572,
+            'wilaya_id' => 61,
+            'name' => 'Djemorah',
+            'arName' => 'جمورة',
+        ],
+        [
+            'id' => 574,
+            'wilaya_id' => 61,
+            'name' => 'El Kantara',
+            'arName' => 'القنطرة',
+        ],
+        [
+            'id' => 573,
+            'wilaya_id' => 61,
+            'name' => 'El Outaya',
+            'arName' => 'الوطاية',
+        ],
+        [
+            'id' => 576,
+            'wilaya_id' => 62,
+            'name' => 'Bir El Ater',
+            'arName' => 'بئر العاتر',
+        ],
+        [
+            'id' => 575,
+            'wilaya_id' => 62,
+            'name' => 'Negrine',
+            'arName' => 'نقرين',
+        ],
+        [
+            'id' => 583,
+            'wilaya_id' => 63,
+            'name' => 'Beni Snous',
+            'arName' => 'بني سنوس',
+        ],
+        [
+            'id' => 582,
+            'wilaya_id' => 63,
+            'name' => 'Sebdou',
+            'arName' => 'سبدو',
+        ],
+        [
+            'id' => 581,
+            'wilaya_id' => 63,
+            'name' => 'Sidi Djillali',
+            'arName' => 'سيدي الجيلالي',
+        ],
+        [
+            'id' => 557,
+            'wilaya_id' => 64,
+            'name' => 'Hamadia',
+            'arName' => 'حمادية',
+        ],
+        [
+            'id' => 556,
+            'wilaya_id' => 64,
+            'name' => 'Ksar Chellala',
+            'arName' => 'قصر الشلالة',
+        ],
+        [
+            'id' => 563,
+            'wilaya_id' => 65,
+            'name' => 'Ain Oussera',
+            'arName' => 'عين وسارة',
+        ],
+        [
+            'id' => 562,
+            'wilaya_id' => 65,
+            'name' => 'Birine',
+            'arName' => 'بيرين',
+        ],
+        [
+            'id' => 560,
+            'wilaya_id' => 65,
+            'name' => 'Had Sahary',
+            'arName' => 'حد الصحاري',
+        ],
+        [
+            'id' => 561,
+            'wilaya_id' => 65,
+            'name' => 'Sidi Laadjel',
+            'arName' => 'سيدي لعجال',
+        ],
+        [
+            'id' => 559,
+            'wilaya_id' => 66,
+            'name' => 'Faidh El Botma',
+            'arName' => 'فيض البطمة',
+        ],
+        [
+            'id' => 558,
+            'wilaya_id' => 66,
+            'name' => 'Messaad',
+            'arName' => 'مسعد',
+        ],
+        [
+            'id' => 580,
+            'wilaya_id' => 67,
+            'name' => 'Aziz',
+            'arName' => 'عزيز',
+        ],
+        [
+            'id' => 579,
+            'wilaya_id' => 67,
+            'name' => 'Chahbounia',
+            'arName' => 'الشهبونية',
+        ],
+        [
+            'id' => 578,
+            'wilaya_id' => 67,
+            'name' => 'Ksar El Boukhari',
+            'arName' => 'قصر البخاري',
+        ],
+        [
+            'id' => 577,
+            'wilaya_id' => 67,
+            'name' => 'Souaghi',
+            'arName' => 'السواقي',
+        ],
+        [
+            'id' => 566,
+            'wilaya_id' => 68,
+            'name' => 'Ben Srour',
+            'arName' => 'بن سرور',
+        ],
+        [
+            'id' => 567,
+            'wilaya_id' => 68,
+            'name' => 'Djebel Messaad',
+            'arName' => 'جبل مساعد',
+        ],
+        [
+            'id' => 568,
+            'wilaya_id' => 68,
+            'name' => 'Khoubana',
+            'arName' => 'خبانة',
+        ],
+        [
+            'id' => 564,
+            'wilaya_id' => 68,
+            'name' => 'Ouled Sidi Brahim',
+            'arName' => 'أولاد سيدي ابراهيم',
+        ],
+        [
+            'id' => 565,
+            'wilaya_id' => 68,
+            'name' => 'Sidi Ameur',
+            'arName' => 'سيدي عامر',
+        ],
+        [
+            'id' => 571,
+            'wilaya_id' => 69,
+            'name' => 'Boussemghoun',
+            'arName' => 'بوسمغون',
+        ],
+        [
+            'id' => 570,
+            'wilaya_id' => 69,
+            'name' => 'Brezina',
+            'arName' => 'بريزينة',
+        ],
+        [
+            'id' => 569,
+            'wilaya_id' => 69,
+            'name' => 'Labiodh Sidi Cheikh',
+            'arName' => 'الأبيض سيدي الشيخ',
         ],
     ];
 

@@ -7,7 +7,8 @@ use Illuminate\Database\Seeder;
 
 class WilayaSeeder extends Seeder
 {
-    private $wilayas = [
+    private $wilayas =
+    [
         [
             'id' => '1',
             'name' => 'Adrar',
@@ -297,6 +298,61 @@ class WilayaSeeder extends Seeder
             'id' => '58',
             'name' => 'In Guezzam',
             'arName' => 'عين قزام',
+        ],
+        [
+            'id' => '59',
+            'name' => 'Aflou',
+            'arName' => 'أفلو',
+        ],
+        [
+            'id' => '60',
+            'name' => 'Barika',
+            'arName' => 'بريكة',
+        ],
+        [
+            'id' => '61',
+            'name' => 'Birine',
+            'arName' => 'بيرين',
+        ],
+        [
+            'id' => '62',
+            'name' => 'Beni Ounif',
+            'arName' => 'بني ونيف',
+        ],
+        [
+            'id' => '63',
+            'name' => 'Timiaouine',
+            'arName' => 'تيمياوين',
+        ],
+        [
+            'id' => '64',
+            'name' => 'Touggourt',
+            'arName' => 'تقرت',
+        ],
+        [
+            'id' => '65',
+            'name' => 'Djanet',
+            'arName' => 'جانت',
+        ],
+        [
+            'id' => '66',
+            'name' => 'El Meghaier',
+            'arName' => 'المغير',
+        ],
+        [
+            'id' => '67',
+            'name' => 'Ksar El Boukhari',
+            'arName' => 'قصر البخاري',
+        ],
+        [
+            'id' => '68',
+            'name' => 'Boussaâda',
+            'arName' => 'بوسعادة',
+        ],
+        [
+            'id' => '69',
+            'name' => 'El Abiodh Sidi Cheikh',
+            'arName' => 'الأبيض سيدي الشيخ',
         ],
     ];
 
